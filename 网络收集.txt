@@ -76,6 +76,22 @@ elta生活旅游,http://37.27.111.214:8080/live/85/hls.m3u8
 综艺,http://37.27.111.214:8080/live/67/hls.m3u8
 
 C1,#genre#
+TVBS新闻,http://tianhewan.top/ZIPP.php?url=http://211.72.65.236:8574/.m3u8
+TVBS,http://tianhewan.top/ZIPP.php?url=http://211.72.65.236:8575/.m3u8
+东森财经,http://tianhewan.top/ZIPP.php?url=http://211.72.65.236:8546/.m3u8
+东森超视,http://tianhewan.top/ZIPP.php?url=http://211.72.65.236:8525/.m3u8
+东森戏剧,http://tianhewan.top/ZIPP.php?url=http://211.72.65.236:8530/.m3u8
+凤凰卫视,http://tianhewan.top/ZIPP.php?url=http://211.72.65.236:8576/.m3u8
+凤凰卫视,http://tianhewan.top/ZIPP.php?url=http://211.72.65.236:8577/.m3u8
+环宇新闻,http://tianhewan.top/ZIPP.php?url=http://211.72.65.236:8547/.m3u8
+年代新闻,http://tianhewan.top/ZIPP.php?url=http://211.72.65.236:8529/.m3u8
+三立新闻,http://tianhewan.top/ZIPP.php?url=http://211.72.65.236:8543/.m3u8
+纬来日本,http://tianhewan.top/ZIPP.php?url=http://211.72.65.236:8537/.m3u8
+纬来综合,http://tianhewan.top/ZIPP.php?url=http://211.72.65.236:8518/.m3u8
+壹新闻,http://tianhewan.top/ZIPP.php?url=http://211.72.65.236:8548/.m3u8
+中天新闻,http://tianhewan.top/ZIPP.php?url=http://211.72.65.236:8541/.m3u8
+
+D1,#genre#
 博山新闻,http://117.72.68.25:9930/qilu.php?id=zbbsxw
 成武综艺,http://117.72.68.25:9930/qilu.php?id=hzcwzy
 定陶新闻,http://117.72.68.25:9930/qilu.php?id=hzdt1
@@ -86,17 +102,15 @@ C1,#genre#
 福建新闻,http://117.72.68.25:9930/fujian.php?id=13
 高唐综艺,http://117.72.68.25:9930/qilu.php?id=lcgtzy
 寒亭新闻,http://117.72.68.25:9930/qilu.php?id=wfhtxw
-河南新闻,http://117.72.68.25:9930/hn.php?id=hnxw
 巨野新闻,http://117.72.68.25:9930/qilu.php?id=hzjyxw
 莱阳民生综艺,http://117.72.68.25:9930/qilu.php?id=ytlyms
-牡丹区综艺,http://117.72.68.25:9930/qilu.php?id=hzmdzy
 蓬莱综艺,http://117.72.68.25:9930/qilu.php?id=ytplzy
 青州文化旅游,http://117.72.68.25:9930/qilu.php?id=wfqzwh
 陕西新闻资讯,http://117.72.68.25:9930/shanxi.php?id=sxxwzx
 上饶经济旅游,http://117.72.68.25:9930/jxtv.php?id=15
 潍坊影视综艺,http://117.72.68.25:9930/qilu.php?id=wfyswy
-武城综艺影视,http://117.72.68.25:9930/qilu.php?id=dzwczy
 无棣综艺,http://117.72.68.25:9930/qilu.php?id=bzwdzy
+五莲文化旅游,http://117.72.68.25:9930/qilu.php?id=rzwlwh
 武宁新闻,http://117.72.68.25:9930/jxtv.php?id=28
 禹城综艺,http://117.72.68.25:9930/qilu.php?id=dzyczy
 鱼台新闻,http://117.72.68.25:9930/qilu.php?id=jiytxw
@@ -105,5 +119,6 @@ C1,#genre#
 沾化综艺,http://117.72.68.25:9930/qilu.php?id=bzzhzy
 长清新闻,http://117.72.68.25:9930/qilu.php?id=jncqxw
 招远综艺,http://117.72.68.25:9930/qilu.php?id=ytzyzy
+周村新闻,http://117.72.68.25:9930/qilu.php?id=zbzctv1
 淄川新闻,http://117.72.68.25:9930/qilu.php?id=zbzcxw
 
