@@ -11,6 +11,7 @@ TVBS综艺台,http://95.179.139.113:5566/4gtv/284
 TVBS,http://95.179.139.113:5566/4gtv/183
 爱尔达生活旅游,http://95.179.139.113:5566/4gtv/237
 八大精彩台,http://95.179.139.113:5566/4gtv/172
+八大综艺台,http://95.179.139.113:5566/4gtv/114
 半岛国际新闻台,http://95.179.139.113:5566/4gtv/85
 大爱电视,http://95.179.139.113:5566/4gtv/209
 大爱二台,http://95.179.139.113:5566/4gtv/230
@@ -32,8 +33,9 @@ fun探索娱乐台,http://95.179.139.113:5566/4gtv/274
 靖天戏剧台,http://95.179.139.113:5566/4gtv/116
 靖天映画,http://95.179.139.113:5566/4gtv/42
 靖天育乐台,http://95.179.139.113:5566/4gtv/83
-靖天综合台,http://95.179.139.113:5566/4gtv/21
+靖天资讯台,http://95.179.139.113:5566/4gtv/88
 靖洋卡通NiceBingo,http://95.179.139.113:5566/4gtv/59
+靖洋戏剧台,http://95.179.139.113:5566/4gtv/118
 龙华电影台,http://95.179.139.113:5566/4gtv/121
 龙华日韩台,http://95.179.139.113:5566/4gtv/28
 龙华戏剧台,http://95.179.139.113:5566/4gtv/23
@@ -71,10 +73,8 @@ AMC电影台,https://gat.zhoujie218.top/litv/4gtv-4gtv017
 CATCHPLAY电影台,https://gat.zhoujie218.top/litv/4gtv-4gtv076
 ELTA生活旅游,https://gat.zhoujie218.top/4gtv/237
 Fun探索娱乐台,https://gat.zhoujie218.top/4gtv/274
-MTVLive音乐,https://gat.zhoujie218.top/4gtv/213
 TVBS欢乐台,https://gat.zhoujie218.top/litv/4gtv-4gtv068
 TVBS精采台,https://gat.zhoujie218.top/litv/4gtv-4gtv067
-TVBS台剧台,https://gat.zhoujie218.top/4gtv/285
 TVBS新闻台,https://gat.zhoujie218.top/litv/4gtv-4gtv072
 TVBS综艺台,https://gat.zhoujie218.top/4gtv/284
 TVBS,https://gat.zhoujie218.top/litv/4gtv-4gtv073
@@ -108,7 +108,6 @@ TVBS,https://gat.zhoujie218.top/litv/4gtv-4gtv073
 靖洋卡通台,https://gat.zhoujie218.top/litv/4gtv-4gtv057
 靖洋戏剧台,https://gat.zhoujie218.top/litv/4gtv-4gtv045
 龙华电影,https://gat.zhoujie218.top/litv/litv-longturn03
-龙华经典,https://gat.zhoujie218.top/litv/litv-longturn21
 龙华卡通,https://gat.zhoujie218.top/litv/litv-longturn01
 龙华偶像,https://gat.zhoujie218.top/litv/litv-longturn12
 龙华日韩,https://gat.zhoujie218.top/litv/litv-longturn11
@@ -117,19 +116,19 @@ TVBS,https://gat.zhoujie218.top/litv/4gtv-4gtv073
 民视,https://gat.zhoujie218.top/litv/4gtv-4gtv155
 民视第一台,https://gat.zhoujie218.top/litv/4gtv-4gtv003
 民视旅游,https://gat.zhoujie218.top/litv/litv-ftv07
-民视台湾台,https://gat.zhoujie218.top/litv/4gtv-4gtv001
 民视台湾台,https://gat.zhoujie218.top/litv/4gtv-4gtv156
 民视新闻台,https://gat.zhoujie218.top/litv/litv-ftv13
 民视影剧,https://gat.zhoujie218.top/litv/litv-ftv09
 民视综艺,https://gat.zhoujie218.top/litv/4gtv-4gtv004
+人间卫视,https://gat.zhoujie218.top/4gtv/210
 三立新闻,https://gat.zhoujie218.top/4gtv/229
 三立综合台,https://gat.zhoujie218.top/4gtv/169
 台视新闻,https://gat.zhoujie218.top/litv/4gtv-4gtv051
 台湾戏剧台,https://gat.zhoujie218.top/litv/litv-longturn22
+戏剧免费看1台,https://gat.zhoujie218.top/4gtv/270
 戏剧免费看2台,https://gat.zhoujie218.top/4gtv/244
 亚洲旅游台,https://gat.zhoujie218.top/litv/litv-longturn17
 影迷数位电影台,https://gat.zhoujie218.top/litv/4gtv-4gtv011
-影迷数位纪实台,https://gat.zhoujie218.top/4gtv/212
 中视,https://gat.zhoujie218.top/litv/4gtv-4gtv040
 中视菁采,https://gat.zhoujie218.top/litv/4gtv-4gtv064
 中视经典,https://gat.zhoujie218.top/litv/4gtv-4gtv080
@@ -215,14 +214,14 @@ elta生活旅游,http://37.27.111.214:8080/live/85/hls.m3u8
 综艺,http://37.27.111.214:8080/live/67/hls.m3u8
 
 E1,#genre#
-博山新闻,http://117.72.68.25:9930/qilu.php?id=zbbsxw
 成武综艺,http://117.72.68.25:9930/qilu.php?id=hzcwzy
 定陶新闻,http://117.72.68.25:9930/qilu.php?id=hzdt1
-定陶综艺,http://117.72.68.25:9930/qilu.php?id=hzdt2
 东阿综艺,http://117.72.68.25:9930/qilu.php?id=lcdezy
+都昌新闻,http://117.72.68.25:9930/jxtv.php?id=21
 福建旅游,http://117.72.68.25:9930/fujian.php?id=8
 福建新闻,http://117.72.68.25:9930/fujian.php?id=13
 高唐综艺,http://117.72.68.25:9930/qilu.php?id=lcgtzy
+广州新闻,http://117.72.68.25:9930/gztv.php?id=gzxw
 寒亭新闻,http://117.72.68.25:9930/qilu.php?id=wfhtxw
 河南新闻,http://117.72.68.25:9930/hn.php?id=hnxw
 巨野新闻,http://117.72.68.25:9930/qilu.php?id=hzjyxw
@@ -233,6 +232,7 @@ E1,#genre#
 陕西新闻资讯,http://117.72.68.25:9930/shanxi.php?id=sxxwzx
 上饶经济旅游,http://117.72.68.25:9930/jxtv.php?id=15
 潍坊影视综艺,http://117.72.68.25:9930/qilu.php?id=wfyswy
+武城综艺影视,http://117.72.68.25:9930/qilu.php?id=dzwczy
 无棣综艺,http://117.72.68.25:9930/qilu.php?id=bzwdzy
 五莲文化旅游,http://117.72.68.25:9930/qilu.php?id=rzwlwh
 武宁新闻,http://117.72.68.25:9930/jxtv.php?id=28
@@ -241,5 +241,6 @@ E1,#genre#
 郓城新闻,http://117.72.68.25:9930/qilu.php?id=hzycxw
 郓城综艺,http://117.72.68.25:9930/qilu.php?id=hzyczy
 长清新闻,http://117.72.68.25:9930/qilu.php?id=jncqxw
+招远综艺,http://117.72.68.25:9930/qilu.php?id=ytzyzy
 淄川新闻,http://117.72.68.25:9930/qilu.php?id=zbzcxw
 
