@@ -11,50 +11,6 @@ TVB星河国语,http://php.jdshipin.com:8880/TVOD/iptv.php?id=xinghe
 无线新闻台,http://php.jdshipin.com:8880/smt.php?id=inews_twn
 
 B1,#genre#
-AMC电影台,http://95.179.139.113:5566/4gtv/39
-KLT-靖天国际台,http://95.179.139.113:5566/4gtv/84
-MTVLive音乐,http://95.179.139.113:5566/4gtv/213
-NiceTV靖天欢乐,http://95.179.139.113:5566/4gtv/119
-TVBS新闻台,http://95.179.139.113:5566/4gtv/291
-TVBS综艺台,http://95.179.139.113:5566/4gtv/284
-八大综艺台,http://95.179.139.113:5566/4gtv/114
-半岛国际新闻台,http://95.179.139.113:5566/4gtv/85
-大爱电视,http://95.179.139.113:5566/4gtv/209
-大爱二台,http://95.179.139.113:5566/4gtv/230
-东森新闻台,http://95.179.139.113:5566/4gtv/292
-公视戏剧,http://95.179.139.113:5566/4gtv/7
-华视新闻,http://95.179.139.113:5566/4gtv/256
-寰宇财经台,http://95.179.139.113:5566/4gtv/281
-寰宇新闻台湾台,http://95.179.139.113:5566/4gtv/280
-靖天电影台,http://95.179.139.113:5566/4gtv/82
-靖天卡通台,http://95.179.139.113:5566/4gtv/15
-靖天戏剧台,http://95.179.139.113:5566/4gtv/116
-靖天映画,http://95.179.139.113:5566/4gtv/42
-靖天育乐台,http://95.179.139.113:5566/4gtv/83
-靖洋卡通NiceBingo,http://95.179.139.113:5566/4gtv/59
-龙华戏剧台,http://95.179.139.113:5566/4gtv/23
-民视第一台,http://95.179.139.113:5566/4gtv/1
-民视第一台,http://95.179.139.113:5566/4gtv/254
-民视台湾台,http://95.179.139.113:5566/4gtv/2
-民视台湾台,http://95.179.139.113:5566/4gtv/255
-民视新闻台,http://95.179.139.113:5566/4gtv/31
-人间卫视,http://95.179.139.113:5566/4gtv/210
-三立新闻iNEWS,http://95.179.139.113:5566/4gtv/229
-戏剧免费看1台,http://95.179.139.113:5566/4gtv/270
-香蕉直击台,http://95.179.139.113:5566/4gtv/94
-亚洲旅游台,http://95.179.139.113:5566/4gtv/250
-亚洲旅游台,http://95.179.139.113:5566/4gtv/261
-影迷数位电影台,http://95.179.139.113:5566/4gtv/40
-影迷数位纪实台,http://95.179.139.113:5566/4gtv/212
-中视菁采台,http://95.179.139.113:5566/4gtv/123
-中视经典台,http://95.179.139.113:5566/4gtv/124
-中视新闻,http://95.179.139.113:5566/4gtv/258
-中视新闻,http://95.179.139.113:5566/4gtv/33
-中天新闻台,http://95.179.139.113:5566/4gtv/260
-中天新闻台,http://95.179.139.113:5566/4gtv/30
-猪哥亮歌厅秀,http://95.179.139.113:5566/4gtv/113
-
-C1,#genre#
 AMC电影台,https://gat.zhoujie218.top/litv/4gtv-4gtv017
 CATCHPLAY电影台,https://gat.zhoujie218.top/litv/4gtv-4gtv076
 ELTA生活旅游,https://gat.zhoujie218.top/4gtv/237
@@ -120,7 +76,6 @@ TVBS,https://gat.zhoujie218.top/litv/4gtv-4gtv073
 戏剧免费看2台,https://gat.zhoujie218.top/4gtv/244
 亚洲旅游台,https://gat.zhoujie218.top/litv/litv-longturn17
 影迷数位电影台,https://gat.zhoujie218.top/litv/4gtv-4gtv011
-影迷数位纪实台,https://gat.zhoujie218.top/4gtv/212
 中视,https://gat.zhoujie218.top/litv/4gtv-4gtv040
 中视菁采,https://gat.zhoujie218.top/litv/4gtv-4gtv064
 中视经典,https://gat.zhoujie218.top/litv/4gtv-4gtv080
@@ -128,7 +83,7 @@ TVBS,https://gat.zhoujie218.top/litv/4gtv-4gtv073
 中天新闻,https://gat.zhoujie218.top/litv/4gtv-4gtv009
 猪哥亮歌厅秀,https://gat.zhoujie218.top/litv/4gtv-4gtv006
 
-D1,#genre#
+C1,#genre#
 AMC电影台,https://litv.zapi.us.kg/?id=4gtv-4gtv017
 CAT电影台,https://litv.zapi.us.kg/?id=4gtv-4gtv076
 八大精彩台,https://litv.zapi.us.kg/?id=4gtv-4gtv034
@@ -174,7 +129,7 @@ tvbs新闻台,https://litv.zapi.us.kg/?id=4gtv-4gtv072
 中天新闻台,https://litv.zapi.us.kg/?id=4gtv-4gtv009
 猪哥亮歌厅秀,https://litv.zapi.us.kg/?id=4gtv-4gtv006
 
-E1,#genre#
+D1,#genre#
 TVBS欢乐台,http://37.27.111.214:8080/live/24/hls.m3u8
 TVBS,http://37.27.111.214:8080/live/23/hls.m3u8
 东森新闻,http://37.27.111.214:8080/live/20/hls.m3u8
@@ -203,17 +158,14 @@ elta生活旅游,http://37.27.111.214:8080/live/85/hls.m3u8
 猪哥亮,http://37.27.111.214:8080/live/35/hls.m3u8
 综艺,http://37.27.111.214:8080/live/67/hls.m3u8
 
-F1,#genre#
-博山新闻,http://117.72.68.25:9930/qilu.php?id=zbbsxw
-成武综艺,http://117.72.68.25:9930/qilu.php?id=hzcwzy
-定陶新闻,http://117.72.68.25:9930/qilu.php?id=hzdt1
+E1,#genre#
 定陶综艺,http://117.72.68.25:9930/qilu.php?id=hzdt2
 东阿综艺,http://117.72.68.25:9930/qilu.php?id=lcdezy
 都昌新闻,http://117.72.68.25:9930/jxtv.php?id=21
 福建旅游,http://117.72.68.25:9930/fujian.php?id=8
 福建新闻,http://117.72.68.25:9930/fujian.php?id=13
-高唐综艺,http://117.72.68.25:9930/qilu.php?id=lcgtzy
 广州新闻,http://117.72.68.25:9930/gztv.php?id=gzxw
+寒亭新闻,http://117.72.68.25:9930/qilu.php?id=wfhtxw
 河南新闻,http://117.72.68.25:9930/hn.php?id=hnxw
 巨野新闻,http://117.72.68.25:9930/qilu.php?id=hzjyxw
 莱阳民生综艺,http://117.72.68.25:9930/qilu.php?id=ytlyms
@@ -223,27 +175,20 @@ F1,#genre#
 陕西新闻资讯,http://117.72.68.25:9930/shanxi.php?id=sxxwzx
 上饶经济旅游,http://117.72.68.25:9930/jxtv.php?id=15
 潍坊影视综艺,http://117.72.68.25:9930/qilu.php?id=wfyswy
-武城综艺影视,http://117.72.68.25:9930/qilu.php?id=dzwczy
-无棣综艺,http://117.72.68.25:9930/qilu.php?id=bzwdzy
 五莲文化旅游,http://117.72.68.25:9930/qilu.php?id=rzwlwh
 武宁新闻,http://117.72.68.25:9930/jxtv.php?id=28
 禹城综艺,http://117.72.68.25:9930/qilu.php?id=dzyczy
 鱼台新闻,http://117.72.68.25:9930/qilu.php?id=jiytxw
 郓城新闻,http://117.72.68.25:9930/qilu.php?id=hzycxw
-郓城综艺,http://117.72.68.25:9930/qilu.php?id=hzyczy
-沾化综艺,http://117.72.68.25:9930/qilu.php?id=bzzhzy
-长清新闻,http://117.72.68.25:9930/qilu.php?id=jncqxw
 招远综艺,http://117.72.68.25:9930/qilu.php?id=ytzyzy
-周村新闻,http://117.72.68.25:9930/qilu.php?id=zbzctv1
 淄川新闻,http://117.72.68.25:9930/qilu.php?id=zbzcxw
 
-G1,#genre#
+F1,#genre#
 山东|博山新闻,http://8.137.59.151:3000/shandong/qilu66.php?id=zbbsxw
 山东|成武综艺,http://8.137.59.151:3000/shandong/qilu66.php?id=hzcwzy
 山东|定陶新闻,http://8.137.59.151:3000/shandong/qilu66.php?id=hzdt1
 山东|东阿综艺,http://8.137.59.151:3000/shandong/qilu66.php?id=lcdezy
 山东|高唐综艺,http://8.137.59.151:3000/shandong/qilu66.php?id=lcgtzy
-山东|寒亭新闻,http://8.137.59.151:3000/shandong/qilu66.php?id=wfhtxw
 山东|巨野新闻,http://8.137.59.151:3000/shandong/qilu66.php?id=hzjyxw
 山东|莱阳民生综艺,http://8.137.59.151:3000/shandong/qilu66.php?id=ytlyms
 山东|蓬莱综艺,http://8.137.59.151:3000/shandong/qilu66.php?id=ytplzy
@@ -256,9 +201,7 @@ G1,#genre#
 山东|禹城综艺,http://8.137.59.151:3000/shandong/qilu66.php?id=dzyczy
 山东|鱼台新闻,http://8.137.59.151:3000/shandong/qilu66.php?id=jiytxw
 山东|郓城新闻,http://8.137.59.151:3000/shandong/qilu66.php?id=hzycxw
-山东|郓城综艺,http://8.137.59.151:3000/shandong/qilu66.php?id=hzyczy
 山东|沾化综艺,http://8.137.59.151:3000/shandong/qilu66.php?id=bzzhzy
-山东|长清新闻,http://8.137.59.151:3000/shandong/qilu66.php?id=jncqxw&playlist.m3u8
 山东|周村新闻,http://8.137.59.151:3000/shandong/qilu66.php?id=zbzctv1
 山东|淄川新闻,http://8.137.59.151:3000/shandong/qilu66.php?id=zbzcxw
 
