@@ -30,8 +30,21 @@ import cv2
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse
 from translate import Translator  # 导入Translator类,用于文本翻译
+import os
+import re
+import datetime
+import requests
+from bs4 import BeautifulSoup
+import base64
+import configparser  # 新增配置文件读取模块
 
-######################################################################################################################
+# ---------------------- 添加配置文件读取 ----------------------
+config = configparser.ConfigParser()
+config.read('fofa.ini', encoding="utf-8")
+API_KEY = config.get("userinfo", "key")  # 从配置获取API KEY
+FOFA_EMAIL = config.get("userinfo", "email")  # 从配置获取邮箱
+
+# ---------------------- 原有文件处理逻辑 ----------------------
 # 获取rtp目录下的文件名,组播IP采集
 files = os.listdir('rtp')
 files_name = []
@@ -39,7 +52,7 @@ files_name = []
 for file in files:
     name, extension = os.path.splitext(file)
     files_name.append(name)
-#忽略不符合要求的文件名
+# 忽略不符合要求的文件名
 provinces_isps = [name for name in files_name if name.count('_') == 1]
 print(f"本次查询：{provinces_isps}的组播节目") 
 keywords = []
@@ -56,39 +69,13 @@ for province_isp in provinces_isps:
                 mcast = first_line.split("rtp://")[1].split(" ")[0]
                 keywords.append(province_isp + "_" + mcast)
     except FileNotFoundError:
-    # 如果文件不存在,则捕获 FileNotFoundError 异常并打印提示信息
+        # 如果文件不存在,则捕获 FileNotFoundError 异常并打印提示信息
         print(f"文件 '{province_isp}.txt' 不存在. 跳过此文件.")
+
 requested_urls = set()  # 用于记录已经请求过的地址
 parse_count = {}  # 用于记录每个 URL 的解析次数
-######################################################################################################################
-# 获取rtp目录下的文件名,组播IP采集
-files = os.listdir('rtp')
-files_name = []
-# 去除后缀名并保存至provinces_isps
-for file in files:
-    name, extension = os.path.splitext(file)
-    files_name.append(name)
-#忽略不符合要求的文件名
-provinces_isps = [name for name in files_name if name.count('_') == 1]
-print(f"本次查询：{provinces_isps}的组播节目") 
-keywords = []
-for province_isp in provinces_isps:
-    # 读取文件并删除空白行
-    try:
-        with open(f'rtp/{province_isp}.txt', 'r', encoding='utf-8') as file:
-            lines = file.readlines()
-            lines = [line.strip() for line in lines if line.strip()]
-        # 获取第二行中以包含 "rtp://" 的值作为 mcast
-        if lines:
-            first_line = lines[1]
-            if "rtp://" in first_line:
-                mcast = first_line.split("rtp://")[1].split(" ")[0]
-                keywords.append(province_isp + "_" + mcast)
-    except FileNotFoundError:
-    # 如果文件不存在,则捕获 FileNotFoundError 异常并打印提示信息
-        print(f"文件 '{province_isp}.txt' 不存在. 跳过此文件.")
-requested_urls = set()  # 用于记录已经请求过的地址
-parse_count = {}  # 用于记录每个 URL 的解析次数
+
+# ---------------------- 修改后的FOFA请求逻辑 ----------------------
 for keyword in keywords:
     province, isp, mcast = keyword.split("_")
     # 将省份转成英文小写
@@ -106,45 +93,43 @@ for keyword in keywords:
         org = "China Mobile communications corporation"
         isp_en = "cmcc"
 
-    current_time = datetime.now()
+    current_time = datetime.datetime.now()
     timeout_cnt = 0
     result_urls = set()
     should_continue_while = True
+    
     while should_continue_while and len(result_urls) == 0 and timeout_cnt <= 2:
         try:
-            search_url = 'https://fofa.info/result?qbase64='
-            search_txt = f'"udpxy" && country="CN" && region="{province}"'  # && org="{org}"
-            # 将字符串编码为字节流
+            # 构造FOFA查询条件（移除原代码中无效的org参数，使用官方API格式）
+            search_txt = f'"udpxy" && country="CN" && region="{province}"'
             bytes_string = search_txt.encode('utf-8')
-            # 使用base64进行编码
-            search_txt = base64.b64encode(bytes_string).decode('utf-8')
-            search_url += search_txt
-            if search_url not in requested_urls:  # 仅当地址未被请求过时才进行请求
+            search_txt_b64 = base64.b64encode(bytes_string).decode('utf-8')
+            
+            # 拼接官方API地址并添加认证参数
+            search_url = f"https://fofa.info/api/v1/search/all?qbase64={search_txt_b64}"
+            search_url += f"&email={FOFA_EMAIL}&key={API_KEY}&page=1&size=100"  # 添加邮箱和API KEY
+            
+            if search_url not in requested_urls:
                 print(f"{current_time} 查询运营商 : {province}{isp},查询网址 : {search_url}")
                 response = requests.get(search_url, timeout=5)
-                # 处理响应
                 response.raise_for_status()
-                # 检查请求是否成功
-                html_content = response.text
-                requested_urls.add(search_url)  # 将请求过的地址添加到记录集合中
-
-            if search_url not in parse_count:
-                parse_count[search_url] = 0
-            if parse_count[search_url] < 2:
-                # 使用BeautifulSoup解析网页内容
-                html_soup = BeautifulSoup(html_content, "html.parser")
-                # print(f"{current_time} html_content:{html_content}")
-                # 查找所有符合指定格式的网址
-                # 设置匹配的格式,如http://8.8.8.8:8888
-                pattern = r"http://\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}:\d+"
-                urls_all = re.findall(pattern, html_content)
-                # 去重得到唯一的URL列表
-                result_urls = set(urls_all)
-                print(f"{current_time} result_urls:{result_urls}")
-                parse_count[search_url] += 1
-            else:
+                
+                # 直接解析JSON响应（替换原有的BeautifulSoup解析）
+                data = response.json()
+                if "results" in data:
+                    # 从API返回结果中提取IP:PORT（假设格式为["ip:port", ...]）
+                    urls_all = [item[0] for item in data["results"]]
+                    result_urls = set(urls_all)
+                    print(f"{current_time} result_urls:{result_urls}")
+                
+                requested_urls.add(search_url)
+            
+            if search_url in parse_count and parse_count[search_url] >= 2:
                 print(f"{current_time} 已达到对 {search_url} 的最大解析次数（2次）")
-                should_continue_while = False  # 当达到最大解析次数，修改循环条件
+                should_continue_while = False
+            else:
+                parse_count[search_url] = parse_count.get(search_url, 0) + 1
+                
         except (requests.Timeout, requests.RequestException) as e:
             timeout_cnt += 1
             print(f"{current_time} [{province}]搜索请求发生超时,异常次数：{timeout_cnt}")
@@ -152,37 +137,34 @@ for keyword in keywords:
                 print(f"{current_time} 搜索IPTV频道源[{province}{isp}],超时次数过多：{timeout_cnt} 次,停止处理")
                 break
 
+    # ---------------------- 后续视频链接验证逻辑不变 ----------------------
     valid_ips = []
-    # 遍历所有视频链接
     for url in result_urls:
         video_url = url + "/rtp/" + mcast
         # 用OpenCV读取视频
         cap = cv2.VideoCapture(video_url)
-        # 检查视频是否成功打开
         if not cap.isOpened():
             print(f"{current_time} {video_url} 无效")
         else:
-            # 读取视频的宽度和高度
             width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
             height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
             print(f"{current_time} {video_url} 的分辨率为 {width}x{height}")
-            # 检查分辨率是否大于0
             if width > 0 and height > 0:
                 valid_ips.append(url)
-            # 关闭视频流
             cap.release()
 
     if valid_ips:
-        # 生成节目列表 省份运营商.txt
         rtp_filename = f'rtp/{province}_{isp}.txt'
         txt_filename = f'playlist/{province}{isp}.txt'
         with open(rtp_filename, 'r', encoding='utf-8') as file:
             data = file.read()
-        with open(txt_filename, 'a') as new_file:  # 以追加形式写入
+        with open(txt_filename, 'a') as new_file:
             for url in valid_ips:
                 new_data = data.replace("rtp://", f"{url}/rtp/")
                 new_file.write(new_data)
         print(f'已生成播放列表,保存至{txt_filename}')
+
+
 
 print('对playlist文件夹里面的所有txt文件进行去重处理')
 def remove_duplicates_keep_order(folder_path):
