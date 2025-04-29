@@ -30,12 +30,7 @@ import cv2
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse
 from translate import Translator  # 导入Translator类,用于文本翻译
-import os
-import re
-import datetime
-import requests
-from bs4 import BeautifulSoup
-import base64
+
 ######################################################################################################################
 # 获取rtp目录下的文件名,组播IP采集
 files = os.listdir('rtp')
@@ -188,8 +183,6 @@ for keyword in keywords:
                 new_data = data.replace("rtp://", f"{url}/rtp/")
                 new_file.write(new_data)
         print(f'已生成播放列表,保存至{txt_filename}')
-
-print('对playlist文件夹里面的所有txt文件进行去重处理')
 
 print('对playlist文件夹里面的所有txt文件进行去重处理')
 def remove_duplicates_keep_order(folder_path):
