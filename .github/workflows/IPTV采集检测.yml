@@ -28,7 +28,7 @@ jobs:
         run: |
           #python ${{ github.workspace }}/py/IPTV搜索引擎采集.py   
           python ${{ github.workspace }}/py/测绘站采集.py   
-          python ${{ github.workspace }}/py/网络收集.py     
+          #python ${{ github.workspace }}/py/网络收集.py     
           #python ${{ github.workspace }}/py/更新文件名.py     
           #python ${{ github.workspace }}/py/酒店源255.py     
       - name: 提交更改
