@@ -117,7 +117,7 @@ for keyword in keywords:
     should_continue_while = True
     while should_continue_while and len(result_urls) == 0 and timeout_cnt <= 2:
         try:
-            search_url = 'https://fofa.info/api/v1/search/all?key=30bffdb13deccd433f6505f2dc699972&qbase64='
+            search_url = 'https://fofa.info/result?qbase64='
             search_txt = f'"udpxy" && country="CN" && region="{province}"'  # && org="{org}"
             # 将字符串编码为字节流
             bytes_string = search_txt.encode('utf-8')
@@ -189,6 +189,7 @@ for keyword in keywords:
                 new_file.write(new_data)
         print(f'已生成播放列表,保存至{txt_filename}')
 
+print('对playlist文件夹里面的所有txt文件进行去重处理')
 
 print('对playlist文件夹里面的所有txt文件进行去重处理')
 def remove_duplicates_keep_order(folder_path):
