@@ -22,8 +22,8 @@ from bs4 import BeautifulSoup
 from urllib.parse import urlparse
 from translate import Translator  # 导入Translator类,用于文本翻译
 # 扫源测绘空间地址
-# 搜素关键词："iptv/live/zh_cn.js" && country="CN" && region="Hunan" && city="changsha"
-# 搜素关键词："ZHGXTV" && country="CN" && region="Hunan" && city="changsha"
+# 搜素关键词："iptv/live/zh_cn.js" && country="CN" && region="Hunan" && city="changsha"   #url + "/iptv/live/1000.json?key=txiptv
+# 搜素关键词："ZHGXTV" && country="CN" && region="Hunan" && city="changsha"   #url + "/ZHGXTV/Public/json/live_interface.txt
 #"isShowLoginJs"智能KUTV管理
 ######################################################################################################################
 ######################################################################################################################
