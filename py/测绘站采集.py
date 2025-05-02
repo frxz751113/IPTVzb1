@@ -29,7 +29,6 @@ from bs4 import BeautifulSoup
 from urllib.parse import urlparse
 from translate import Translator  # 导入Translator类,用于文本翻译
 # -*- coding: utf-8 -*-
-# -*- coding: utf-8 -*-
 import time
 import random
 import requests
@@ -48,7 +47,6 @@ os.makedirs('playlist', exist_ok=True)
 DELAY_RANGE = (3, 6)     # 随机延迟时间范围（秒）
 MAX_RETRIES = 3          # 最大重试次数
 REQUEST_TIMEOUT = 10     # 请求超时时间（秒）
-PROXY_REFRESH_INTERVAL = 300  # 代理刷新间隔（秒）
 
 def get_random_header():
     """生成随机请求头"""
@@ -58,76 +56,29 @@ def get_random_header():
         'Referer': 'https://fofa.info/'
     }
 
-# 代理池相关变量
-proxies = []
-last_refresh_time = 0
-
-def scrape_proxies_89ip(url):
-    """从 89ip.cn 抓取代理列表"""
-    try:
-        response = requests.get(url)
-        response.raise_for_status()
-      
-        # 89ip.cn 返回的代理列表是纯文本，每行一个代理
-        proxies_text = response.text.split('提取结果')[1].strip()
-        # 过滤掉空行和无效的代理
-        valid_proxies = [proxy.strip() for proxy in proxies_text.splitlines() if re.match(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}:\d{1,5}$', proxy.strip())]
-      
-        # 默认所有代理为 HTTP 协议
-        return [f"http://{proxy}" for proxy in valid_proxies]
-  
-    except Exception as e:
-        print(f"抓取代理失败: {str(e)}")
-        return []
-
-def get_proxies():
-    """获取代理列表，定期刷新"""
-    global proxies, last_refresh_time
-    current_time = time.time()
-  
-    # 如果代理列表为空或超过刷新间隔，重新抓取代理
-    if not proxies or current_time - last_refresh_time > PROXY_REFRESH_INTERVAL:
-        print("正在刷新代理列表...")
-        proxy_url = "https://www.89ip.cn/tqdl.html?num=60&address=&kill_address=&port=&kill_port=&isp="
-        proxies = scrape_proxies_89ip(proxy_url)
-        last_refresh_time = current_time
-      
-        if not proxies:
-            raise Exception("无法获取代理")
-  
-    return proxies
-
 def safe_request(url):
-    """带重试机制和代理的请求函数"""
+    """带重试机制的请求函数"""
     for attempt in range(MAX_RETRIES):
         try:
             # 随机延迟防止被封
             time.sleep(random.uniform(*DELAY_RANGE))
-          
-            # 获取代理列表
-            proxy_list = get_proxies()
-          
-            # 随机选择一个代理
-            proxy = random.choice(proxy_list)
-            print(f"使用代理: {proxy}")
-          
+            
             response = requests.get(
                 url,
                 headers=get_random_header(),
-                proxies={"http": proxy, "https": proxy},
                 timeout=REQUEST_TIMEOUT
             )
-          
+            
             # 检查HTTP状态码
             if response.status_code == 429:
                 wait_time = 30  # 遇到反爬等待30秒
                 print(f"遇到反爬机制，等待{wait_time}秒后重试")
                 time.sleep(wait_time)
                 continue
-              
+                
             response.raise_for_status()
             return response.text
-          
+            
         except Exception as e:
             print(f"请求失败（第{attempt+1}次重试）: {str(e)}")
             if attempt == MAX_RETRIES - 1:
@@ -137,19 +88,19 @@ def validate_video(url, mcast):
     """验证视频流有效性"""
     video_url = f"{url}/rtp/{mcast}"
     print(f"正在验证: {video_url}")
-  
+    
     try:
         # 设置超时参数
         cap = cv2.VideoCapture(video_url, cv2.CAP_FFMPEG)
         cap.set(cv2.CAP_PROP_TIMEOUT, 5000)  # 5秒超时
-      
+        
         if cap.isOpened():
             width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
             height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
             cap.release()
             return width > 0 and height > 0
         return False
-      
+        
     except Exception as e:
         print(f"视频验证异常: {str(e)}")
         return False
@@ -176,7 +127,7 @@ def main():
             continue
 
         # 构造搜索请求
-        search_txt = f'"udpxy" && country="CN" && region="{province}"'
+        search_txt = f'"udpxy" && country="CN" && region="{province}'
         encoded_query = base64.b64encode(search_txt.encode()).decode()
         search_url = f'https://fofa.info/result?qbase64={encoded_query}'
 
@@ -209,9 +160,6 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-
 
 
 print('对playlist文件夹里面的所有txt文件进行去重处理')
