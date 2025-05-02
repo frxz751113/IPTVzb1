@@ -2,40 +2,67 @@ name: IP采集检测
 
 on:
   schedule:
-    - cron: '5 0 * * *'        #这里更改自动运行的时间，没这两行的话只能手动运行
+    - cron: '5 0 * * *'  # UTC时间每天0:05运行（北京时间8:05）
   workflow_dispatch:
-    分支:
-      - main
+    inputs:
+      branch:
+        description: 'main'
+        required: true
+        default: 'main'
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-    
-      - name: Set up Python
-        uses: actions/setup-python@v2
+      - name: 检出代码 📥
+        uses: actions/checkout@v3
         with:
-          python-version: 3.x
+          fetch-depth: 0  # 获取完整提交历史
 
-      - name: Install dependencies
+      - name: 设置Python环境 🐍
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: 安装依赖 📦
         run: |
           pip install --upgrade pip
-          pip install selenium requests futures eventlet fake-useragent opencv-python Beautifulsoup4 translate termcolor func_timeout replace input opencc pypinyin pytz tqdm
-      - name: Run py
+          pip install \
+            requests \
+            beautifulsoup4 \
+            opencv-python-headless \
+            fake-useragent \
+            tqdm \
+            pytz
+
+      - name: 执行采集脚本 🚀
         run: |
-          #python ${{ github.workspace }}/py/IPTV搜索引擎采集.py   
-          python ${{ github.workspace }}/py/测绘站采集.py   
-          #python ${{ github.workspace }}/py/网络收集.py     
-          #python ${{ github.workspace }}/py/更新文件名.py     
-          #python ${{ github.workspace }}/py/酒店源255.py     
-      - name: 提交更改
+          # 只保留需要执行的脚本
+          python ${{ github.workspace }}/py/测绘站采集.py
+          # 其他脚本按需取消注释
+
+      - name: 提交变更 💾
         run: |
+          # 配置Git身份
           git config --local user.email "actions@163.com"
-          git config --local user.name "GitHub Action"
-          #git reset --hard origin/main
+          git config --local user.name "GitHub Action Bot"
+
+          # 检查是否有文件变更
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "没有检测到文件变更，跳过提交"
+            exit 0
+          fi
+
+          # 执行提交操作
           git add .
-          git commit -m "Add generated file"
-          git push -f origin main
+          git commit -m "🔄 自动更新采集数据 [skip ci]"
+          
+          # 先拉取最新代码避免冲突
+          git pull origin main --rebase
+          
+          # 强制推送更新（适用于自动化场景）
+          git push origin main --force-with-lease
+
+        # 添加错误忽略以防空提交
+        continue-on-error: true
