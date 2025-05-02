@@ -38,4 +38,4 @@ jobs:
           #git reset --hard origin/main
           git add .
           git commit -m "Add generated file"
-          git push -f
+          git push -f origin main
