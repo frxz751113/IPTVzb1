@@ -28,13 +28,7 @@ jobs:
       - name: 安装依赖 📦
         run: |
           pip install --upgrade pip
-          pip install \
-            requests \
-            beautifulsoup4 \
-            opencv-python-headless \
-            fake-useragent \
-            tqdm \
-            pytz
+          pip install selenium requests futures pyautogui eventlet opencv-python Beautifulsoup4 translate termcolor func_timeout replace input opencc pypinyin pytz tqdm
 
       - name: 执行采集脚本 🚀
         run: |
