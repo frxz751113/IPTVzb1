@@ -129,7 +129,7 @@ def main():
             continue
 
         # 构造搜索请求
-        search_txt = f'"udpxy" && country="CN" && region="{province} && is_domain=true'
+        search_txt = f'"udpxy" && country="CN" && region="{province}'
         encoded_query = base64.b64encode(search_txt.encode()).decode()
         search_url = f'https://fofa.info/result?qbase64={encoded_query}'
 
@@ -160,8 +160,8 @@ def main():
                     dst.write(modified + '\n')
             print(f"已生成播放列表: {output_file}")
 
-if __name__ == '__main__':
-    main()
+#if __name__ == '__main__':
+    #main()
 
 
 print('对playlist文件夹里面的所有txt文件进行去重处理')
