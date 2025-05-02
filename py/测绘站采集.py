@@ -160,8 +160,8 @@ def main():
                     dst.write(modified + '\n')
             print(f"已生成播放列表: {output_file}")
 
-#if __name__ == '__main__':
-    #main()
+if __name__ == '__main__':
+    main()
 
 
 print('对playlist文件夹里面的所有txt文件进行去重处理')
