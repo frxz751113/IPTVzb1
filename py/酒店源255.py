@@ -42,7 +42,7 @@ urls = [
     #"https://fofa.info/result?qbase64=IlpIR1hUViIgJiYgcG9ydD0iODAwMyI%3D" ,   #8003
     "https://fofa.info/result?qbase64=IlpIR1hUViIgJiYgcG9ydD0iODg4Ig%3D%3D" ,   #888
     #"https://fofa.info/result?qbase64=IlpIR1hUViIgJiYgcG9ydD0iODA4OSI%3D" ,   #8089
-    #"https://fofa.info/result?qbase64=IlpIR1hUViIgJiYgcG9ydD0iODAwOSI%3D", #8009
+    "https://fofa.info/result?qbase64=IlpIR1hUViIgJiYgcG9ydD0iODgi"
 ]
 
 def modify_urls(url):
@@ -75,7 +75,7 @@ for url in urls:
     urls_all = re.findall(r"http://\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}:\d+", page_content)
     urls = set(urls_all)
     x_urls = []
-    for url in urls:
+    for url in urls:  # 缩进修正：内层循环与外层for对齐
         url = url.strip()
         ip_start_index = url.find("//") + 2
         ip_end_index = url.find(":", ip_start_index)
@@ -93,7 +93,7 @@ for url in urls:
     valid_urls = []
     with concurrent.futures.ThreadPoolExecutor(max_workers=100) as executor:
         futures = []
-        for url in urls:
+        for url in urls:  # 缩进修正：内层循环与with块对齐
             modified_urls = modify_urls(url)
             for modified_url in modified_urls:
                 futures.append(executor.submit(is_url_accessible, modified_url))
@@ -101,16 +101,16 @@ for url in urls:
             result = future.result()
             if result:
                 valid_urls.append(result)
-    for url in valid_urls:
+    for url in valid_urls:  # 缩进修正：与外层for对齐
         print(url)
-    for url in valid_urls:
+    for url in valid_urls:  # 缩进修正：与外层for对齐
         try:
             json_url = f"{url}"
             response = requests.get(json_url, timeout=3, headers={'User-Agent': UserAgent().random})
             json_data = response.content.decode('utf-8')
             lines = json_data.split('\n')
             excluded_keywords = ['udp', 'rtp']
-            for line in lines:
+            for line in lines:  # 缩进修正：内层循环与try块对齐
                 if 'hls' in line and all(keyword not in line for keyword in excluded_keywords):
                     line = line.strip()
                     if line:
@@ -122,7 +122,7 @@ for url in urls:
                         else:
                             urld = (f"{urls}")
                         if name and urld:
-                            name = name.replace("高清电影", "影迷电影")                            
+                            name = name.replace("高清电影", "影迷电影")                        
                             name = name.replace("中央", "CCTV")
                             name = name.replace("高清", "")
                             name = name.replace("HD", "")
@@ -229,17 +229,15 @@ for url in urls:
                             name = name.replace("奥运匹克", "")
                             urld = urld.replace("index.m3u8", "index.m3u8?$智慧光迅听说名字越长越好看")
                             results.append(f"{name},{urld}")
-            except:
-                continue
-        except:
+        except:  # 缩进修正：与外层for对齐
             continue
 channels = []
-for result in results:
+for result in results:  # 缩进修正：与外层代码块对齐
     line = result.strip()
     if result:
         channel_name, channel_url = result.split(',')
         channels.append((channel_name, channel_url))
-with open("iptv.txt", 'w', encoding='utf-8') as file:
+with open("iptv.txt", 'w', encoding='utf-8') as file:  # 缩进修正：与外层代码块对齐
     for result in results:
         file.write(result + "\n")
         print(result)  #关闭频道名称和频道地址打印,缩短运行时间
