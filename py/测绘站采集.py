@@ -130,7 +130,7 @@ def main():
             continue
 
         # 构造搜索请求
-        search_txt = f'"udpxy" && country="CN" && region="{province}"'
+        search_txt = f'"udpxy" && country="CN" && region="{province}" && domain'
         encoded_query = base64.b64encode(search_txt.encode()).decode()
         search_url = f'https://fofa.info/result?qbase64={encoded_query}'
 
