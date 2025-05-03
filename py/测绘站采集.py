@@ -90,21 +90,24 @@ def validate_video(url, mcast):
     print(f"正在验证: {video_url}")
   
     try:
-        # 设置超时参数
+        # 使用 FFmpeg 作为后端来打开视频流
         cap = cv2.VideoCapture(video_url, cv2.CAP_FFMPEG)
-        cap.set(cv2.CAP_PROP_TIMEOUT, 5000)  # 5秒超时
       
-        if cap.isOpened():
-            width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
-            height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
-            cap.release()
-            return width > 0 and height > 0
-        return False
+        # 设置超时参数
+        ret, frame = cap.read()
+        if not ret:
+            print(f"视频验证失败: 无法读取帧")
+            return False
+      
+        # 检查视频流是否有效
+        width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
+        height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
+        cap.release()
+        return width > 0 and height > 0
       
     except Exception as e:
         print(f"视频验证异常: {str(e)}")
         return False
-
 def main():
     # 获取需要处理的文件列表
     files = [f.split('.')[0] for f in os.listdir('rtp') if f.endswith('.txt')]
@@ -127,7 +130,7 @@ def main():
             continue
 
         # 构造搜索请求
-        search_txt = f'"udpxy" && country="CN" && region="{province}"'
+        search_txt = f'"udpxy" && country="CN" && region="{province}" && aXNfZG9tYWluPXRydWU%3D'
         encoded_query = base64.b64encode(search_txt.encode()).decode()
         search_url = f'https://fofa.info/result?qbase64={encoded_query}'
 
