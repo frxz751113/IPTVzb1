@@ -33,8 +33,8 @@ jobs:
       - name: 执行采集脚本 🚀
         run: |
           # 只保留需要执行的脚本
-          python ${{ github.workspace }}/py/测绘站采集.py
-          #python ${{ github.workspace }}/py/酒店源255.py
+          #python ${{ github.workspace }}/py/测绘站采集.py
+          python ${{ github.workspace }}/py/酒店源1.py
           # 其他脚本按需取消注释
 
       - name: 提交变更 💾
