@@ -1053,7 +1053,7 @@ with open(file_path, 'r+', encoding='utf-8') as f:
 
 
 #任务结束,删除不必要的过程文件
-files_to_remove = ['去重.txt', "2.txt", "iptv.txt", "e.txt", "a0.txt", "a.txt", "a1.txt", "b.txt", "c.txt", "c1.txt", "c2.txt", "d.txt", "f.txt", "o1.txt", "o.txt", "酒店源.txt"]
+files_to_remove = ['去重.txt', "2.txt", "e.txt", "a0.txt", "a.txt", "a1.txt", "b.txt", "c.txt", "c1.txt", "c2.txt", "d.txt", "iptv.txt", "f.txt", "o1.txt", "o.txt"]
 for file in files_to_remove:
     if os.path.exists(file):
         os.remove(file)
