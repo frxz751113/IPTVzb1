@@ -1,3 +1,4 @@
+#本程序只适用于酒店源的检测,请勿移植他用
 import time
 import concurrent.futures
 from selenium import webdriver
@@ -20,6 +21,14 @@ import cv2
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse
 from translate import Translator  # 导入Translator类,用于文本翻译
+# 扫源测绘空间地址
+# 搜素关键词："iptv/live/zh_cn.js" && country="CN" && region="Hunan" && city="changsha"   #url + "/iptv/live/1000.json?key=txiptv
+# 搜素关键词："ZHGXTV" && country="CN" && region="Hunan" && city="changsha"   #url + "/ZHGXTV/Public/json/live_interface.txt
+#"isShowLoginJs"智能KUTV管理
+#############################import time
+import requests
+import re
+import fileinput
 import random
 
 # 定义请求头列表，随机选择请求头
@@ -29,31 +38,18 @@ USER_AGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0"
 ]
 
-# 定义代理 IP 列表（这里需要替换为真实可用的代理 IP）
-PROXIES = [
-     "http://182.44.4.11:8090",
-     "http://175.178.182.213"
-]
-
 def get_random_user_agent():
     """随机选择一个用户代理"""
     return random.choice(USER_AGENTS)
-
-def get_random_proxy():
-    """随机选择一个代理 IP"""
-    if PROXIES:
-        return {'http': random.choice(PROXIES), 'https': random.choice(PROXIES)}
-    return None
 
 def make_request(url, timeout=3):
     """发送请求并处理异常，添加随机请求间隔和反爬机制"""
     headers = {
         'User-Agent': get_random_user_agent()
     }
-    proxy = get_random_proxy()
     try:
         time.sleep(random.uniform(1, 3))  # 随机请求间隔
-        response = requests.get(url, headers=headers, proxies=proxy, timeout=timeout)
+        response = requests.get(url, headers=headers, timeout=timeout)
         if 200 <= response.status_code <= 401:
             return response
     except requests.exceptions.RequestException:
@@ -101,7 +97,7 @@ def process_urls(urls, path):
                                 else:
                                     urld = (f"{urls}")
                                 if name and urld:
-                                    name = name.replace("高清电影", "影迷电影")                            
+                                    name = name.replace("高清电影", "影迷电影")
                                     name = name.replace("中央", "CCTV")
                                     name = name.replace("高清", "")
                                     name = name.replace("HD", "")
@@ -232,7 +228,6 @@ def process_urls(urls, path):
                                 urld = f"{url_x}{urlx}"
                             if name and urld:
                                 name = name.replace("高清电影", "影迷电影")
-                                name = name.replace("高清电影", "影迷电影")                            
                                 name = name.replace("中央", "CCTV")
                                 name = name.replace("高清", "")
                                 name = name.replace("HD", "")
@@ -250,13 +245,6 @@ def process_urls(urls, path):
                                 name = name.replace("CHC影", "影")
                                 name = name.replace("-", "")
                                 name = name.replace(" ", "")
-                                name = name.replace("", "")    #########################
-                                name = name.replace("", "")
-                                name = name.replace("", "")
-                                name = name.replace("", "")
-                                name = name.replace("", "")
-                                name = name.replace("", "")
-                                name = name.replace("", "")
                                 name = name.replace("PLUS", "+")
                                 name = name.replace("＋", "+")
                                 name = name.replace("(", "")
@@ -352,7 +340,7 @@ def process_urls(urls, path):
                                 name = name.replace("奥运匹克", "")
                                 name = name.replace("TVBTVB", "TVB")
                                 name = name.replace("星空卫视", "动物杂技")
-                                urld = urld.replace("key", "$不见黄河心不死") #key=txiptv&playlive=1&down=1  key=txiptv&playlive=0&authid=0  key=txiptv&playlive=1&authid=0
+                                urld = urld.replace("key", "$不见黄河心不死")
                                 results.append(f"{name},{urld}")
             except Exception:
                 continue
@@ -390,6 +378,88 @@ with open("iptv.txt", 'w', encoding='utf-8') as file:
         print(result)
 print("频道列表文件iptv.txt获取完成！")
 
+# 定义一个关键词组，用于排除掉含有关键词的行
+keywords = ['南宁#', '公共#', '教育', '新闻', 'SCTV#', '动漫', '卡通', '少儿', '中国', '玉林', '陆川', '新疆', '摄影']
+with open('iptv.txt', 'r', encoding='utf-8') as infile:
+    lines = infile.readlines()
+filtered_lines = [line for line in lines if not any(keyword in line for keyword in keywords)]
+with open('iptv.txt', 'w', encoding='utf-8') as outfile:
+    outfile.writelines(filtered_lines)
+
+# 定义替换规则的字典，对整行内的多余标识内容进行替换
+replacements = {
+    "2珠江": "TVB星河",
+    "T[": "T",
+    "BM20": "",
+    "1ZX": "凤凰资讯HD",
+    "2ZW）": "凤凰中文HD",
+    "3XG": "凤凰香港",
+    "4ZW": "凤凰中文",
+    "5ZX": "凤凰资讯",
+    "星河台": "星河",
+    "dx[": "[",
+    "g[": "[",
+    "P[": "+[",
+    "lt[": "[",
+    "电信": "",
+    "卫视高清": "卫视",
+    "SCTV5": "",
+    "T,": ",",
+    "dx,": ",",
+    "g,": ",",
+    "TVBTVB星河": "TVB星河",
+    "5音乐台": "CCTV15",
+    "天映": "天映经典[🏠]",
+    "星河": "星河[🏠]",
+    "翡翠台": "翡翠台[🏠]",
+    "环球旅游": "环球旅游[🏠]",
+    "凤凰香港": "凤凰香港[🏠]",
+    "凤凰中文": "凤凰中文[🏠]",
+    "凤凰资讯": "凤凰资讯[🏠]",
+    "BM9家庭影院": "东森电影[🏠]",
+    "BM15广东影视": "广东影视[🏠]",
+    "3X电影": "龙祥时代[🏠]",
+    "4DS": "东森电影",
+    "电影[🏠]电影": "电影[🏠]",
+    "酒店MV": "酒店MV[🏠]",
+    "私人影院": "私人影院[🏠]",
+    "东森洋片": "东森洋片[🏠]",
+    "东森电影": "东森电影[🏠]",
+    "AXN电影": "AXN电影[🏠]",
+    "酒店影视1": "酒店影视1[🏠]",
+    "酒店影视2": "酒店影视2[🏠]",
+    "酒店影视3": "酒店影视3[🏠]",
+    "龙祥电影": "龙祥电影[🏠]",
+    "广场舞": "广场舞[🏠]",
+    "动物杂技": "动物杂技[🏠]",
+    "[🏠][🏠]": "[🏠]",
+    "经典[🏠]电影": "经典[🏠]"
+}
+
+# 打开原始文件读取内容，并写入新文件
+with open('iptv.txt', 'r', encoding='utf-8') as file:
+    lines = file.readlines()
+
+# 创建新文件并写入替换后的内容
+with open('iptv.txt', 'w', encoding='utf-8') as new_file:
+    for line in lines:
+        for old, new in replacements.items():
+            line = line.replace(old, new)
+        new_file.write(line)
+print("替换完成，新文件已保存。")
+
+# 定义要搜索的关键词，从文件中提取包含这个关键词的行，然后添加到另一个文件尾
+keywords = [',', 'tsfile#']
+# 打开1.txt文件并读取内容
+with open('网络收集.txt', 'r', encoding='utf-8') as file:
+    lines = file.readlines()
+# 创建一个新的列表，只包含包含关键词的行
+filtered_lines = [line for line in lines if any(keyword in line for keyword in keywords)]
+# 将这些行追加写入到2.txt文件
+with open('iptv.txt', 'a', encoding='utf-8') as file:
+    file.writelines(filtered_lines)
+print("频道列表文件iptv.txt再次追加写入成功！")
+    
 
 
 
