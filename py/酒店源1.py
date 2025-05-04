@@ -778,7 +778,7 @@ with open(output_file_path, 'w', encoding='utf-8') as output_file:
                 start_time = time.time()
                 frame_count = 0
                 # 尝试捕获5秒内的帧
-                while frame_count < 50 and (time.time() - start_time) < 3:#//////////////////////////////////////////////////////////////////////////////////////###########
+                while frame_count < 50 and (time.time() - start_time) < 5:#//////////////////////////////////////////////////////////////////////////////////////###########
                     ret, frame = cap.read()
                     if not ret:
                         break
