@@ -29,15 +29,7 @@ from bs4 import BeautifulSoup
 from urllib.parse import urlparse
 from translate import Translator  # 导入Translator类,用于文本翻译
 # -*- coding: utf-8 -*-
-import time
 import random
-import requests
-import re
-import os
-import cv2
-from datetime import datetime
-from bs4 import BeautifulSoup
-import base64
 from fake_useragent import UserAgent  # 需要先安装：pip install fake-useragent
 
 # 创建输出目录
@@ -62,23 +54,23 @@ def safe_request(url):
         try:
             # 随机延迟防止被封
             time.sleep(random.uniform(*DELAY_RANGE))
-          
+
             response = requests.get(
                 url,
                 headers=get_random_header(),
                 timeout=REQUEST_TIMEOUT
             )
-          
+
             # 检查HTTP状态码
             if response.status_code == 429:
                 wait_time = 30  # 遇到反爬等待30秒
                 print(f"遇到反爬机制，等待{wait_time}秒后重试")
                 time.sleep(wait_time)
                 continue
-              
+
             response.raise_for_status()
             return response.text
-          
+
         except Exception as e:
             print(f"请求失败（第{attempt+1}次重试）: {str(e)}")
             if attempt == MAX_RETRIES - 1:
@@ -88,26 +80,24 @@ def validate_video(url, mcast):
     """验证视频流有效性"""
     video_url = f"{url}/rtp/{mcast}"
     print(f"正在验证: {video_url}")
-  
+
     try:
-        # 使用 FFmpeg 作为后端来打开视频流
-        cap = cv2.VideoCapture(video_url, cv2.CAP_FFMPEG)
-      
-        # 设置超时参数
-        ret, frame = cap.read()
-        if not ret:
-            print(f"视频验证失败: 无法读取帧")
-            return False
-      
-        # 检查视频流是否有效
-        width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
-        height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
-        cap.release()
-        return width > 0 and height > 0
-      
+        # 发送请求，尝试下载 1 千字节的数据
+        response = requests.get(video_url, headers=get_random_header(), timeout=REQUEST_TIMEOUT, stream=True)
+        response.raise_for_status()
+
+        content_length = 0
+        for chunk in response.iter_content(chunk_size=1024):
+            if chunk:
+                content_length += len(chunk)
+                if content_length >= 1024:
+                    break
+        return content_length >= 1024
+
     except Exception as e:
         print(f"视频验证异常: {str(e)}")
         return False
+
 def main():
     # 获取需要处理的文件列表
     files = [f.split('.')[0] for f in os.listdir('rtp') if f.endswith('.txt')]
