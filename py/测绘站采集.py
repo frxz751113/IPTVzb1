@@ -36,9 +36,10 @@ from fake_useragent import UserAgent  # 需要先安装：pip install fake-usera
 os.makedirs('playlist', exist_ok=True)
 
 # 配置参数
-DELAY_RANGE = (3, 6)     # 随机延迟时间范围（秒）
-MAX_RETRIES = 3          # 最大重试次数
-REQUEST_TIMEOUT = 10     # 请求超时时间（秒）
+DELAY_RANGE = (3, 6)  # 随机延迟时间范围（秒）
+MAX_RETRIES = 3  # 最大重试次数
+REQUEST_TIMEOUT = 10  # 请求超时时间（秒）
+
 
 def get_random_header():
     """生成随机请求头"""
@@ -47,6 +48,7 @@ def get_random_header():
         'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8',
         'Referer': 'https://fofa.info/'
     }
+
 
 def safe_request(url):
     """带重试机制的请求函数"""
@@ -72,31 +74,24 @@ def safe_request(url):
             return response.text
 
         except Exception as e:
-            print(f"请求失败（第{attempt+1}次重试）: {str(e)}")
+            print(f"请求失败（第{attempt + 1}次重试）: {str(e)}")
             if attempt == MAX_RETRIES - 1:
                 raise
 
+
 def validate_video(url, mcast):
-    """验证视频流有效性"""
+    """验证视频流链接连通性"""
     video_url = f"{url}/rtp/{mcast}"
     print(f"正在验证: {video_url}")
 
     try:
-        # 发送请求，尝试下载 1 千字节的数据
-        response = requests.get(video_url, headers=get_random_header(), timeout=REQUEST_TIMEOUT, stream=True)
+        response = requests.get(video_url, headers=get_random_header(), timeout=REQUEST_TIMEOUT)
         response.raise_for_status()
-
-        content_length = 0
-        for chunk in response.iter_content(chunk_size=1024):
-            if chunk:
-                content_length += len(chunk)
-                if content_length >= 1024:
-                    break
-        return content_length >= 1024
-
+        return True
     except Exception as e:
         print(f"视频验证异常: {str(e)}")
         return False
+
 
 def main():
     # 获取需要处理的文件列表
@@ -151,8 +146,10 @@ def main():
                     dst.write(modified + '\n')
             print(f"已生成播放列表: {output_file}")
 
+
 if __name__ == '__main__':
     main()
+    
 print('对playlist文件夹里面的所有txt文件进行去重处理')
 def remove_duplicates_keep_order(folder_path):
     for filename in os.listdir(folder_path):
