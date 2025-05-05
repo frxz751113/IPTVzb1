@@ -201,7 +201,7 @@ def get_ip_key(url):
 
 # 设置固定的文件夹路径
 folder_path = 'playlist'
-
+out_path = ''
 # 确保文件夹路径存在
 if not os.path.isdir(folder_path):
     print("指定的文件夹不存在。")
@@ -216,7 +216,8 @@ for filename in os.listdir(folder_path):
             lines = file.readlines()
 
         # 准备写回文件
-        with open(file_path, 'w', encoding='utf-8') as output_file:
+        #with open(file_path, 'w', encoding='utf-8') as output_file:
+        with open(out_path, 'w', encoding='utf-8') as output_file:
             # 使用 tqdm 显示进度条
             for line in tqdm(lines, total=len(lines), desc=f"Processing {filename}"):
                 parts = line.split(',', 1)
