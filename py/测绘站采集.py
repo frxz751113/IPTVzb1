@@ -131,9 +131,9 @@ def main():
             print(f"搜索失败: {str(e)}")
             continue
 
-        # 解析搜索结果
+        # 解析搜索结果，修改正则表达式以匹配IP和域名
         soup = BeautifulSoup(html, 'html.parser')
-        pattern = re.compile(r"http://\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}:\d+")
+        pattern = re.compile(r"http://(?:\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|\w[\w.-]*\w):\d+")
         found_urls = set(pattern.findall(html))
         print(f"找到{len(found_urls)}个有效地址")
 
@@ -194,7 +194,7 @@ import sys
 detected_ips = {}
 
 def get_ip_key(url):
-    """从URL中提取IP地址，并构造一个唯一的键"""
+    """从URL中提取IP地址或域名，并构造一个唯一的键"""
     start = url.find('://') + 3
     end = url.find('/', start)
     if end == -1:
@@ -228,7 +228,7 @@ for filename in os.listdir(folder_path):
                     url = url.strip()
                     ip_key = get_ip_key(url)
                     
-                    # 检查IP是否已经被检测过
+                    # 检查IP或域名是否已经被检测过
                     if ip_key in detected_ips:
                         # 如果之前检测成功，则写入该行
                         if detected_ips[ip_key]['status'] == 'ok':
