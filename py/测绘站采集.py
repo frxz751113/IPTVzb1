@@ -144,7 +144,7 @@ def main():
         # 生成播放列表
         if valid_urls:
             output_file = f'playlist/{province}{isp}.txt'
-            with open(f'rtp/{filename}.txt', 'r') as src, open(output_file, 'w') as dst:
+            with open(f'rtp/{filename}.txt', 'r') as src, open(output_file, 'a') as dst:
                 original_content = src.read()
                 for url in valid_urls:
                     modified = original_content.replace('rtp://', f'{url}/rtp/')
