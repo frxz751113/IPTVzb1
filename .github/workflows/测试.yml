@@ -26,7 +26,7 @@ jobs:
           pip install selenium requests futures eventlet opencv-python Beautifulsoup4 translate termcolor func_timeout replace input opencc pypinyin pytz tqdm
       - name: Run py
         run: | 
-          python ${{ github.workspace }}/py/epg下载.py      
+          python ${{ github.workspace }}/py/网络收集.py      
       - name: 提交更改
         run: |
           git config --local user.email "actions@163.com"
