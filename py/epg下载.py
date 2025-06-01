@@ -1,7 +1,8 @@
 from urllib.request import Request, urlopen
 
 urls = [
-    "https://epg.112114.xyz/pp.xml.gz"
+    "https://epg.112114.xyz/pp.xml.gz",
+    "https://epg.pw/xmltv/epg_HK.xml"
 ]
 
 downloaded_file_name = "pp.xml.gz"
