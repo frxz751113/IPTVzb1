@@ -573,7 +573,7 @@ def main(source_file_path, output_file_path):
     print(f"任务完成,有效源数量: {valid_count[0]}, 无效源数量: {invalid_count[0]}")
 if __name__ == "__main__":
     try:
-        source_file_path = "iptv.txt"('请动动你发财的小手吧\n\n拖入utf-8直播源文件回车后运行:')
+        source_file_path = "iptv.txt"
         output_file_path = "酒店源.txt"
         main(source_file_path, output_file_path)
     except Exception as e:
