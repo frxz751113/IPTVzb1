@@ -505,6 +505,79 @@ remove_duplicates('iptv.txt', 'iptv_temp.txt')
 filter_lines('iptv_temp.txt', 'iptv.txt')
 
 print("去重和过滤完成！最终结果保存在 iptv.txt")
+import requests
+from tqdm import tqdm
+import threading
+import re
 
+print("本程序只检测地址中带m3u/php/live的，其它的无论是否有效一律不检测不输出\n")
+print("如果你确定不含这种关键词的地址是有效源请预先备份\n")
+
+# 测试HTTP连接
+def test_connectivity(url, max_attempts=2):
+    #if "udp" in url or "rtp" in url:
+        #print("\n组播地址: 跳过检测")
+        #return False
+
+    video_formats = ["m3u", "1", "/", "rtsp"]
+    if not any(re.search(keyword, url, re.I) for keyword in video_formats):
+        print("\n特殊网址: 跳过检测")
+        return False
+
+    for _ in range(max_attempts):
+        try:
+            response = requests.get(url, timeout=0.3)
+            return response.status_code == 200
+        except requests.RequestException:
+            pass
+
+    return False
+
+# 处理每一行的函数
+def process_line(line, output_file, valid_count, invalid_count):
+    parts = line.strip().split(",")
+    if len(parts) == 2:
+        channel_name, channel_url = parts
+        if "genre" in line.lower():
+            with threading.Lock():
+                output_file.write("\n" +line)  # 直接写入原始行
+        elif test_connectivity(channel_url):
+            with threading.Lock():
+                output_file.write(f"{channel_name},{channel_url}\n")
+                valid_count[0] += 1
+        else:
+            with threading.Lock():
+                invalid_count[0] += 1
+    else:
+        with threading.Lock():
+            invalid_count[0] += 1
+
+# 主函数
+def main(source_file_path, output_file_path):
+    with open(source_file_path, "r", encoding="utf-8") as source_file:
+        lines = source_file.readlines()
+
+    valid_count = [0]
+    invalid_count = [0]
+
+    with open(output_file_path, "w", encoding="utf-8") as output_file:
+        threads = []
+        for line in tqdm(lines, desc="地址有效"):
+            thread = threading.Thread(target=process_line, args=(line, output_file, valid_count, invalid_count))
+            thread.start()
+            threads.append(thread)
+
+        for thread in threads:
+            thread.join()
+
+    print(f"任务完成,有效源数量: {valid_count[0]}, 无效源数量: {invalid_count[0]}")
+if __name__ == "__main__":
+    try:
+        source_file_path = "iptv.txt"('请动动你发财的小手吧\n\n拖入utf-8直播源文件回车后运行:')
+        output_file_path = "酒店源.txt"
+        main(source_file_path, output_file_path)
+    except Exception as e:
+        print(f"程序发生错误: {e}")
+
+os.remove("iptv.txt")
 os.remove("iptv_temp.txt")
-input("按任意键退出...")
