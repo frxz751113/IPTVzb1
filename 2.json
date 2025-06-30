@@ -408,7 +408,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://raw.githubusercontent.com/frxz751113/AAAAA/refs/heads/main/json/知识.json",
-      "jar": ""
+             "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/spider1.jar"
     },
     {
       "key": "儿童",
@@ -419,7 +419,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/少儿.json",
-      "jar": ""
+             "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/spider1.jar"
     },
     {
       "key": "小学",
@@ -430,7 +430,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/小学.json",
-      "jar": ""
+             "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/spider1.jar"
     },
     {
       "key": "初中",
@@ -441,7 +441,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/初中.json",
-      "jar": ""
+             "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/spider1.jar"
     },
     {
       "key": "高中",
@@ -452,7 +452,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://raw.githubusercontent.com/frxz751113/AAAAA/refs/heads/main/json/高中.json",
-      "jar": ""
+             "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/spider1.jar"
     },
     {
       "key": "幼小衔接",
@@ -463,7 +463,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/幼小衔接.json",
-      "jar": ""
+             "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/spider1.jar"
     },
     {
       "key": "幼儿启蒙",
@@ -474,7 +474,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/幼儿启蒙.json",
-      "jar": ""
+             "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/spider1.jar"
     },
     {
       "key": "csp_hiker_兔小贝",
@@ -485,7 +485,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/兔小贝.json",
-      "jar": "https://raw.githubusercontent.com/frxz751113/AAAAA/refs/heads/main/json/spider.jar"
+      "jar": "https://raw.githubusercontent.com/frxz751113/AAAAA/refs/heads/main/json/spider1.jar"
     },
     {
       "key": "csp_hiker_兔小贝2",
@@ -496,7 +496,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/兔小贝2.json",
-      "jar": "https://raw.githubusercontent.com/frxz751113/AAAAA/refs/heads/main/json/spider.jar"
+      "jar": "https://raw.githubusercontent.com/frxz751113/AAAAA/refs/heads/main/json/spider1.jar"
     },
     {
       "key": "小灯塔",
@@ -507,7 +507,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/小灯塔百科.json",
-      "jar": ""
+             "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/spider1.jar"
     },
     {
       "key": "小灯塔科学",
@@ -518,7 +518,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/小灯塔科学.json",
-      "jar": ""
+             "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/spider1.jar"
     },
     {
       "key": "小灯塔地理",
@@ -529,7 +529,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/小灯塔地理.json",
-      "jar": ""
+             "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/spider1.jar"
     },
     {
       "key": "小灯塔国学",
@@ -540,7 +540,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/小灯塔国学.json",
-      "jar": ""
+             "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/spider1.jar"
     },
     {
       "key": "小灯塔人文",
@@ -551,7 +551,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/小灯塔人文.json",
-      "jar": ""
+             "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/spider1.jar"
     },
     {
       "key": "儿童拼音",
@@ -562,7 +562,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/儿童拼音.json",
-      "jar": ""
+             "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/spider1.jar"
     },
     {
       "key": "儿童识字",
@@ -573,7 +573,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/儿童识字.json",
-      "jar": ""
+             "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/spider1.jar"
     },
     {
       "key": "儿童英语",
@@ -584,7 +584,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/儿童英语.json",
-      "jar": ""
+             "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/spider1.jar"
     },
     {
       "key": "儿童硬笔",
@@ -595,7 +595,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/儿童硬笔.json",
-      "jar": ""
+             "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/spider1.jar"
     },
     {
       "key": "儿童思维",
@@ -606,7 +606,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/儿童思维.json",
-      "jar": ""
+             "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/spider1.jar"
     },
     {
       "key": "儿童口才",
@@ -617,7 +617,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/儿童口才.json",
-      "jar": ""
+             "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/spider1.jar"
     },
     {
       "key": "儿童编程",
@@ -628,7 +628,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/儿童编程.json",
-      "jar": ""
+             "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/spider1.jar"
     },
     {
       "key": "儿童武术",
@@ -639,7 +639,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/儿童武术.json",
-      "jar": ""
+             "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/spider1.jar"
     },
     {
       "key": "兴趣培养",
@@ -650,7 +650,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/兴趣培养.json",
-      "jar": ""
+             "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/spider1.jar"
     },
     {
       "key": "央视经典",
@@ -661,7 +661,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/央视经典.json",
-      "jar": ""
+             "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/spider1.jar"
     },
     {
       "key": "益智动画",
@@ -672,7 +672,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/益智动画.json",
-      "jar": ""
+             "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/spider1.jar"
     },
     {
       "key": "小学语文",
@@ -683,7 +683,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/小学语文.json",
-      "jar": ""
+             "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/spider1.jar"
     },
     {
       "key": "小学数学",
@@ -694,7 +694,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/小学数学.json",
-      "jar": ""
+             "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/spider1.jar"
     },
     {
       "key": "小学英语",
@@ -705,7 +705,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/小学英语.json",
-      "jar": ""
+             "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/spider1.jar"
     },
     {
       "key": "小学教育",
@@ -716,7 +716,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/小学教育.json",
-      "jar": ""
+             "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/spider1.jar"
     }
   ],
   "parses": [
