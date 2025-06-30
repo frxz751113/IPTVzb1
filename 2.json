@@ -395,7 +395,7 @@
       "key": "电视",
       "name": "💻电视直播",
       "type": 3,
-      "api": "./lib/直播转点播.js",
+      "api": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/直播转点播.js",
       "ext": "极速央卫$http://adultiptv.net/lists/all.m3u备"
     },
     {
@@ -417,7 +417,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "./lib/少儿.json",
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/少儿.json",
       "jar": ""
     },
     {
@@ -428,7 +428,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "./lib/小学.json",
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/小学.json",
       "jar": ""
     },
     {
@@ -439,7 +439,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "./lib/初中.json",
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/初中.json",
       "jar": ""
     },
     {
@@ -461,7 +461,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "./lib/幼小衔接.json",
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/幼小衔接.json",
       "jar": ""
     },
     {
@@ -472,7 +472,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "./lib/幼儿启蒙.json",
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/幼儿启蒙.json",
       "jar": ""
     },
     {
@@ -483,7 +483,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "./lib/兔小贝.json",
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/兔小贝.json",
       "jar": "https://raw.githubusercontent.com/frxz751113/AAAAA/refs/heads/main/json/spider.jar"
     },
     {
@@ -494,7 +494,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "./lib/兔小贝2.json",
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/兔小贝2.json",
       "jar": "https://raw.githubusercontent.com/frxz751113/AAAAA/refs/heads/main/json/spider.jar"
     },
     {
@@ -505,7 +505,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "./lib/小灯塔百科.json",
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/小灯塔百科.json",
       "jar": ""
     },
     {
@@ -516,7 +516,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "./lib/小灯塔科学.json",
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/小灯塔科学.json",
       "jar": ""
     },
     {
@@ -527,7 +527,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "./lib/小灯塔地理.json",
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/小灯塔地理.json",
       "jar": ""
     },
     {
@@ -538,7 +538,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "./lib/小灯塔国学.json",
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/小灯塔国学.json",
       "jar": ""
     },
     {
@@ -549,7 +549,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "./lib/小灯塔人文.json",
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/小灯塔人文.json",
       "jar": ""
     },
     {
@@ -560,7 +560,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "./lib/儿童拼音.json",
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/儿童拼音.json",
       "jar": ""
     },
     {
@@ -571,7 +571,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "./lib/儿童识字.json",
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/儿童识字.json",
       "jar": ""
     },
     {
@@ -582,7 +582,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "./lib/儿童英语.json",
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/儿童英语.json",
       "jar": ""
     },
     {
@@ -593,7 +593,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "./lib/儿童硬笔.json",
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/儿童硬笔.json",
       "jar": ""
     },
     {
@@ -604,7 +604,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "./lib/儿童思维.json",
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/儿童思维.json",
       "jar": ""
     },
     {
@@ -615,7 +615,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "./lib/儿童口才.json",
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/儿童口才.json",
       "jar": ""
     },
     {
@@ -626,7 +626,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "./lib/儿童编程.json",
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/儿童编程.json",
       "jar": ""
     },
     {
@@ -637,7 +637,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "./lib/儿童武术.json",
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/儿童武术.json",
       "jar": ""
     },
     {
@@ -648,7 +648,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "./lib/兴趣培养.json",
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/兴趣培养.json",
       "jar": ""
     },
     {
@@ -659,7 +659,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "./lib/央视经典.json",
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/央视经典.json",
       "jar": ""
     },
     {
@@ -670,7 +670,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "./lib/益智动画.json",
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/益智动画.json",
       "jar": ""
     },
     {
@@ -681,7 +681,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "./lib/小学语文.json",
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/小学语文.json",
       "jar": ""
     },
     {
@@ -692,7 +692,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "./lib/小学数学.json",
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/小学数学.json",
       "jar": ""
     },
     {
@@ -703,7 +703,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "./lib/小学英语.json",
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/小学英语.json",
       "jar": ""
     },
     {
@@ -714,7 +714,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "./lib/小学教育.json",
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/小学教育.json",
       "jar": ""
     }
   ],
