@@ -6,7 +6,7 @@
       "type": 0,
       "pass": true,
       "ua": "okhttp/3.12.13",
-      "url": "./lib/js.txt",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/js.txt",
       "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
       "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
@@ -22,7 +22,7 @@
     {
       "name": "APTV",
       "type": 0,
-      "url": "./lib/iptv.m3u",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/iptv.m3u",
       "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
       "logo": "https://epg.iill.top/logo/{name}.png",
       "ua": "okhttp/3.15,AptvPlayer/1.4.0",
@@ -35,8 +35,8 @@
       "key": "荐片",
       "name": "荐片秒播",
       "type": 3,
-      "api": "./lib/drpy2.min.js",
-      "ext": "./lib/jianpian.js"
+      "api": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js",
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/jianpian.js"
     },
     {
       "key": "豆瓣资源",
@@ -133,7 +133,7 @@
       },
       "ext": {
         "cookie": "http://127.0.0.1:9978/file/TVBox/bilibili.txt",
-        "json": "./lib/哔哩合集.json"
+        "json": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/哔哩合集.json"
       },
       "timeout": 10
     },
@@ -162,22 +162,22 @@
       "key": "drpy_js_奇珍异兽",
       "name": "奇艺官方",
       "type": 3,
-      "api": "./lib/drpy2.min.js",
-      "ext": "./lib/奇珍异兽.js"
+      "api": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js",
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/奇珍异兽.js"
     },
     {
       "key": "drpy_js_腾云驾雾",
       "name": "腾讯官方",
       "type": 3,
-      "api": "./lib/drpy2.min.js",
-      "ext": "./lib/腾云驾雾.js"
+      "api": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js",
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/腾云驾雾.js"
     },
     {
       "key": "drpy_js_百忙无果",
       "name": "芒果官方",
       "type": 3,
-      "api": "./lib/drpy2.min.js",
-      "ext": "./lib/百忙无果.js"
+      "api": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js",
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/百忙无果.js"
     },
     {
       "key": "csp_戏曲",
@@ -186,8 +186,8 @@
       "api": "csp_Bili",
       "searchable": 1,
       "quickSearch": 1,
-      "ext": "./lib/戏曲.json",
-      "jar": "./lib/极速.jar"
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/戏曲.json",
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/极速.jar"
     },
     {
       "key": "软件",
@@ -197,8 +197,8 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "./lib/eee.json",
-      "jar": "./lib/极速.jar"
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/eee.json",
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/极速.jar"
     },
     {
       "key": "MV01",
@@ -277,7 +277,7 @@
       "ext": {
         "danmu": true
       },
-      "jar": "./lib/ttkx.jar"
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/ttkx.jar"
     },
     {
       "key": "小苹果弹幕版",
@@ -389,7 +389,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "./lib/ffzy.json"
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/ffzy.json"
     }
   ],
   "parses": [
