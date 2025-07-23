@@ -2,7 +2,7 @@ name: IP采集检测
 
 on:
   schedule:
-    - cron: '5 0 * * *'  # UTC时间每天0:05运行（北京时间8:05）
+    - cron: '5 0 */5 * *'  # UTC时间每天0:05运行（北京时间8:05）
   workflow_dispatch:
     inputs:
       branch:
