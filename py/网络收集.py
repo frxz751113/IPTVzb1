@@ -24,14 +24,10 @@ from urllib.parse import urlparse
 from translate import Translator  # 导入Translator类,用于文本翻译
 ## 定义txt文件的URL列表
 urls = [
-       'https://dimaston.github.io/live.m3u',  #假m3u
-       'https://raw.githubusercontent.com/xiongjian83/TvBox/refs/heads/main/live.txt',
-       'https://raw.github.com/ddhola/file/d7afb504b1ba4fef31813e1166cb892215a9c063/0609test',
-       'https://raw.github.com/KAN314go/A/e81a1c22cd1b9f459bc363bd916c13133e235510/tv/%E5%AE%89%E5%8D%9A8K.txt',
-       'https://raw.github.com/vbskycn/iptv/master/tv/iptv4.txt',
-       'https://raw.github.com/junge3333/juds6/main/yszb1.txt',
-       'http://wp.wadg.pro/down.php/c7a364c3b23d0b7d3b01e9e731414efc.txt',
-       '',
+       'https://raw.githubusercontent.com/AnonymousOrz/IPTV/92ee0bf5c26dd20ac118503563d6b7fffa3f0349/Live/collect/CR_250713.txt',  
+       'https://raw.githubusercontent.com/lai1tony/git_catvod/bb831377a6622e97ef32e6f8e87069bcb0c50e77/hk1box/live.txt',
+       'https://raw.githubusercontent.com/AA999OK/TVBOX/f4b90f95ab2630674318f4a100df07dd3315c96f/CK/017/lib/bhzb2.txt',
+       'https://raw.githubusercontent.com/quninainaixi/quninainaixi/6359176dc427bb1afecdd4b160400d8d2bb3109a/DSJ2024417.txt',
        '',
        '',
        '',
@@ -323,9 +319,11 @@ remove_duplicates('汇总.txt', '2.txt')
 import re
 import os
 # 定义一个包含所有要排除的关键词的列表
-excluded_keywords = ['epg', 'mitv', 'udp', 'rtp', 'P2p', 'p2p', 'p3p', 'P2P', '新闻综合', 'P3p', 'jdshipin#', '9930/qilu', 'gitcode.net', '151:99', '21dtv', 'txmov2', 'gcw.bdcdn', 'metshop', 
-                     'shandong', 'goodiptv', '购物', '[', 'P3P', '腔', '曲', '//1', '/hls/', '春节', '网络收集', '95.179', 'hlspull', 'github', 'lunbo', 'tw.ts138', '114:8278', '//tvb', 'extraott', 
-                     '22:8891', 'fanmingming', '43:22222', 'etv.xhgvip', 'free.xiptv', 'www.zhixun', 'xg.52sw', 'iptv.yjxfz.com', 'zb.qc', 'CHC', '/vd', '/TV2/']   #, 'CHC', '/TV2/'
+excluded_keywords = ['epg', 'mitv', 'udp', 'rtp', 'P2p', 'p2p', 'p3p', 'P2P', '新闻综合', 'P3p', 'jdshipin#', '9930/qilu', 'gitcode.net', '151:99', 
+                     '21dtv', 'txmov2', 'gcw.bdcdn', 'metshop', 'shandong', 'goodiptv', '购物', '[', 'P3P', '腔', '曲', '//1', '/hls/', '/tsfile/', 
+                     '春节', '网络收集', '95.179', 'hlspull', 'github', 'lunbo', 'tw.ts138', '114:8278', '//tvb', 'extraott', 
+                     '22:8891', 'fanmingming', '43:22222', 'etv.xhgvip', 'free.xiptv', 'www.zhixun', 'xg.52sw', 'iptv.yjxfz.com', 
+                     'zb.qc', 'CHC', '/vd', 'CCTV', '卫视', '/TV2/']   #, 'CHC', '/TV2/'
 
 # 定义一个包含所有要提取的关键词的列表
 extract_keywords = ['1905', '凤凰卫视', '人间卫视', '亚洲卫视', '香港卫视', '神乐', '翡翠台', '凤凰香港', '凤凰中文', '凤凰资讯', 'AXN', 'AMC', '电影台', '大爱', '东森', 
@@ -433,13 +431,13 @@ def merge_and_filter():
                     cap = cv2.VideoCapture(url)
                     start_time = time.time()
                     frame_count = 0
-                    while frame_count < 50 and (time.time() - start_time) < 3:
+                    while frame_count < 30 and (time.time() - start_time) < 3:
                         ret, frame = cap.read()
                         if not ret:
                             break
                         frame_count += 1
                     cap.release()
-                    if frame_count >= 50:
+                    if frame_count >= 30:
                         detected_ips[ip_key] = {'status': 'ok'}
                         output_file.write(line)
                     else:
