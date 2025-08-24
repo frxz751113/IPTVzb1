@@ -28,7 +28,7 @@ urls = [
        'https://raw.githubusercontent.com/lai1tony/git_catvod/bb831377a6622e97ef32e6f8e87069bcb0c50e77/hk1box/live.txt',
        'https://raw.githubusercontent.com/AA999OK/TVBOX/f4b90f95ab2630674318f4a100df07dd3315c96f/CK/017/lib/bhzb2.txt',
        'https://raw.githubusercontent.com/quninainaixi/quninainaixi/6359176dc427bb1afecdd4b160400d8d2bb3109a/DSJ2024417.txt',
-       '',
+       'https://raw.githubusercontent.com/Alan-Alana/IPTV/097f6fa3ecd2ea51521ae03397a418fa16ebed60/channl.txt',
        '',
        '',
        '',
