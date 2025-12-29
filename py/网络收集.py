@@ -34,7 +34,7 @@ urls = [
        'https://raw.githubusercontent.com/mlzlzj/hnyuan/refs/heads/main/iptv_list.txt',
        'https://live.kakaxi-1.ink/iptv.txt',
        'https://raw.githubusercontent.com/fenxp/iptv/refs/heads/main/live/tvlive.txt',
-       'https://myernestlu.github.io/zby.txt',
+       'https://raw.githubusercontent.com/fleung49/star/f36651b6b5657a98cc33bfdfc959f9da96e86ab9/mit',
        'https://raw.githubusercontent.com/adminouyang/231006/refs/heads/main/py/%E4%BC%98%E8%B4%A8%E6%BA%90/output/ipv4/result.txt',
        'https://raw.githubusercontent.com/Supprise0901/TVBox_live/refs/heads/main/live.txt',
        'https://raw.githubusercontent.com/alenin-zhang/IPTV/refs/heads/main/lenin.txt',
