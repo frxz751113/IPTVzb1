@@ -1,3 +1,11 @@
+## 一览表 📋  
+
+| APP名称 | 版本     | 下载地址                     | 状态 | 备注                                                         |
+| :----- | :------- | :--------------------------- | :--: | ------------------------------------------------------------ |
+| TVBox  | 20260227 | [下载](https://github.com/xxx/xxx/releases/download/v20260227/tvbox.apk) | ✅   | 空盒原版，分为白亮和黑壳版，具体进文件夹查看版本说明，需配置接口源 |
+| 影视仓 | v6.2.0   | [下载](https://github.com/xxx/xxx/releases/download/v6.2.0/ys.apk) | ✅   | 安卓6.0及以上，不支持纯血鸿蒙，需设置接口源，本仓库下方有分享。[其他版本下载](https://github.com/xxx/xxx/tree/main/ys-versions) |
+| 影视仓V3 | v3.0.36  | [下载](https://github.com/xxx/xxx/releases/download/v3.0.36/ysv3.apk) | ✅   | V3版本兼容安卓4.4及以下，家里电视或盒子是比较老版本的系统可以安装 |  
+
 https://tvv.tw/
 
 https://github.boki.moe/
