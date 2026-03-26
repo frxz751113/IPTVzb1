@@ -5,7 +5,8 @@
 | TVBox  | 20260227 | [下载](https://github.com/youhunwl/TVAPP/tree/refs/heads/main/TVBox) | ✅   | 空盒原版，分为白亮和黑壳版，具体进文件夹查看版本说明，需配置接口源 |
 | 影视仓 | v6.2.0   | [下载](https://raw.githubusercontent.com/youhunwl/TVAPP/refs/heads/main/%E5%BD%B1%E8%A7%86/%E5%BD%B1%E8%A7%86%E4%BB%93/%E5%BD%B1%E8%A7%86%E4%BB%93_6.2.0_opt.apk) | ✅   | 安卓6.0及以上，不支持纯血鸿蒙，需设置接口源，本仓库下方有分享。[其他版本下载](https://github.com/youhunwl/TVAPP/tree/refs/heads/main/%E5%BD%B1%E8%A7%86/%E5%BD%B1%E8%A7%86%E4%BB%93) |
 | 影视仓V3 | v3.0.36  | [下载](https://raw.githubusercontent.com/youhunwl/TVAPP/refs/heads/main/%E5%BD%B1%E8%A7%86/%E5%BD%B1%E8%A7%86%E4%BB%93/%E5%BD%B1%E8%A7%86%E4%BB%93V3%E7%A8%B3%E5%AE%9A%E7%89%88-3.0.36_%E5%85%BC%E5%AE%B9%E5%AE%89%E5%8D%934.apk) | ✅   | V3版本兼容安卓4.4及以下，家里电视或盒子是比较老版本的系统可以安装 |  
-| FongMi影视 | v5.3.2  | [下载](https://github.com/youhunwl/TVAPP/tree/refs/heads/main/%E5%BD%B1%E8%A7%86/FongMi%E5%BD%B1%E8%A7%86) | ✅   | 蜂蜜影视，请对照文件夹里版本说明下载 | | OK影视                  | v5.0.3 | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/影视/OK影视/OK影视-电视版-5.0.3.apk) | 🟢    | 标准版 [安卓5专版下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/影视/OK影视/安卓5专版) |
+| FongMi影视 | v5.3.2  | [下载](https://github.com/youhunwl/TVAPP/tree/refs/heads/main/%E5%BD%B1%E8%A7%86/FongMi%E5%BD%B1%E8%A7%86) | ✅   | 蜂蜜影视，请对照文件夹里版本说明下载 | 
+| OK影视                  | v5.0.3 | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/影视/OK影视/OK影视-电视版-5.0.3.apk) | 🟢    | 标准版 [安卓5专版下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/影视/OK影视/安卓5专版) |
 | OK影视Pro               | v5.1.0 | [下载](/影视/OK影视/README.md) | 🟢    | 多了在线字幕/弹幕搜索、VLC（电视版）、MPV（手机版），以上功能都需要在Pro版的设置点击关于激活看广告激活Pro功能，介意请用标准版 | 
 
 https://tvv.tw/
