@@ -31,8 +31,10 @@ https://gcore.jsdelivr.net/gh/用户名/仓库名/main/接口文件
 https://raw.githubusercontents.com/用户名/仓库名/main/接口文件
 
 https://raw.bgithub.xyz/用户名/仓库名/main/接口文件
+
+## CF地址
 * https://dash.cloudflare.com/sign-up
-* 云部署需要注意
+## * 云部署需要注意
 ***
 git仓库部署后直接分配域名后面加文件名即可访问
 ***
