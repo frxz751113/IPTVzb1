@@ -12,6 +12,8 @@
 
 ## Github RAW 加速服 务
 
+https://down.nigx.cn/raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/
+
 https://ghfast.top/     最快
 
 https://tvv.tw/
