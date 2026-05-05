@@ -1,12 +1,12 @@
 {
-  "spider": "https://ym.wya6.cn/tz/wyxs.php",
+  "spider": "./11.jar",
   //"spider": "./lib/aw.jar;md5;29ee0730017660db62f57a585cd1aeb6",
   "lives": [
     {
       "name": "综合源",
       "type": 0,
       "pass": true,
-      "url": "http://2.net4.de5.net:80/js.txt",
+      "url": "./js.txt",
       "epg": "http://124.222.214.218:35678/?ch={name}&date={date}",
       "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
