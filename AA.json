@@ -6,36 +6,10 @@
 			"url": "./js.txt",
 			"epg": "https://epg.aptv.app/?ch={name}&date={date}",
 			"logo": "https://epg.112114.xyz/logo/{name}.png"
-		},
-		{
-			"name": "TW",
-			"type": 0,
-			"pass": true,
-			"ua": "okhttp/3.12.13",
-			"url": "https://raw.bgithub.xyz/frxz751113/AAAAA/refs/heads/main/TW.txt",
-			"epg": "https://epg.aptv.app/?ch={name}&date={date}",
-			"logo": "https://epg.112114.xyz/logo/{name}.png"
-		},
-
-
-		{
-			"name": "网络收集",
-			"type": 0,
-			"pass": true,
-			"ua": "okhttp/3.12.13",
-			"url": "https://ghproxy.net/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/网络收集.txt",
-			"epg": "https://epg.aptv.app/?ch={name}&date={date}",
-			"logo": "https://epg.112114.xyz/logo/{name}.png"
 		}
 	],
 
-	"sites": [{
-			"key": "荐片",
-			"name": "💥荐片秒播💥",
-			"type": 3,
-			"api": "./js/drpy2.min.js",
-			"ext": "./js/jianpian.js"
-		},
+	"sites": [
 {"key":"优质资源库","name":"优质资源库","jiexiUrl":"https://vip.yyzyplay.com/?url=","api":"https://api.yzzy-api.com/inc/ldg_api.php","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"量子资源旧","name":"量子资源旧","jiexiUrl":"https://lziplayer.com/?url=","api":"http://cj.lziapi.com/api.php/provide/vod/at/xml/","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"量子资源新","name":"量子资源新","jiexiUrl":"https://lziplayer.com/?url=","api":"http://www.lzizy6.com/api.php/provide/vod/at/xml/","searchable":1,"quickSearch":1,"filterable":1},
