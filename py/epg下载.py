@@ -1,7 +1,7 @@
 from urllib.request import Request, urlopen
 
 urls = [
-    "https://epg.112114.xyz/pp.xml.gz",  # 第一个文件，扩展名为 .xml.gz
+    "https://epg.112114.xyz/pp.xml.",  # 第一个文件，扩展名为 .xml.gz
     "https://epg.pw/xmltv/epg_HK.xml"    # 第二个文件，扩展名为 .xml
 ]
 
@@ -9,7 +9,7 @@ urls = [
 for i, url in enumerate(urls):
     # 根据URL确定文件名和扩展名
     if url.endswith('.xml.gz'):
-        downloaded_file_name = f"pp.xml.gz"  # 第一个文件，保持 .xml.gz 扩展名
+        downloaded_file_name = f"pp.xml"  # 第一个文件，保持 .xml.gz 扩展名
     else:
         downloaded_file_name = f"HK.xml"     # 第二个文件，保持 .xml 扩展名
   
