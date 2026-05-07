@@ -255,7 +255,10 @@
 {"key": "dr_剧爷爷","name": "🍊剧爷爷[影][DR]","type": 3,"api": "./lib/drpy2.min.js","ext": "./lib/剧爷爷.js"},
 {"key": "dr_蛋蛋剧","name": "🍊蛋蛋剧[影][DR]","type": 3,"api": "./lib/drpy2.min.js","ext": "./lib/蛋蛋剧.js"},
 {"key": "dr_两个BT","name": "🍊两个BT[影][DR]","type": 3,"api": "./lib/drpy2.min.js","ext": "./lib/两个BT.js"},
-	
+{"key":"美少女资源","name":"美少女资源","jiexiUrl":"https://lziplayer.com/?url=","api":"https://www.msnii.com/api/xml.php","searchable":1,"quickSearch":1,"filterable":1},
+{"key":"淫水机资源","name":"淫水机资源","jiexiUrl":"https://lziplayer.com/?url=","api":"https://www.xrbsp.com/api/xml.php","searchable":1,"quickSearch":1,"filterable":1},
+{"key":"香奶儿资源","name":"香奶儿资源","jiexiUrl":"https://lziplayer.com/?url=","api":"https://www.gdlsp.com/api/xml.php","searchable":1,"quickSearch":1,"filterable":1},
+{"key":"白嫖资源","name":"白嫖资源","jiexiUrl":"https://lziplayer.com/?url=","api":"https://www.kxgav.com/api/xml.php","searchable":1,"quickSearch":1,"filterable":1},	
     {
       "key": "软件",
       "name": "教程二线",
