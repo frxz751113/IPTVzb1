@@ -46,8 +46,6 @@
 {"key":"香奶儿资源","name":"香奶儿资源","type":0,"api":"https://www.gdlsp.com/api/xml.php","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"白嫖资源","name":"白嫖资源","type":0,"api":"https://www.kxgav.com/api/xml.php","searchable":1,"quickSearch":1,"filterable":1},
 { "key":"黄AV资源", "name":"黄AV需VPN", "type":0, "api":"https://www.pgxdy.com/api/xml.php","searchable":1,"quickSearch":1,"filterable":1},
-{"key":"av番號資源","name":"番號資源需VPN","type":1,"api":"http://fhapi9.com/api.php/provide/vod/at/json","searchable":1,"quickSearch":1},
-{"key": "lajiao","name": "辣椒资源需VPN",  "type": 1,  "api": "http://api.11bat.com/api.php/provide/vod", "searchable": 1,    "quickSearch": 1,     "filterable": 0   },
     {
       "key": "儿童编程",
       "name": "🌏儿童编程",
