@@ -1,7 +1,7 @@
 from urllib.request import Request, urlopen
 
 urls = [
-    "https://epg.112114.xyz/pp.xml.",  # 第一个文件，扩展名为 .xml.gz
+    "https://epg.112114.xyz/pp.xml",  # 第一个文件，扩展名为 .xml.gz
     "https://epg.pw/xmltv/epg_HK.xml"    # 第二个文件，扩展名为 .xml
 ]
 
