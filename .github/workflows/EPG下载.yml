@@ -1,4 +1,4 @@
-name: 测试
+name: EPG下载
 
 on:
   schedule:
