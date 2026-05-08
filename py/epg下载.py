@@ -2,7 +2,7 @@ import urllib.request as req
 import re
 
 # ======================
-# ✅ EPG 配置
+# ✅ EPG 配置区（三组预留）
 # ======================
 
 EPISODES = {
@@ -13,9 +13,21 @@ EPISODES = {
 
 MERGED_OUTPUT = "merged_epg.xml"
 
+# ======================
+# ✅ 要删除的标签行（仅限行级）
+# ======================
+
+REMOVE_TAGS = {
+    "<desc>",
+    "<date>",
+    "<audio>",
+    "<stereo>",
+    "</audio>"
+}
+
 
 # ======================
-# ✅ 下载 EPG
+# ✅ 下载单个 EPG
 # ======================
 
 def download_epg(url, filename):
@@ -30,7 +42,7 @@ def download_epg(url, filename):
         with req.urlopen(request, timeout=30) as resp:
             raw = resp.read().decode("utf-8", errors="ignore")
 
-            # HTML 里提取 XML
+            # HTML 页面里提取 XML
             if "<tv" in raw and "<programme" in raw:
                 xml_match = re.search(r"(<\?xml.*?</tv>)", raw, re.S)
                 if xml_match:
@@ -46,7 +58,7 @@ def download_epg(url, filename):
 
 
 # ======================
-# ✅ 文本级合并（按你规则）
+# ✅ 文本级合并 + 行级清洗
 # ======================
 
 def merge_xmltv_text(files, output):
@@ -56,26 +68,36 @@ def merge_xmltv_text(files, output):
         with open(file, "r", encoding="utf-8") as f:
             lines = f.readlines()
 
-        # 去掉多余空行
-        lines = [l.rstrip("\n") for l in lines if l.strip()]
+        cleaned = []
 
+        for line in lines:
+            stripped = line.strip()
+
+            # ✅ 只删除指定的行级标签
+            if any(stripped.startswith(tag) for tag in REMOVE_TAGS):
+                continue
+
+            cleaned.append(line.rstrip("\n"))
+
+        # ✅ 第一个文件：保留头两行
         if idx == 0:
-            # ✅ 第一个文件：取前两行作为头
-            all_lines.extend(lines[:2])
-            all_lines.extend(lines[2:-1])
+            all_lines.extend(cleaned[:2])
+            all_lines.extend(cleaned[2:-1])
+
+        # ✅ 最后一个文件：保留尾部
         elif idx == len(files) - 1:
-            # ✅ 最后一个文件：取中间 + 最后一行作为尾
-            all_lines.extend(lines[1:-1])
-            all_lines.append(lines[-1])
+            all_lines.extend(cleaned[1:-1])
+            all_lines.append(cleaned[-1])
+
+        # ✅ 中间文件
         else:
-            # ✅ 中间文件：去掉头尾
-            all_lines.extend(lines[1:-1])
+            all_lines.extend(cleaned[1:-1])
 
     # ✅ 写最终文件
     with open(output, "w", encoding="utf-8") as f:
         f.write("\n".join(all_lines))
 
-    print(f"✅ 文本级合并完成: {output}")
+    print(f"✅ 合并完成（已移除多余标签行）: {output}")
 
 
 # ======================
