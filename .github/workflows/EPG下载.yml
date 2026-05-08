@@ -23,7 +23,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install --upgrade pip
-          pip install selenium requests futures eventlet opencv-python Beautifulsoup4 translate termcolor func_timeout replace input opencc pypinyin pytz tqdm
+          pip install selenium requests futures eventlet opencv-python Beautifulsoup4 translate termcolor func_timeout replace input opencc pypinyin pytz tqdm lxml defusedxml urllib3
       - name: Run py
         run: | 
           #python ${{ github.workspace }}/py/网络收集.py 
