@@ -1,24 +1,48 @@
 from urllib.request import Request, urlopen
+import re
 
-urls = [
-    "https://epg.112114.xyz/pp.xml",  # 第一个文件，扩展名为 .xml.gz
-    "https://epg.pw/xmltv/epg_HK.xml"    # 第二个文件，扩展名为 .xml
-]
+urls = {
+    "https://epg.112114.xyz/pp.xml": "pp.xml",
+    "https://epg.pw/xmltv/epg_HK.xml": "HK.xml"
+}
 
-# 遍历URL列表，下载文件
-for i, url in enumerate(urls):
-    # 根据URL确定文件名和扩展名
-    if url.endswith('.xml'):
-        downloaded_file_name = f"pp.xml"  # 第一个文件，保持 .xml.gz 扩展名
-    else:
-        downloaded_file_name = f"HK.xml"     # 第二个文件，保持 .xml 扩展名
-  
+for url, filename in urls.items():
     try:
-        req = Request(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'})
-        with urlopen(req) as response:
-            data = response.read()
-            with open(downloaded_file_name, 'wb') as file:
-                file.write(data)
-            print(f"成功下载文件: {downloaded_file_name} 来自 {url}")
+        req = Request(
+            url,
+            headers={
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+            }
+        )
+
+        with urlopen(req, timeout=30) as resp:
+            raw_data = resp.read()
+
+            # 先当文本处理
+            text = raw_data.decode("utf-8", errors="ignore")
+
+            # ✅ 判断是不是 XML（哪怕被 HTML 包着）
+            if "<tv" in text and "<programme" in text:
+                # 提取 XML 主体（防止前面有 HTML）
+                xml_content = re.search(
+                    r"(<\?xml.*?</tv>)",
+                    text,
+                    re.S
+                )
+
+                if xml_content:
+                    xml_text = xml_content.group(1)
+                else:
+                    xml_text = text
+
+                with open(filename, "w", encoding="utf-8") as f:
+                    f.write(xml_text)
+
+                print(f"✅ 成功保存 XML: {filename}")
+                continue
+
+            # ❌ 否则认为是普通网页，直接拒绝
+            print(f"❌ 跳过（不是 XML）: {url}")
+
     except Exception as e:
-        print(f"下载文件时出错: {e} 对于URL: {url}")
+        print(f"❌ 下载失败: {url} -> {e}")
