@@ -4,8 +4,7 @@ import gzip
 import io
 
 urls = {
-    "https://e.erw.cc/all.xml.gz": "e.xml.gz",
-    # "https://epg.pw/xmltv/epg_HK.xml": "HK.xml"
+    "https://e.erw.cc/all.xml.gz": "pp.xml"   # ✅ 最终保存的文件名
 }
 
 for url, filename in urls.items():
@@ -28,34 +27,30 @@ for url, filename in urls.items():
             )
 
             if is_gzip:
-                # 解压 gzip
+                print("📦 检测到 gzip，正在解压...")
                 with gzip.GzipFile(fileobj=io.BytesIO(raw_data)) as gz_file:
                     raw_data = gz_file.read()
 
             # 统一按文本处理
             text = raw_data.decode("utf-8", errors="ignore")
 
-            # ✅ 判断是不是 XML（哪怕被 HTML 包着）
-            if "<tv" in text and "<programme" in text:
-                xml_content = re.search(
-                    r"(<\?xml.*?</tv>)",
-                    text,
-                    re.S
-                )
+            # ✅ 提取 XML 主体
+            xml_match = re.search(
+                r"(<\?xml.*?</tv>)",
+                text,
+                re.S
+            )
 
-                if xml_content:
-                    xml_text = xml_content.group(1)
-                else:
-                    xml_text = text
+            if xml_match:
+                xml_text = xml_match.group(1)
+            else:
+                xml_text = text
 
-                with open(filename, "w", encoding="utf-8") as f:
-                    f.write(xml_text)
+            # ✅ 保存为真正的 XML 文件
+            with open(filename, "w", encoding="utf-8") as f:
+                f.write(xml_text)
 
-                print(f"✅ 成功保存 XML: {filename}")
-                continue
-
-            # ❌ 非 XML
-            print(f"❌ 跳过（不是 XML）: {url}")
+            print(f"✅ 成功生成 XML: {filename}")
 
     except Exception as e:
         print(f"❌ 下载失败: {url} -> {e}")
