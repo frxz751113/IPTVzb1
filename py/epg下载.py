@@ -7,11 +7,11 @@ import re
 
 EPISODES = {
     "https://epg.112114.xyz/pp.xml": "pp.xml",
-    "https://epg.pw/xmltv/epg_HK.xml": "HK.xml",
-    "https://epg.pw/xmltv/epg_TW.xml": "third.xml"
+    #"https://epg.pw/xmltv/epg_HK.xml": "HK.xml",
+    #"https://epg.pw/xmltv/epg_TW.xml": "third.xml"
 }
 
-MERGED_OUTPUT = "merged_epg.xml"
+MERGED_OUTPUT = "epg.xml"
 
 # ======================
 # ✅ 要删除的标签行（仅限行级）
@@ -116,6 +116,12 @@ def main():
     else:
         print("❌ 没有可用的 EPG 文件")
 
-
+files_to_remove = ['pp.xml', 'HK.xml', "third.xml"]
+for file in files_to_remove:
+    if os.path.exists(file):
+        os.remove(file)
+    else:              # 如果文件不存在,则提示异常并打印提示信息
+        print(f"文件 {file} 不存在,跳过删除。")
+        
 if __name__ == "__main__":
     main()
