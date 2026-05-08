@@ -4,7 +4,7 @@ import gzip
 import io
 
 urls = {
-    "https://epg.112114.xyz/pp.xml": "pp.xml",
+    "https://e.erw.cc/all.xml.gz": "e.xml.gz",
     # "https://epg.pw/xmltv/epg_HK.xml": "HK.xml"
 }
 
