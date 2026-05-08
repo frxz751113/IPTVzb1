@@ -1,48 +1,111 @@
-from urllib.request import Request, urlopen
+import urllib.request as req
+import xml.etree.ElementTree as ET
 import re
+from collections import defaultdict
 
-urls = {
+# ======================
+# ✅ EPG 配置区（三组预留）
+# ======================
+
+EPISODES = {
     "https://epg.112114.xyz/pp.xml": "pp.xml",
-    "https://epg.pw/xmltv/epg_HK.xml": "HK.xml"
+    "https://epg.pw/xmltv/epg_HK.xml": "HK.xml",
+    "https://epg.pw/xmltv/epg_TW.xml": "third.xml"
 }
 
-for url, filename in urls.items():
+MERGED_OUTPUT = "merged_epg.xml"
+
+
+# ======================
+# ✅ 下载单个 EPG
+# ======================
+
+def download_epg(url, filename):
     try:
-        req = Request(
+        request = req.Request(
             url,
             headers={
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
             }
         )
 
-        with urlopen(req, timeout=30) as resp:
-            raw_data = resp.read()
+        with req.urlopen(request, timeout=30) as resp:
+            raw = resp.read()
+            text = raw.decode("utf-8", errors="ignore")
 
-            # 先当文本处理
-            text = raw_data.decode("utf-8", errors="ignore")
-
-            # ✅ 判断是不是 XML（哪怕被 HTML 包着）
+            # HTML 里提取 XML
             if "<tv" in text and "<programme" in text:
-                # 提取 XML 主体（防止前面有 HTML）
-                xml_content = re.search(
-                    r"(<\?xml.*?</tv>)",
-                    text,
-                    re.S
-                )
+                xml_match = re.search(r"(<\?xml.*?</tv>)", text, re.S)
+                if xml_match:
+                    text = xml_match.group(1)
 
-                if xml_content:
-                    xml_text = xml_content.group(1)
-                else:
-                    xml_text = text
+            with open(filename, "w", encoding="utf-8") as f:
+                f.write(text)
 
-                with open(filename, "w", encoding="utf-8") as f:
-                    f.write(xml_text)
-
-                print(f"✅ 成功保存 XML: {filename}")
-                continue
-
-            # ❌ 否则认为是普通网页，直接拒绝
-            print(f"❌ 跳过（不是 XML）: {url}")
+            print(f"✅ 下载成功: {filename}")
 
     except Exception as e:
         print(f"❌ 下载失败: {url} -> {e}")
+
+
+# ======================
+# ✅ 合并多个 XMLTV
+# ======================
+
+def merge_xmltv(files, output):
+    channels = {}
+    programmes = defaultdict(list)
+
+    for file in files:
+        try:
+            tree = ET.parse(file)
+            root = tree.getroot()
+
+            for ch in root.findall("channel"):
+                cid = ch.get("id")
+                if cid not in channels:
+                    channels[cid] = ch
+
+            for prog in root.findall("programme"):
+                programmes[prog.get("channel")].append(prog)
+
+        except Exception as e:
+            print(f"❌ 解析失败: {file} -> {e}")
+
+    tv = ET.Element("tv")
+
+    for ch in channels.values():
+        tv.append(ch)
+
+    for plist in programmes.values():
+        for p in plist:
+            tv.append(p)
+
+    ET.ElementTree(tv).write(
+        output,
+        encoding="utf-8",
+        xml_declaration=True
+    )
+
+    print(f"✅ 合并完成: {output}")
+
+
+# ======================
+# ✅ 主流程
+# ======================
+
+def main():
+    files = []
+
+    for url, filename in EPISODES.items():
+        download_epg(url, filename)
+        files.append(filename)
+
+    if files:
+        merge_xmltv(files, MERGED_OUTPUT)
+    else:
+        print("❌ 没有可用的 EPG 文件")
+
+
+if __name__ == "__main__":
+    main()
