@@ -9,14 +9,6 @@
       "url": "./js.txt",
       "epg": "http://124.222.214.218:35678/?ch={name}&date={date}",
       "logo": "https://epg.112114.xyz/logo/{name}.png"
-    },
-    {
-      "name": "RTSP湖北",
-      "type": 0,
-      "pass": true,
-      "url": "http://2.net4.de5.net:80/rtsp湖北.txt",
-      "epg": "http://124.222.214.218:35678/?ch={name}&date={date}",
-      "logo": "https://epg.112114.xyz/logo/{name}.png"
     }
   ],
   "sites": [
