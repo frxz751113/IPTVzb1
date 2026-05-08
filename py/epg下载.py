@@ -33,7 +33,7 @@ def download_epg(url, filename):
             raw = resp.read()
             text = raw.decode("utf-8", errors="ignore")
 
-            # HTML 里提取 XML
+            # ✅ HTML 页面里提取 XML
             if "<tv" in text and "<programme" in text:
                 xml_match = re.search(r"(<\?xml.*?</tv>)", text, re.S)
                 if xml_match:
@@ -49,17 +49,22 @@ def download_epg(url, filename):
 
 
 # ======================
-# ✅ 合并多个 XMLTV
+# ✅ 合并多个 XMLTV（关键修复版）
 # ======================
 
 def merge_xmltv(files, output):
     channels = {}
     programmes = defaultdict(list)
 
+    first_root = None
+
     for file in files:
         try:
             tree = ET.parse(file)
             root = tree.getroot()
+
+            if first_root is None:
+                first_root = root  # ✅ 保留第一份 tv 属性
 
             for ch in root.findall("channel"):
                 cid = ch.get("id")
@@ -72,7 +77,12 @@ def merge_xmltv(files, output):
         except Exception as e:
             print(f"❌ 解析失败: {file} -> {e}")
 
-    tv = ET.Element("tv")
+    if first_root is None:
+        print("❌ 没有任何可用的 XMLTV 根节点")
+        return
+
+    # ✅ 使用第一份 <tv> 的属性（generator-info-name 等）
+    tv = ET.Element("tv", attrib=first_root.attrib)
 
     for ch in channels.values():
         tv.append(ch)
@@ -81,7 +91,8 @@ def merge_xmltv(files, output):
         for p in plist:
             tv.append(p)
 
-    ET.ElementTree(tv).write(
+    tree = ET.ElementTree(tv)
+    tree.write(
         output,
         encoding="utf-8",
         xml_declaration=True
