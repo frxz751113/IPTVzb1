@@ -1,10 +1,8 @@
 import urllib.request as req
-import xml.etree.ElementTree as ET
 import re
-from collections import defaultdict
 
 # ======================
-# ✅ EPG 配置区（三组预留）
+# ✅ EPG 配置
 # ======================
 
 EPISODES = {
@@ -17,7 +15,7 @@ MERGED_OUTPUT = "merged_epg.xml"
 
 
 # ======================
-# ✅ 下载单个 EPG
+# ✅ 下载 EPG
 # ======================
 
 def download_epg(url, filename):
@@ -30,17 +28,16 @@ def download_epg(url, filename):
         )
 
         with req.urlopen(request, timeout=30) as resp:
-            raw = resp.read()
-            text = raw.decode("utf-8", errors="ignore")
+            raw = resp.read().decode("utf-8", errors="ignore")
 
-            # ✅ HTML 页面里提取 XML
-            if "<tv" in text and "<programme" in text:
-                xml_match = re.search(r"(<\?xml.*?</tv>)", text, re.S)
+            # HTML 里提取 XML
+            if "<tv" in raw and "<programme" in raw:
+                xml_match = re.search(r"(<\?xml.*?</tv>)", raw, re.S)
                 if xml_match:
-                    text = xml_match.group(1)
+                    raw = xml_match.group(1)
 
             with open(filename, "w", encoding="utf-8") as f:
-                f.write(text)
+                f.write(raw)
 
             print(f"✅ 下载成功: {filename}")
 
@@ -49,56 +46,36 @@ def download_epg(url, filename):
 
 
 # ======================
-# ✅ 合并多个 XMLTV（关键修复版）
+# ✅ 文本级合并（按你规则）
 # ======================
 
-def merge_xmltv(files, output):
-    channels = {}
-    programmes = defaultdict(list)
+def merge_xmltv_text(files, output):
+    all_lines = []
 
-    first_root = None
+    for idx, file in enumerate(files):
+        with open(file, "r", encoding="utf-8") as f:
+            lines = f.readlines()
 
-    for file in files:
-        try:
-            tree = ET.parse(file)
-            root = tree.getroot()
+        # 去掉多余空行
+        lines = [l.rstrip("\n") for l in lines if l.strip()]
 
-            if first_root is None:
-                first_root = root  # ✅ 保留第一份 tv 属性
+        if idx == 0:
+            # ✅ 第一个文件：取前两行作为头
+            all_lines.extend(lines[:2])
+            all_lines.extend(lines[2:-1])
+        elif idx == len(files) - 1:
+            # ✅ 最后一个文件：取中间 + 最后一行作为尾
+            all_lines.extend(lines[1:-1])
+            all_lines.append(lines[-1])
+        else:
+            # ✅ 中间文件：去掉头尾
+            all_lines.extend(lines[1:-1])
 
-            for ch in root.findall("channel"):
-                cid = ch.get("id")
-                if cid not in channels:
-                    channels[cid] = ch
+    # ✅ 写最终文件
+    with open(output, "w", encoding="utf-8") as f:
+        f.write("\n".join(all_lines))
 
-            for prog in root.findall("programme"):
-                programmes[prog.get("channel")].append(prog)
-
-        except Exception as e:
-            print(f"❌ 解析失败: {file} -> {e}")
-
-    if first_root is None:
-        print("❌ 没有任何可用的 XMLTV 根节点")
-        return
-
-    # ✅ 使用第一份 <tv> 的属性（generator-info-name 等）
-    tv = ET.Element("tv", attrib=first_root.attrib)
-
-    for ch in channels.values():
-        tv.append(ch)
-
-    for plist in programmes.values():
-        for p in plist:
-            tv.append(p)
-
-    tree = ET.ElementTree(tv)
-    tree.write(
-        output,
-        encoding="utf-8",
-        xml_declaration=True
-    )
-
-    print(f"✅ 合并完成: {output}")
+    print(f"✅ 文本级合并完成: {output}")
 
 
 # ======================
@@ -113,7 +90,7 @@ def main():
         files.append(filename)
 
     if files:
-        merge_xmltv(files, MERGED_OUTPUT)
+        merge_xmltv_text(files, MERGED_OUTPUT)
     else:
         print("❌ 没有可用的 EPG 文件")
 
