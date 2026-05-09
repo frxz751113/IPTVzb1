@@ -13,15 +13,6 @@
   ],
   "sites": [
     {
-      "key": "瓜子影视",
-      "name": "瓜子",
-      "type": 3,
-      "api": "csp_Gz360",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
-    {
       "key": "热播影视",
       "name": "热播🌌APP",
       "type": 3,
@@ -313,11 +304,6 @@
       "name": "冰豆",
       "type": 0,
       "url": "https://bd.jx.cn/?url="
-    },
-    {
-      "name": "618",
-      "type": 0,
-      "url": "http://muguang.mgtv.com.muguangys.com/jiexi.php?url="
     }
   ],
   "rules": [
