@@ -11,7 +11,7 @@ EPISODES = {
     "https://epg.pw/xmltv/epg_TW.xml": "third.xml"
 }
 
-MERGED_OUTPUT = "merged_epg.xml"
+MERGED_OUTPUT = "pp.xml"
 
 # ======================
 # ✅ 要删除的标签行（仅限行级）
