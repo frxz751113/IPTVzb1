@@ -304,6 +304,11 @@
       "name": "冰豆",
       "type": 0,
       "url": "https://bd.jx.cn/?url="
+    },
+    {
+      "name": "lemiao",
+      "type": 0,
+      "url": "http://jx.hao-zsj.cn/vip/?url="
     }
   ],
   "rules": [
