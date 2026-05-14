@@ -78,8 +78,17 @@
       "api": "csp_Jpys",
       "ext": "https://m.610pkea.com,https://y2s52n7.com,https://m.hkybqufgh.com,https://m.sizhengxt.com,https://m.9zhoukj.com,https://m.sizhengxt.com,https://m.jiabaide.cn"
     },
-*/
-   {
+    {
+      "key": "csp_XBPQ_番茄",
+      "name": "番茄短剧",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/番茄.json"
+    },
+    {
       "key": "py_cctv",
       "name": "💥央视PY💥",
       "type": 3,
@@ -119,20 +128,20 @@
       "ext": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/百忙无果.js"
     },
     {
+      "key": "csp_戏曲",
+      "name": "哔哩戏曲",
+      "type": 3,
+      "api": "csp_Bili",
+      "searchable": 1,
+      "quickSearch": 1,
+      "ext": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/戏曲.json"
+    },
+*/
+    {
       "key": "cat_聚合短剧[短]",
       "name": "聚合短剧",
       "type": 3,
       "api": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/cat_聚合短剧[短].js"
-    },
-    {
-      "key": "csp_XBPQ_番茄",
-      "name": "番茄短剧",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/番茄.json"
     },
     {
       "key": "T1_旺旺短剧",
@@ -145,16 +154,6 @@
       "categories": [
         "短剧"
       ]
-    },
-    {
-      "key": "csp_戏曲",
-      "name": "哔哩戏曲",
-      "type": 3,
-      "api": "csp_Bili",
-      "searchable": 1,
-      "quickSearch": 1,
-      "ext": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/戏曲.json",
-      "jar": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/极速.jar"
     },
 
     
