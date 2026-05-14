@@ -1,6 +1,6 @@
 {
+  //"spider": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/极速.jar",
   "spider": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/11.jar",
-  //"spider": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/aw.jar;md5;29ee0730017660db62f57a585cd1aeb6",
   "lives": [
     {
       "name": "综合源",
@@ -75,7 +75,7 @@
 "api":"https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/%E5%8D%8E%E6%95%B0.py",
 "changeable":1
 },
-    {
+ /*   {
       "key": "Live2Vod",
       "name": "电视直播",
       "type": 3,
@@ -83,7 +83,7 @@
       "searchable": 1,
       "jar": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/直转点.jar",
       "ext": "湖北内网$https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/js.txt#饭太硬$https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/js.txt#影视范$https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/js.txt&&&http://api.btstu.cn/sjbz/?lx=meizi"
-    },
+    },*/
    {
       "key": "py_cctv",
       "name": "💥央视PY💥",
