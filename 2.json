@@ -12,17 +12,94 @@
     }
   ],
   "sites": [
-   /* {"key":"瓜子影视","name":"瓜子","type":3,"api":"csp_Gz360","searchable":1,"quickSearch":1,"filterable":1},
-    {"key":"热播影视","name":"热播🌌APP","type":3,"api":"csp_AppRJ","searchable":1,"quickSearch":1,"filterable":0,"ext":{"url":"http://v.rbotv.cn"}},
-    {"key":"农民影视","name":"农民｜影视","type":3,"api":"csp_Wwys","ext":"https://vip.wwgz.cn:5200"},
-    {"key":"星芽短剧","name":"星芽｜短剧","type":3,"api":"https://oplist.wya6.cn/d/wydb/xs/py/星芽短剧.py","searchable":1,"changeable":1,"quickSearch":1,"filterable":1},
-    {"key":"本地","name":"本地视频","type":3,"api":"csp_LocalFile"},
-    {"key":"Live2Vod","name":"电视直播","type":3,"api":"csp_Live2Vod","searchable":1,"jar":"https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/直转点.jar","ext":"湖北内网$https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/js.txt#饭太硬$https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/js.txt#影视范$https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/js.txt&&&http://api.btstu.cn/sjbz/?lx=meizi"},
-    {"key":"金牌影视","name":"金牌｜影视","type":3,"api":"csp_Jpys","ext":"https://m.610pkea.com,https://y2s52n7.com,https://m.hkybqufgh.com,https://m.sizhengxt.com,https://m.9zhoukj.com,https://m.sizhengxt.com,https://m.jiabaide.cn"},
-    */
-   {"key":"py_cctv","name":"💥央视PY💥","type":3,"api":"py_cctv","searchable":0,"quickSearch":0,"filterable":0,"api":"https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/cctv.py"},
-   {"key":"华数","name":"🌴华数影视","type":3,//"api":"https://gitee.com/yiwu369/6758/raw/master/py/华数.py","api":"https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/%E5%8D%8E%E6%95%B0.py","changeable":1},
- 
+   /* {
+      "key": "瓜子影视",
+      "name": "瓜子",
+      "type": 3,
+      "api": "csp_Gz360",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "热播影视",
+      "name": "热播🌌APP",
+      "type": 3,
+      "api": "csp_AppRJ",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": {
+        "url": "http://v.rbotv.cn"
+      }
+    },
+    {
+      "key": "农民影视",
+      "name": "农民｜影视",
+      "type": 3,
+      "api": "csp_Wwys",
+      "ext": "https://vip.wwgz.cn:5200"
+    },
+    {
+      "key": "星芽短剧",
+      "name": "星芽｜短剧",
+      "type": 3,
+      "api": "https://oplist.wya6.cn/d/wydb/xs/py/星芽短剧.py",
+      "searchable": 1,
+      "changeable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "本地",
+      "name": "本地视频",
+      "type": 3,
+      "api": "csp_LocalFile"
+    },
+    {
+      "key": "Live2Vod",
+      "name": "电视直播",
+      "type": 3,
+      "api": "csp_Live2Vod",
+      "searchable": 1,
+      "jar": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/直转点.jar",
+      "ext": "湖北内网$https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/js.txt#饭太硬$https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/js.txt#影视范$https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/js.txt&&&http://api.btstu.cn/sjbz/?lx=meizi"
+    },
+    {
+      "key": "金牌影视",
+      "name": "金牌｜影视",
+      "type": 3,
+      "api": "csp_Jpys",
+      "ext": "https://m.610pkea.com,https://y2s52n7.com,https://m.hkybqufgh.com,https://m.sizhengxt.com,https://m.9zhoukj.com,https://m.sizhengxt.com,https://m.jiabaide.cn"
+    },*/
+   {
+      "key": "py_cctv",
+      "name": "💥央视PY💥",
+      "type": 3,
+      "api": "py_cctv",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0,
+      "api": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/cctv.py"
+    },
+{
+"key":"华数",
+"name":"🌴华数影视",
+"type":3,
+//"api":"https://gitee.com/yiwu369/6758/raw/master/py/华数.py",
+"api":"https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/%E5%8D%8E%E6%95%B0.py",
+"changeable":1
+},
+   {
+      "key": "py_cctv",
+      "name": "💥央视PY💥",
+      "type": 3,
+      "api": "py_cctv",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0,
+      "ext": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/%E5%8D%8E%E6%95%B0.py"
+    },
    {
       "key": "drpy_js_奇珍异兽",
       "name": "奇艺官方",
