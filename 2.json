@@ -1,6 +1,6 @@
 {
-  //"spider": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/极速.jar",
-  "spider": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/11.jar",
+  "spider": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/极速.jar",
+  //"spider": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/11.jar",
   "lives": [
     {
       "name": "综合源",
