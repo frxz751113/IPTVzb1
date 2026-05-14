@@ -28,34 +28,21 @@
       "name": "奇艺官方",
       "type": 3,
       "api": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js",
-      "ext": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/奇珍异兽.js",
-      "jar": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/极速.jar"
-    },
-   {
-      "key": "py_cctv",
-      "name": "💥央视PY💥",
-      "type": 3,
-      "api": "py_cctv",
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 0,
-      "ext": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/%E5%8D%8E%E6%95%B0.py"
+      "ext": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/奇珍异兽.js"
     },
     {
       "key": "drpy_js_腾云驾雾",
       "name": "腾讯官方",
       "type": 3,
       "api": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js",
-      "ext": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/腾云驾雾.js",
-      "jar": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/极速.jar"
+      "ext": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/腾云驾雾.js"
     },
     {
       "key": "drpy_js_百忙无果",
       "name": "芒果官方",
       "type": 3,
       "api": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js",
-      "ext": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/百忙无果.js",
-      "jar": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/极速.jar"
+      "ext": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/百忙无果.js"
     },
     {
       "key": "cat_测试",
@@ -101,9 +88,8 @@
       "ext": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/戏曲.json",
       "jar": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/极速.jar"
     },
-{"key": "dr_可可影视[优]","name": "🍒可可影视[影][DR]","type": 3,"api": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/可可影视[优].js"},
-{"key": "dr_荐片[优]","name": "🍒荐片[影][DR]","type": 3,"api": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","timeout": 30,"ext": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/荐片[磁].js"},
-/*{"key": "dr_麦田影院","name": "🍒麦田影院[影][DR]","type": 3,"api": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/麦田影院.js"},
+/*{"key": "dr_可可影视[优]","name": "🍒可可影视[影][DR]","type": 3,"api": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/可可影视[优].js"},
+{"key": "dr_麦田影院","name": "🍒麦田影院[影][DR]","type": 3,"api": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/麦田影院.js"},
 {"key": "dr_一起看[优]","name": "🍒一起看[影][DR]","type": 3,"api": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/一起看[优].js"},
 {"key": "dr_柠檬影视[优]","name": "🍒柠檬影视[影][DR]","type": 3,"api": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/柠檬影视[优].js"},
 {"key": "dr_Emby[优]","name": "🍒Emby[影][DR]","type": 3,"api": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/Emby[优].js"},
@@ -151,7 +137,8 @@
 {"key": "dr_瓜子影视","name": "🍒瓜子影视[影][DR]","type": 3,"api": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/瓜子影视.js"},
 {"key": "dr_金牌[优]","name": "🍒金牌[影][DR]","type": 3,"api": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","click": "document.querySelector(\"#playleft iframe\").contentWindow.document.querySelector(\"#start\").click();","ext": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/金牌[优].js"},
 {"key": "dr_厂长资源[优]","name": "🍒厂长资源[影][DR]","type": 3,"api": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/厂长资源[优].js"},
-  
+{"key": "dr_荐片[优]","name": "🍒荐片[影][DR]","type": 3,"api": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","timeout": 30,"ext": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/荐片[磁].js"},
+ 
 {"name": "🥝好看短剧[短][SP]","key": "HHkk","type": 3,"api": "csp_HHkkAmns","jar": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/aw.jar","searchable": 1,"filterable": 1,"quickSearch": 1,"changeable": 1},
 {"name": "🥝盒马短剧[短][SP]","key": "Hema","type": 3,"api": "csp_HemaAmns","jar": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/aw.jar","searchable": 1,"filterable": 1,"quickSearch": 1,"changeable": 1},
 {"name": "🥝拜拜短剧[短][SP]","key": "Bddj","type": 3,"api": "csp_BddjAmns","jar": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/aw.jar","searchable": 1,"filterable": 1,"quickSearch": 1,"changeable": 1},
