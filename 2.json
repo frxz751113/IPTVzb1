@@ -32,15 +32,6 @@
       "filterable"“可过滤”: 0,
       "api"“API”: "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/cctv.py"“https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/cctv.py”
     },
- /*   {
-      "key"“钥匙”: "drpy_js_腾云驾雾",
-      "name": "腾讯官方""spider"“蜘蛛”
-      "type": 3,
-      "api": "https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js",
-      "ext": "https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/腾云驾雾.js",
-      "jar": "https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/极速.jar"
-    },
-*/
     {
       "key": "drpy_js_百忙无果",
       "name": "芒果官方",
