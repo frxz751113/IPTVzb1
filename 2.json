@@ -29,10 +29,10 @@
 {"key":"乐播资源","name":"乐播资源","type":0,"api":"https://lbapi9.com/api.php/provide/vod/at/xml","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"av番號資源","name":"番號資源需VPN","type":1,"api":"http://fhapi9.com/api.php/provide/vod/at/json","searchable":1,"quickSearch":1},
 {"key": "lajiao","name": "辣椒资源需VPN",  "type": 1,  "api": "http://api.11bat.com/api.php/provide/vod", "searchable": 1,    "quickSearch": 1,     "filterable": 0   },
-{"key":"大地资源","name":"大地资源VPN","jiexiUrl":"https://lziplayer.com/?url=","api":"https://dadiapi.com/api.php","searchable":1,"quickSearch":1,"filterable":1},
-{"key":"软件","name":"教程二线","type":3,"api":"csp_Bili","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/eee.json","jar":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/极速.jar"}
+{"key":"大地资源","name":"大地资源VPN","jiexiUrl":"https://lziplayer.com/?url=","api":"https://dadiapi.com/api.php","searchable":1,"quickSearch":1,"filterable":1}
+],
 
-  ],
+  
   "parses": [
 {"name": "解析1","type": 0,"url": "https://bd.jx.cn/?url="},
 {"name": "免费分享","type": 0,"url": "https://jx.xmflv.com/?url=","ext": {"flag": ["qq","腾讯","qiyi","爱奇艺","奇艺","youku","优酷","mgtv","芒果","imgo","letv","乐视","pptv","PPTV","sohu","bilibili","哔哩哔哩","哔哩"],"header": {"User-Agent": "okhttp/4.1.0"}}},
