@@ -24,16 +24,12 @@
 */
 {"key": "dr_星芽短剧[短]","name": "星芽短剧","type": 3,"api": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/星芽短剧[短].js"},
 {"key": "dr_小酷短剧[短]","name": "小酷短剧","type": 3,"api": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/小酷短剧[短].js"},
-{"key": "dr_短剧网[短]","name": "短剧网","type": 3,"api": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/短剧网[短].js"},
-{"key":"乐播资源","name":"乐播需VPN","type":0,"api":"https://lbapi9.com/api.php/provide/vod/at/xml","searchable":1,"quickSearch":1,"filterable":1},
-{"key":"美少女资源","name":"美少女资源","type":0,"api":"https://www.msnii.com/api/xml.php","searchable":1,"quickSearch":1,"filterable":1},
-{"key":"淫水机资源","name":"淫水机资源需VPN","type":0,"api":"https://www.xrbsp.com/api/xml.php","searchable":1,"quickSearch":1,"filterable":1},
-{"key":"香奶儿资源","name":"香奶儿资源","type":0,"api":"https://www.gdlsp.com/api/xml.php","searchable":1,"quickSearch":1,"filterable":1},
-{ "key":"黄AV资源", "name":"黄AV需VPN", "type":0, "api":"https://www.pgxdy.com/api/xml.php","searchable":1,"quickSearch":1,"filterable":1},
+//{"key": "dr_短剧网[短]","name": "短剧网","type": 3,"api": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/短剧网[短].js"},
+{"key":"乐播资源","name":"乐播资源","type":0,"api":"https://lbapi9.com/api.php/provide/vod/at/xml","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"av番號資源","name":"番號資源需VPN","type":1,"api":"http://fhapi9.com/api.php/provide/vod/at/json","searchable":1,"quickSearch":1},
 {"key": "lajiao","name": "辣椒资源需VPN",  "type": 1,  "api": "http://api.11bat.com/api.php/provide/vod", "searchable": 1,    "quickSearch": 1,     "filterable": 0   },
-{"key":"大地资源","name":"大地资源VPN","jiexiUrl":"https://lziplayer.com/?url=","api":"https://dadiapi.com/api.php","searchable":1,"quickSearch":1,"filterable":1},
-{"key":"白嫖资源","name":"白嫖资源","jiexiUrl":"https://lziplayer.com/?url=","api":"https://www.kxgav.com/api/xml.php","searchable":1,"quickSearch":1,"filterable":1}
+{"key":"大地资源","name":"大地资源VPN","jiexiUrl":"https://lziplayer.com/?url=","api":"https://dadiapi.com/api.php","searchable":1,"quickSearch":1,"filterable":1}
+
   ],
   "parses": [
     {
