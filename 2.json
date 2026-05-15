@@ -28,7 +28,7 @@
 {"key":"av番號資源","name":"番號資源需VPN","type":1,"api":"http://fhapi9.com/api.php/provide/vod/at/json","searchable":1,"quickSearch":1},
 {"key": "lajiao","name": "辣椒资源需VPN",  "type": 1,  "api": "http://api.11bat.com/api.php/provide/vod", "searchable": 1,    "quickSearch": 1,     "filterable": 0   },
 {"key":"大地资源","name":"大地资源VPN","jiexiUrl":"https://lziplayer.com/?url=","api":"https://dadiapi.com/api.php","searchable":1,"quickSearch":1,"filterable":1},
-{"key":"软件","name":"教程二线","type":3,"api":"csp_Bili","searchable":1,"quickSearch":1,"filterable":1,"ext":".lib/eee.json","jar":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/极速.jar"}
+{"key":"软件","name":"教程二线","type":3,"api":"csp_Bili","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/eee.json","jar":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/极速.jar"}
 
   ],
   "parses": [
