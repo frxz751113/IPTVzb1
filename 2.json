@@ -32,7 +32,7 @@
       "filterable": 0,
       "api": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/cctv.py"
     },
-    {
+ /*   {
       "key": "drpy_js_腾云驾雾",
       "name": "腾讯官方",
       "type": 3,
@@ -40,6 +40,7 @@
       "ext": "https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/腾云驾雾.js",
       "jar": "https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/极速.jar"
     },
+*/
     {
       "key": "drpy_js_百忙无果",
       "name": "芒果官方",
