@@ -1,5 +1,6 @@
 {
-  "spider": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/极速.jar",
+  "spider": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/aw.jar",
+  //"spider": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/极速.jar",
   //"spider": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/11.jar",
   "lives": [
     {
@@ -139,7 +140,7 @@
       "quickSearch": 1,
       "ext": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/戏曲.json"
     },
-*/
+
     {
       "key": "cat_聚合短剧[短]",
       "name": "聚合短剧",
@@ -159,11 +160,6 @@
       ]
     },
 
-    
-    
-/*
-
-    
 {"key": "dr_可可影视[优]","name": "🍒可可影视[影][DR]","type": 3,"api": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/可可影视[优].js"},
 {"key": "dr_荐片[优]","name": "🍒荐片[影][DR]","type": 3,"api": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","timeout": 30,"ext": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/荐片[磁].js"},
 {"key": "dr_麦田影院","name": "🍒麦田影院[影][DR]","type": 3,"api": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/麦田影院.js"},
@@ -215,12 +211,12 @@
 
     
  
-{"name": "🥝好看短剧[短][SP]","key": "HHkk","type": 3,"api": "csp_HHkkAmns","jar": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/aw.jar","searchable": 1,"filterable": 1,"quickSearch": 1,"changeable": 1},
-{"name": "🥝盒马短剧[短][SP]","key": "Hema","type": 3,"api": "csp_HemaAmns","jar": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/aw.jar","searchable": 1,"filterable": 1,"quickSearch": 1,"changeable": 1},
-{"name": "🥝拜拜短剧[短][SP]","key": "Bddj","type": 3,"api": "csp_BddjAmns","jar": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/aw.jar","searchable": 1,"filterable": 1,"quickSearch": 1,"changeable": 1},
-{"name": "🥝围观短剧[短][SP]","key": "Wgdj","type": 3,"api": "csp_WgdjAmns","jar": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/aw.jar","searchable": 1,"filterable": 1,"quickSearch": 1,"changeable": 1},
-{"name": "🥝喵喵短剧[短][SP]","key": "Qmdj","type": 3,"api": "csp_QmdjAmns","jar": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/aw.jar","searchable": 1,"filterable": 1,"quickSearch": 1,"changeable": 1},
-{"name": "🥝星星短剧[短][SP]","key": "Xydj","type": 3,"api": "csp_XydjAmns","jar": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/aw.jar","searchable": 1,"filterable": 1,"quickSearch": 1,"changeable": 1},
+{"name": "🥝好看短剧[短][SP]","key": "HHkk","type": 3,"api": "csp_HHkkAmns","searchable": 1,"filterable": 1,"quickSearch": 1,"changeable": 1},
+{"name": "🥝盒马短剧[短][SP]","key": "Hema","type": 3,"api": "csp_HemaAmns","searchable": 1,"filterable": 1,"quickSearch": 1,"changeable": 1},
+{"name": "🥝拜拜短剧[短][SP]","key": "Bddj","type": 3,"api": "csp_BddjAmns","searchable": 1,"filterable": 1,"quickSearch": 1,"changeable": 1},
+{"name": "🥝围观短剧[短][SP]","key": "Wgdj","type": 3,"api": "csp_WgdjAmns","searchable": 1,"filterable": 1,"quickSearch": 1,"changeable": 1},
+{"name": "🥝喵喵短剧[短][SP]","key": "Qmdj","type": 3,"api": "csp_QmdjAmns","searchable": 1,"filterable": 1,"quickSearch": 1,"changeable": 1},
+{"name": "🥝星星短剧[短][SP]","key": "Xydj","type": 3,"api": "csp_XydjAmns","searchable": 1,"filterable": 1,"quickSearch": 1,"changeable": 1},
         
 {"key": "dr_星芽短剧[短]","name": "🥝星芽短剧[短][DR]","type": 3,"api": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/星芽短剧[短].js"},
 {"key": "dr_小酷短剧[短]","name": "🥝小酷短剧[短][DR]","type": 3,"api": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/小酷短剧[短].js"},
@@ -245,7 +241,6 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/eee.json",
-      "jar": "https://tvv.tw/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/极速.jar"
     }
   ],
   "parses": [
