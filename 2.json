@@ -1,20 +1,20 @@
 {
- //"spider": "https://ghfast.top/ https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/83.jar",
+ //"spider": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/83.jar",
  
   "lives": [
     {
       "name": "综合源",
       "type": 0,
       "pass": true,
-      "url": "https://ghfast.top/ https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/js.txt",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/js.txt",
       "epg": "http://124.222.214.218:35678/?ch={name}&date={date}",
       "logo": "https://epg.112114.xyz/logo/{name}.png"
     }
   ],
   "sites": [
-{"key": "dr_瓜子影视","name": "瓜子影视","type": 3,"api": "https://ghfast.top/ https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext": "https://ghfast.top/ https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/瓜子影视.js"}, 
-{"key": "dr_农民影视[优]","name": "农民影视","type": 3,"api": "https://ghfast.top/ https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext": "https://ghfast.top/ https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/农民影视[优].js"},
-{"key":"cat_聚合短剧[短]","name":"聚合短剧","type":3,"api":"https://ghfast.top/ https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/cat_聚合短剧[短].js"},
+{"key": "dr_瓜子影视","name": "瓜子影视","type": 3,"api": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/瓜子影视.js"}, 
+{"key": "dr_农民影视[优]","name": "农民影视","type": 3,"api": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/农民影视[优].js"},
+{"key":"cat_聚合短剧[短]","name":"聚合短剧","type":3,"api":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/cat_聚合短剧[短].js"},
 
 
     
@@ -27,13 +27,13 @@
 {"name": "星星短剧[短][SP]","key": "Xydj","type": 3,"api": "csp_XydjAmns","searchable": 1,"filterable": 1,"quickSearch": 1,"changeable": 1},
 */
     
-{"key": "dr_星芽短剧[短]","name": "星芽短剧","type": 3,"api": "https://ghfast.top/ https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext": "https://ghfast.top/ https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/星芽短剧[短].js"},
-//{"key": "dr_小酷短剧[短]","name": "小酷短剧","type": 3,"api": "https://ghfast.top/ https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext": "https://ghfast.top/ https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/小酷短剧[短].js"},
+{"key": "dr_星芽短剧[短]","name": "星芽短剧","type": 3,"api": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/星芽短剧[短].js"},
+//{"key": "dr_小酷短剧[短]","name": "小酷短剧","type": 3,"api": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/小酷短剧[短].js"},
 {"key":"乐播资源","name":"乐播资源","type":0,"api":"https://lbapi9.com/api.php/provide/vod/at/xml","searchable":1,"quickSearch":1,"filterable":1}
 //{"key":"av番號資源","name":"番號資源需VPN","type":1,"api":"http://fhapi9.com/api.php/provide/vod/at/json","searchable":1,"quickSearch":1},
 //{"key": "lajiao","name": "辣椒资源需VPN",  "type": 1,  "api": "http://api.11bat.com/api.php/provide/vod", "searchable": 1,    "quickSearch": 1,     "filterable": 0   },
 //{"key":"大地资源","name":"大地资源VPN","jiexiUrl":"https://lziplayer.com/?url=","api":"https://dadiapi.com/api.php","searchable":1,"quickSearch":1,"filterable":1},
-//{"key":"软件","name":"教程二线","type":3,"api":"csp_Bili","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://ghfast.top/ https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/eee.json","jar": "https://ghfast.top/ https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/83.jar"}
+//{"key":"软件","name":"教程二线","type":3,"api":"csp_Bili","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/eee.json","jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/83.jar"}
 ],
 
   
