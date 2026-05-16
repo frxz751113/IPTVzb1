@@ -1,6 +1,10 @@
 {
   "classes": [
     {
+      "type_name": "爬虫教程",
+      "type_id": "爬虫教程"
+    },
+    {
       "type_name": "网盘挂载",
       "type_id": "网盘挂载"
     },
