@@ -1,6 +1,18 @@
 {
   "classes": [
     {
+      "type_name": "韩宝仪",
+      "type_id": "韩宝仪"
+    },
+    {
+      "type_name": "卓依婷",
+      "type_id": "卓依婷"
+    },
+    {
+      "type_name": "杨钰莹",
+      "type_id": "杨钰莹"
+    },
+    {
       "type_name": "爬虫教程",
       "type_id": "爬虫教程"
     },
@@ -23,10 +35,6 @@
     {
       "type_name": "phyton",
       "type_id": "phyton教程"
-    },
-    {
-      "type_name": "xml",
-      "type_id": "xml教程"
     },
     {
       "type_name": "photoshop",
