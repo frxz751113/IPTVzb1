@@ -5,16 +5,8 @@
       "type_id": "影视"
     },
     {
-      "type_name": "MT管理器",
-      "type_id": "MT管理器"
-    },
-    {
       "type_name": "网盘挂载",
       "type_id": "网盘挂载"
-    },
-    {
-      "type_name": "alist+WebDav",
-      "type_id": "alist+WebDav"
     },
     {
       "type_name": "TVBox修改",
@@ -29,10 +21,6 @@
       "type_id": "Git入门到精通"
     },
     {
-      "type_name": "java",
-      "type_id": "java教程"
-    },
-    {
       "type_name": "phyton",
       "type_id": "phyton教程"
     },
@@ -43,14 +31,6 @@
     {
       "type_name": "photoshop",
       "type_id": "photoshop教程"
-    },
-    {
-      "type_name": "PR",
-      "type_id": "PR教程"
-    },
-    {
-      "type_name": "AE",
-      "type_id": "AE教程"
     },
     {
       "type_name": "C4D",
