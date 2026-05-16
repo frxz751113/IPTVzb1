@@ -12,7 +12,7 @@
 | OK影视Pro               | v5.1.0 | [下载](https://github.com/frxz751113/TV-app/blob/main/%E5%BD%B1%E8%A7%86/OK%E5%BD%B1%E8%A7%86/README.md) | 🟢    | 多了在线字幕/弹幕搜索、VLC（电视版）、MPV（手机版），以上功能都需要在Pro版的设置点击关于激活看广告激活Pro功能，介意请用标准版 | 
 
 
-## Github RAW 加速服 务
+## Github RAW 加速服务  影视接口https://github.com/woshishiq1/hipy-drpy/blob/main/dr/dr2.json
 
 https://down.nigx.cn/raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/
 
