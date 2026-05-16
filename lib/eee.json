@@ -1,8 +1,8 @@
 {
   "classes": [
     {
-      "type_name": "电影",
-      "type_id": "电影"
+      "type_name": "影视",
+      "type_id": "影视"
     },
     {
       "type_name": "MT管理器",
