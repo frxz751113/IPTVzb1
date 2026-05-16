@@ -13,13 +13,9 @@
 {"key": "dr_瓜子影视","name": "瓜子影视","type": 3,"api": "https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext": "https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/瓜子影视.js"}, 
 {"key": "dr_农民影视[优]","name": "农民影视","type": 3,"api": "https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext": "https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/农民影视[优].js"},
 {"key":"cat_聚合短剧[短]","name":"聚合短剧","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/cat_聚合短剧[短].js"},
-    {
-      "key": "dr_一起看[优]",
-      "name": "🍒一起看[影][DR]",
-      "type": 3,
-      "api": "./lib/drpy2.min.js",
-      "ext": "./lib/一起看[优].js"
-    },
+
+//搜索      "name": "🍒一起看[影][DR]",
+
 
 {"key": "dr_星芽短剧[短]","name": "星芽短剧","type": 3,"api": "https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext": "https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/星芽短剧[短].js"},
 //{"key": "dr_小酷短剧[短]","name": "小酷短剧","type": 3,"api": "https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext": "https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/小酷短剧[短].js"},
