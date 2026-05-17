@@ -1,5 +1,5 @@
 {
-  "spider": "./aw精简.jar",
+  "spider": "./lib/aw精简.jar",
   "lives": [
     {
       "name": "综合源",
