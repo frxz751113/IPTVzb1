@@ -1,5 +1,5 @@
 {
-  //"spider":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/aw精简.jar",
+  "spider":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/aw精简.jar",
   "lives": [
     {
       "name": "综合源",
@@ -10,10 +10,10 @@
       "logo": "https://epg.112114.xyz/logo/{name}.png"
     }
   ],
-  "sites": [//{"name":"豆瓣精选","key":"GoConfig","type":3,"api":"csp_GoConfigAmns","indexs":1,"searchable":0,"filterable":0,"quickSearch":0,"changeable":0},
-//{"name":"短剧导航","key":"DjHggg","type":3,"api":"csp_HgggAmns","indexs":1,"searchable":0,"filterable":0,"quickSearch":0,"changeable":0,"ext":"short_play"},
-//{"name":"漫剧导航","key":"MjHggg","type":3,"api":"csp_HgggAmns","indexs":1,"searchable":0,"filterable":0,"quickSearch":0,"changeable":0,"ext":"comic_series"},
-//{"key": "1905", "name": "1905影视", "type": 3, "api": "csp_Web1905", "searchable": 1, "quickSearch": 0, "filterable": 0,"jar":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/11.jar"},
+  "sites": [{"name":"豆瓣精选","key":"GoConfig","type":3,"api":"csp_GoConfigAmns","indexs":1,"searchable":0,"filterable":0,"quickSearch":0,"changeable":0},
+{"name":"短剧导航","key":"DjHggg","type":3,"api":"csp_HgggAmns","indexs":1,"searchable":0,"filterable":0,"quickSearch":0,"changeable":0,"ext":"short_play"},
+{"name":"漫剧导航","key":"MjHggg","type":3,"api":"csp_HgggAmns","indexs":1,"searchable":0,"filterable":0,"quickSearch":0,"changeable":0,"ext":"comic_series"},
+{"key": "1905", "name": "1905影视", "type": 3, "api": "csp_Web1905", "searchable": 1, "quickSearch": 0, "filterable": 0,"jar":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/11.jar"},
 {"key":"py_1905","name":"🍑1905[PY]","type":3,"api":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/1905.py","searchable":1,"quickSearch":1,"filterable":1},
 {"key": "dr_瓜子影视","name": "瓜子影视","type": 3,"api": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min1.js","ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/瓜子影视.js"}, 
 {"key": "dr_农民影视[优]","name": "农民影视","type": 3,"api": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min1.js","ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/农民影视[优].js"},
@@ -22,14 +22,14 @@
 {"key":"py_热播影视大全","name":"🍑热播[影][PY]","type":3,"api":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/RJAPP.py","ext":" http://v.rbotv.cn "},
 
 
-/* 
+
 {"name": "好看短剧[短][SP]","key": "HHkk","type": 3,"api": "csp_HHkkAmns","searchable": 1,"filterable": 1,"quickSearch": 1,"changeable": 1},
 {"name": "盒马短剧[短][SP]","key": "Hema","type": 3,"api": "csp_HemaAmns","searchable": 1,"filterable": 1,"quickSearch": 1,"changeable": 1},
 {"name": "拜拜短剧[短][SP]","key": "Bddj","type": 3,"api": "csp_BddjAmns","searchable": 1,"filterable": 1,"quickSearch": 1,"changeable": 1},
 {"name": "围观短剧[短][SP]","key": "Wgdj","type": 3,"api": "csp_WgdjAmns","searchable": 1,"filterable": 1,"quickSearch": 1,"changeable": 1},
 {"name": "喵喵短剧[短][SP]","key": "Qmdj","type": 3,"api": "csp_QmdjAmns","searchable": 1,"filterable": 1,"quickSearch": 1,"changeable": 1},
 {"name": "星星短剧[短][SP]","key": "Xydj","type": 3,"api": "csp_XydjAmns","searchable": 1,"filterable": 1,"quickSearch": 1,"changeable": 1},
-*/
+
     
 {"key": "dr_星芽短剧[短]","name": "星芽短剧","type": 3,"api": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/星芽短剧[短].js"},
 {"key": "dr_小酷短剧[短]","name": "小酷短剧","type": 3,"api": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/小酷短剧[短].js"},
