@@ -1,5 +1,5 @@
 {
-  "spider":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/aw.jar",
+  "spider":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/aw精简.jar",
   "lives": [
     {
       "name": "综合源",
@@ -10,7 +10,10 @@
       "logo": "https://epg.112114.xyz/logo/{name}.png"
     }
   ],
-  "sites": [
+  "sites": [{"name":"豆瓣精选","key":"GoConfig","type":3,"api":"csp_GoConfigAmns","indexs":1,"searchable":0,"filterable":0,"quickSearch":0,"changeable":0},
+{"name":"短剧导航","key":"DjHggg","type":3,"api":"csp_HgggAmns","indexs":1,"searchable":0,"filterable":0,"quickSearch":0,"changeable":0,"ext":"short_play"},
+{"name":"漫剧导航","key":"MjHggg","type":3,"api":"csp_HgggAmns","indexs":1,"searchable":0,"filterable":0,"quickSearch":0,"changeable":0,"ext":"comic_series"},
+
 {"key": "dr_瓜子影视","name": "瓜子影视","type": 3,"api": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min1.js","ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/瓜子影视.js"}, 
 {"key": "dr_农民影视[优]","name": "农民影视","type": 3,"api": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min1.js","ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/农民影视[优].js"},
 {"key":"cat_聚合短剧[短]","name":"聚合短剧","type":3,"api":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/cat_聚合短剧[短].js"},
