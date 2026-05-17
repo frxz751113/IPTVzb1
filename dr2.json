@@ -1,5 +1,5 @@
 {
-  "spider": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/aw.png;md5;29ee0730017660db62f57a585cd1aeb6",
+  "spider": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/aw.png",
   "sites": [
     {
       "name": "💬嗷嗚|彈幕|豆瓣",
@@ -49,7 +49,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/Bili.json",
-      "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/XYQ.jar?md5=07f7e56adbda0c328398d7d663ff75a5"
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/XYQ.jar"
     },
     {
       "key": "csp_Aid",
@@ -73,7 +73,7 @@
       "changeable": 0,
       "indexs": 0,
       "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/market.json",
-      "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/mk.jar?md5=5400486b7884dd01de5a306e34724c3c"
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/mk.jar"
     },
     {
       "key": "cat_测试",
@@ -2184,7 +2184,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/BT天堂磁力.json",
-      "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/XBPQ.jar?md5=65c2929d870759604dad0aa9cebec0a6"
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/XBPQ.jar"
     },
     {
       "key": "csp_XBPQ_好恐怖",
@@ -2195,7 +2195,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/好恐怖磁力.json",
-      "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/XBPQ.jar?md5=65c2929d870759604dad0aa9cebec0a6"
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/XBPQ.jar"
     },
     {
       "key": "csp_XBPQ_迅雷8",
@@ -2206,7 +2206,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/迅雷吧磁力.json",
-      "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/XBPQ.jar?md5=65c2929d870759604dad0aa9cebec0a6"
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/XBPQ.jar"
     },
     {
       "key": "csp_Dygang",
@@ -2216,7 +2216,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/nf.jar?md5=8698fabf1748b57cfdeb52e1ed2e1b25"
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/nf.jar"
     },
     {
       "key": "csp_xlys",
@@ -2227,7 +2227,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://www.xlys02.com",
-      "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/nf.jar?md5=8698fabf1748b57cfdeb52e1ed2e1b25"
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/nf.jar"
     },
     {
       "key": "csp_New6v",
@@ -2237,7 +2237,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/nf.jar?md5=8698fabf1748b57cfdeb52e1ed2e1b25"
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/nf.jar"
     },
     {
       "key": "csp_DyGod",
@@ -2247,7 +2247,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/nf.jar?md5=8698fabf1748b57cfdeb52e1ed2e1b25"
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/nf.jar"
     },
     {
       "key": "csp_QnMp4",
@@ -2257,7 +2257,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/nf.jar?md5=8698fabf1748b57cfdeb52e1ed2e1b25"
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/nf.jar"
     },
     {
       "key": "csp_MeijuMi",
@@ -2268,7 +2268,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://www.meijumi.net/",
-      "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/nf.jar?md5=8698fabf1748b57cfdeb52e1ed2e1b25"
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/nf.jar"
     },
     {
       "key": "csp_BLSGod",
@@ -2278,7 +2278,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/nf.jar?md5=8698fabf1748b57cfdeb52e1ed2e1b25"
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/nf.jar"
     },
     {
       "key": "dr_夸克影视[盘]",
@@ -3792,7 +3792,7 @@
       "quickSearch": 0,
       "changeable": 0,
       "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/少儿教育.json",
-      "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/XYQ.jar?md5=07f7e56adbda0c328398d7d663ff75a5"
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/XYQ.jar"
     },
     {
       "key": "小学课堂",
@@ -3807,7 +3807,7 @@
       "quickSearch": 0,
       "changeable": 0,
       "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/小学课堂.json",
-      "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/XYQ.jar?md5=07f7e56adbda0c328398d7d663ff75a5"
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/XYQ.jar"
     },
     {
       "key": "初中课堂",
@@ -3822,7 +3822,7 @@
       "quickSearch": 0,
       "changeable": 0,
       "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/初中课堂.json",
-      "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/XYQ.jar?md5=07f7e56adbda0c328398d7d663ff75a5"
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/XYQ.jar"
     },
     {
       "key": "高中教育",
@@ -3837,7 +3837,7 @@
       "quickSearch": 0,
       "changeable": 0,
       "ext": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/高中课堂.json",
-      "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/XYQ.jar?md5=07f7e56adbda0c328398d7d663ff75a5"
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/XYQ.jar"
     },
     {
       "key": "dr_哔哩小学",
