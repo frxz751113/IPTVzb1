@@ -1,0 +1,9 @@
+[
+{"name": "推荐","list": [
+{"name":"手机右滑🔀","url": "","icon": "http://127.0.0.1:9978/file/tvbox/img/d5.gif","version":"电视请点击⏺"}]},
+
+//{"name":"当前版本","list":[{"name":"本地包日期","url":"","icon":"http://127.0.0.1:9978/file/tvbox/img/wj.png","version":"2025-03-04"}]},
+
+{"name":"↓本地数据更新↓","list":[
+{"name":"↑随缘更新↑","url":"https://gh-proxy.com/github.com/jak0099/dr/archive/refs/heads/master.zip","icon":"http://127.0.0.1:9978/file/tvbox/img/wj.png","version":"🔄点击拉取","copy":"数据更新完毕，本地接口[clan://localhost/dr-master/jk/ck2.json]"}
+]}]

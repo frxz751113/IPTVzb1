@@ -1,0 +1,23 @@
+{
+"作者":"张弘",
+"站名":"ASMR",
+"主页url":"https://www.ufov8.com",
+"直接播放":"1",
+"数组":"<a class=\"media-content\"&&</a>",
+"图片":"img src=\"&&\"",
+"标题":"alt=\"&&\"",
+"链接":"href=\"&&\"",
+"链接前缀":"https://www.ufov8.com",
+"副标题":"<div>&&</div>",
+"搜索url":"https://www.ufov8.com/page/{pg}?s={wd}",
+"搜索模式":"1",
+"搜索数组":"<a class=\"media-content\"&&</a>",
+"搜索图片":"img src=\"&&\"",
+"搜索标题":"alt=\"&&\"",
+"搜索链接":"href=\"&&\"",
+"搜索链接前缀":"https://www.ufov8.com",
+"搜索副标题":"<div>&&</div>",
+"搜索后缀":"",
+"分类url":"https://www.ufov8.com/{cateId}/page/{catePg}",
+"分类":"视频$asmrsp#女性向$nxxasmr#国内ASMR$gnasmr#日韩ASMR$rhsp#欧美ASMR$omasmr#精剪合集$jinjianspheji"
+}
