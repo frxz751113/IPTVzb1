@@ -3,16 +3,25 @@
 import sys
 import json
 import time
-from urllib.parse import quote
+import hashlib
+from urllib.parse import urlencode
 
 sys.path.append('..')
 from base.spider import Spider
 
+# ========== WBI 签名（必须） ==========
+mixinKeyEncTab = [
+    46,47,18,2,53,8,23,32,15,50,10,31,58,3,45,35,27,43,22,24,6,11,36,41,16,0,14,25,53,57,50,38,49,61,13,23,28,33,8,60,39,34,17,5,55,40,9,31,20,29,61,19,57,7,21,51,60,12,47,44,37,38,59,43,52,42,2,1,40,41,27,55,10,16,9,58,52,48,54,30,56,25,36,20,32,47,56,43,18,53,45,29,34,47,56,38,44,46,19,43,55,16,50,15,48,27,36,20,32,47,56,43,18,53,51,39,51,45,15,47,53,40,37,11,56,48,34,39,18,53,47,55,14,50,23,18,43,24,43,44,51,38,55,40,50,28,18,46,71
+]
 
+def getMixinKey(orig):
+    return reduce(lambda s, i: s + orig[i], mixinKeyEncTab, '')[:32]
+
+# ========== 主 Spider ==========
 class Spider(Spider):
 
     def getName(self):
-        return "B站歌星搜索"
+        return "B站个性歌星"
 
     def init(self, extend):
         pass
@@ -20,7 +29,7 @@ class Spider(Spider):
     def destroy(self):
         pass
 
-    # ================= 分类 =================
+    # ================= 分类（你指定的） =================
     def homeContent(self, filter):
         return {
             "class": [
@@ -36,14 +45,23 @@ class Spider(Spider):
     def categoryContent(self, tid, page, filter, ext):
         return self.searchContent(tid, page)
 
-    # ================= 搜索 =================
+    # ================= 搜索（JS 同款） =================
     def searchContent(self, key, page):
-        url = "https://api.bilibili.com/x/web-interface/wbi/search/all/v2"
+        wts = str(int(time.time()))
+
         params = {
             "keyword": key,
             "page": page,
-            "search_type": "video"
+            "search_type": "video",
+            "wts": wts
         }
+
+        # WBI 签名
+        encoded = urlencode(sorted(params.items()))
+        mixinKey = getMixinKey(encoded)
+        w_rid = hashlib.md5((encoded + mixinKey).encode()).hexdigest()
+
+        url = f"https://api.bilibili.com/x/web-interface/wbi/search/all/v2?{encoded}&w_rid={w_rid}"
 
         headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
@@ -51,14 +69,14 @@ class Spider(Spider):
             "Cookie": self.getCookie()
         }
 
-        r = self.fetch(url, params=params, headers=headers, timeout=5)
+        r = self.fetch(url, headers=headers, timeout=5)
         data = json.loads(r.text)
 
         videos = []
-        if "data" not in data or "result" not in data["data"]:
+        if data.get("code") != 0:
             return self.empty(page)
 
-        for item in data["data"]["result"]:
+        for item in data.get("data", {}).get("result", []):
             if item.get("result_type") != "video":
                 continue
             for v in item.get("data", []):
@@ -80,7 +98,7 @@ class Spider(Spider):
             "total": len(videos)
         }
 
-    # ================= Cookie（重点） =================
+    # ================= Cookie（照 JS 给的） =================
     def getCookie(self):
         return (
             "_uuid=5E4B2B98-1014A-84D8-FA33-EC210C5BEC10DA82367infoc; "
@@ -92,7 +110,6 @@ class Spider(Spider):
             "bili_jct=2dbe39aea02b41324395630a24d4775f; "
             "sid=89gnel66; "
             "CURRENT_QUALITY=80; "
-            "bp_video_offset_3493076028885079=undefined; "
             "bsource=search_google"
         )
 
@@ -106,7 +123,7 @@ class Spider(Spider):
             "total": 0
         }
 
-    # ================= 其他 =================
+    # ================= 兼容 =================
     def searchContentPage(self, key, quick, page):
         return self.searchContent(key, page)
 
