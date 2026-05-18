@@ -1,19 +1,28 @@
 # -*- coding: utf-8 -*-
-# 本资源来源于互联网公开渠道，仅可用于个人学习爬虫技术。
-# 严禁将其用于任何商业用途，下载后请于 24 小时内删除，搜索结果均来自源站，本人不承担任何责任。
+# 本资源收集自互联网，仅供个人学习与测试用途。
+# 严禁用于商业目的，请于下载后 24 小时内删除。
 
 from Crypto.Cipher import AES
 from base.spider import Spider
 from Crypto.Util.Padding import unpad, pad
 import re,sys,time,json,base64,urllib3,hashlib,binascii
+from concurrent.futures import ThreadPoolExecutor, as_completed
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 sys.path.append('..')
 
 class Spider(Spider):
-    headers,host,key,iv,ckkey,ckiv,config = {
-        'User-Agent': "Dart/2.10 (dart:io)",
-        'Accept-Encoding': "gzip",
-    }, '','','','','',{}
+    def __init__(self):
+        super().__init__()
+        self.headers = {
+            'User-Agent': "Dart/2.10 (dart:io)",
+            'Accept-Encoding': "gzip",
+        }
+        self.host = ''
+        self.key = ''
+        self.iv = ''
+        self.ckkey = ''
+        self.ckiv = ''
+        self.config = {}
 
     def init(self, extend=""):
         try:
@@ -68,14 +77,62 @@ class Spider(Spider):
 
     def homeContent(self, filter):
         if not self.host: return None
-        response = self.fetch(f'{self.host}/sk-api/type/list', headers=self.headers, verify=False).text
-        data_ = self.sk_decrypt(response)
-        data = json.loads(data_)['data']
-        classes = []
-        for i in data:
-            if isinstance(i,dict):
-                classes.append({'type_id': i['type_id'], 'type_name': i['type_name']})
-        return {'class': classes}
+        try:
+            response = self.fetch(f'{self.host}/sk-api/type/list', headers=self.headers, verify=False).text
+            data_ = self.sk_decrypt(response)
+            data = json.loads(data_)['data']
+            classes = []
+            for i in data:
+                if isinstance(i, dict):
+                    classes.append({'type_id': i['type_id'], 'type_name': i['type_name']})
+        except Exception:
+            return {'class': []}
+        filters = {}
+        def fetch_filter(tid):
+            try:
+                url = f'{self.host}/sk-api/type/alltypeextend?typeId={tid}'
+                resp = self.fetch(url, headers=self.headers, verify=False).text
+                decrypted = self.sk_decrypt(resp)
+                f_data = json.loads(decrypted)
+                if f_data.get('code') == 200 and f_data.get('data'):
+                    data_obj = f_data['data']
+                    type_filters = []
+                    mappings = {
+                        'class': ('extendtype', '类型'),
+                        'area': ('area', '地区'),
+                        'lang': ('lang', '语言'),
+                        'year': ('year', '年份')
+                    }
+                    for api_key, val in mappings.items():
+                        filter_key, filter_name = val
+                        if data_obj.get(api_key):
+                            options = [x.strip() for x in data_obj[api_key].split(',') if x.strip()]
+                            if options:
+                                value_list = [{'n': '全部', 'v': ''}]
+                                for opt in options:
+                                    value_list.append({'n': opt, 'v': opt})
+                                type_filters.append({'key': filter_key, 'name': filter_name, 'init': '', 'value': value_list})
+                    type_filters.append({
+                        'key': 'sort',
+                        'name': '排序',
+                        'init': 'updateTime',
+                        'value': [
+                            {'n': '最新', 'v': 'updateTime'},
+                            {'n': '人气', 'v': 'hot'},
+                            {'n': '评分', 'v': 'score'}
+                        ]
+                    })
+                    return str(tid), type_filters
+            except Exception:
+                pass
+            return None
+        with ThreadPoolExecutor(max_workers=5) as executor:
+            futures = [executor.submit(fetch_filter, c['type_id']) for c in classes]
+            for future in as_completed(futures):
+                res = future.result()
+                if res:
+                    filters[res[0]] = res[1]
+        return {'class': classes, 'filters': filters}
 
     def homeVideoContent(self):
         response = self.fetch(f'{self.host}/sk-api/vod/list?page=1&limit=12&type=randomlikeindex&area=&lang=&year=&mtype=',headers=self.headers, verify=False).text
@@ -84,7 +141,12 @@ class Spider(Spider):
         return {'list': data}
 
     def categoryContent(self, tid, pg, filter, extend):
-        response = self.fetch(f"{self.host}/sk-api/vod/list?typeId={tid}&page={pg}&limit=18&type={extend.get('sort','updateTime')}&area={extend.get('area','')}&lang={extend.get('lang','')}&year={extend.get('year','')}&mtype=&extendtype=", headers=self.headers, verify=False).text
+        sort = extend.get('sort', 'updateTime')
+        area = extend.get('area', '')
+        lang = extend.get('lang', '')
+        year = extend.get('year', '')
+        extendtype = extend.get('extendtype', '')
+        response = self.fetch(f"{self.host}/sk-api/vod/list?typeId={tid}&page={pg}&limit=18&type={sort}&area={area}&lang={lang}&year={year}&mtype=&extendtype={extendtype}", headers=self.headers, verify=False).text
         data_ = self.sk_decrypt(response)
         data = json.loads(data_)['data']
         return {'list': data, 'page': pg}
@@ -102,7 +164,7 @@ class Spider(Spider):
         return {'list': [data]}
 
     def playerContent(self, flag, id, vipflags):
-        jx,url = 0,''
+        jx,url,direct_link = 0,'',0
         config = self.config
         direct_json_links = config.get('direct_json_link',[])
         direct_links = config.get('direct_link',[])
@@ -113,22 +175,21 @@ class Spider(Spider):
         for i in direct_links:
             if i in id and i.startswith('http'):
                 direct_link = 1
-        if direct_json or not(id.startswith('http')) or not(re.match(r'https?:\/\/.*\.(m3u8|mp4|flv)', id)):
+        if direct_json or not direct_link or not(id.startswith('http')):
             try:
                 response = self.fetch(f'{self.host}/sk-api/vod/skjson?url={id}&skjsonindex=0', headers=self.headers, verify=False).text
                 data_ = self.sk_decrypt(response)
                 data = json.loads(data_)['data']
-                url = data.get('url')
-                if not url.startswith('http'):
-                    if url == '' and (re.match(r'https?:\/\/.*\.(m3u8|mp4|flv)', id) or direct_link):
-                        jx, url = 0, id
-                    else:
-                        jx,url = 1, id
+                play_url = data.get('url')
+                if play_url.startswith('http'):
+                    url = play_url
             except Exception:
-                jx, url = 1, id
-        if url == '' and (re.match(r'https?:\/\/.*\.(m3u8|mp4|flv)', id) or direct_link):
-            jx, url = 0, id
-        return { 'jx': jx, 'parse': '0', 'url': url, 'header': {'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1'}}
+                pass
+        if not url:
+            url = id
+            if re.search(r'(?:www\.iqiyi|v\.qq|v\.youku|www\.mgtv|www\.bilibili)\.com', id):
+                jx = 1
+        return { 'jx': jx, 'parse': 0, 'url': url, 'header': {'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1'}}
 
     def ck_encrypt(self, str):
         key = self.ckkey.encode('utf-8')
