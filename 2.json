@@ -18,6 +18,7 @@
 {"key":"dr_农民影视[优]","name":"农民影视","type":3,"api":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/农民影视[优].js"},
 {"key":"cat_聚合短剧[短]","name":"聚合短剧","type":3,"api":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/cat_聚合短剧[短].js"},
 {"key":"py_哔哩视频","name":"🍑哔哩[影][PY]","type":3,"api":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/哔哩视频.py","searchable":1,"quickSearch":1,"filterable":1},
+{"key":"py_哔哩老歌","name":"🍑哔哩[影][PY]","type":3,"api":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/哔哩搜索.py","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"py_热播影视大全","name":"🍑热播[影][PY]","type":3,"api":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/RJAPP.py","ext":"http://v.rbotv.cn"},
 
  
