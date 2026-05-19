@@ -45,22 +45,21 @@
   
   
 {"key":"乐播资源","name":"乐播资源","type":0,"api":"https://lbapi9.com/api.php/provide/vod/at/xml","searchable":1,"quickSearch":1,"filterable":1},
-{"key":"lajiao","name":"辣椒资源需VPN","type":1,"api":"http://api.11bat.com/api.php/provide/vod","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"didizy.com","name":"💕滴滴(直连)","type":1,"api":"https://api.ddapi.cc/api.php/provide/vod/?ac=list","searchable":1,"filterable":1,"jar":"https://8415.kstore.space/Tvbox/jar/papapg.jar"},
-{"key":"影视","name":"影视18[VPN]","type":1,"api":"https://155api.com/api.php/provide/vod/"},
+{"key":"KpgxdyE","name":"🔞黄AV资源","type":0,"api":"https://www.pgxdy.com/api/xml.php","searchable":1,"quickSearch":1,"filterable":1},
+{"key":"森林","name":"🔞采集.森林资源","type":1,"api":"https://beiyong.slapibf.com/api.php/provide/vod/?ac=list","searchable":1}
+
+ /*
+{"key":"9号资源","name":"🔞9号资源[VPN]","type":0,"api":"http://fhapi9.com/api.php/provide/vod/at/xml/","searchable":1,"quickSearch":1,"filterable":1},
+{"key":"lajiao","name":"辣椒资源需VPN","type":1,"api":"http://api.11bat.com/api.php/provide/vod","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"奥斯卡","name":"🔞采集.奥斯卡[VPN]","type":1,"api":"https://aosikazy.com/api.php/provide/vod/?ac=list","searchable":1},
 {"key":"奶香m","name":"🔞采集.奶香香[VPN]","type":1,"api":"https://Naixxzy.com/api.php/provide/vod/?ac=list","searchable":1},
 {"key":"大地专场","name":"🔞大地采集[VPN]","type":0,"api":"https://dadiapi.com/api.php","playUrl":"","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"玉兔专场","name":"🔞玉兔采集[VPN]","type":1,"api":"https://apiyutu.com/api.php/provide/vod/","playUrl":"","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"155专场","name":"🔞155采集[VPN]","type":1,"api":"https://155api.com/api.php/provide/vod/","playUrl":"","searchable":1,"quickSearch":1,"filterable":1},
-{"key":"zp011","name":"🔞78乐播","type":0,"api":"https://lbapi9.com/api.php/provide/vod/at/xml/","searchable":1,"quickSearch":1,"filterable":1},
-{"key":"zp059","name":"🔞番号资源[VPN]","type":0,"api":"http://fhapi9.com/api.php/provide/vod/at/xml","searchable":1,"quickSearch":1,"filterable":1},
-{"key":"KpgxdyE","name":"🔞黄AV资源","type":0,"api":"https://www.pgxdy.com/api/xml.php","searchable":1,"quickSearch":1,"filterable":1},
-{"key":"森林","name":"🔞采集.森林资源","type":1,"api":"https://beiyong.slapibf.com/api.php/provide/vod/?ac=list","searchable":1},
-{"key":"9号资源","name":"🔞9号资源[VPN]","type":0,"api":"http://fhapi9.com/api.php/provide/vod/at/xml/","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"91md","name":"🏆91md[VPN]","type":1,"api":"https://91md.me/api.php/provide/vod/from/mdm3u8/","searchable":1,"quickSearch":1,"filterable":1},
-{"key":"*AIvin","name":"*🔞AIvin[VPN]","type":0,"api":"http://lbapiby.com/api.php/provide/vod/at/xml"},
-{"key":"大地资源","name":"大地资源[VPN]","jiexiUrl":"https://lziplayer.com/?url=","api":"https://dadiapi.com/api.php","searchable":1,"quickSearch":1,"filterable":1}
+{"key":"*AIvin","name":"*🔞AIvin[VPN]","type":0,"api":"http://lbapiby.com/api.php/provide/vod/at/xml"}
+*/
 ],
 
 "parses":[{"name":"解析1","type":0,"url":"https://bd.jx.cn/?url="},
