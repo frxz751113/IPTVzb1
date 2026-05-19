@@ -9,6 +9,11 @@
 {"key":"dr_瓜子影视","name":"瓜子影视[DR旧]","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/瓜子影视.js"},
 {"key":"dr_农民影视[优]","name":"农民影视[DR旧]","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/农民影视[优].js"},
 {"key":"py_热播影视大全","name":"🍑热播[影][PY]","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/RJAPP.py","ext":"http://v.rbotv.cn"},
+{"key":"py_西饭短剧[短]","name":"🥝西饭短剧[短][PY]","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/西饭短剧.py","searchable":1,"quickSearch":1,"filterable":1},
+{"key":"py_看客联盟","name":"🍑看客联盟[影][PY]","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/skapp.py","ext":{"host":"https://kankelm.cn:2024/appdomain.txt","key":"ygcnbcvybqqckwqy","iv":"1583560747143708"}},
+{"key":"py_央视片库","name":"🍑央视片库[影][PY]","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/央视片库.py"},
+{"key":"py_独播库","name":"🍑独播库[影][PY]","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/独播库.py"},
+{"key":"华数","name":"🌴华数影视","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/%E5%8D%8E%E6%95%B0.py","changeable":1},
 
   
 //{"name":"短剧推荐","key":"DjHggg","type":3,"api":"csp_HgggAmns","indexs":1,"searchable":0,"filterable":0,"quickSearch":0,"changeable":0,"ext":"short_play"},
@@ -31,11 +36,6 @@
 {"key":"dr_小酷短剧[短]","name":"小酷短剧","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/小酷短剧[短].js"},
 {"key":"py_河马短剧[短]","name":"🥝河马短剧[短][PY]","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/河马短剧.py","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"py_星星短剧[短]","name":"🥝星星短剧[短][PY]","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/星星短剧.py","searchable":1,"quickSearch":1,"filterable":1},
-{"key":"py_西饭短剧[短]","name":"🥝西饭短剧[短][PY]","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/西饭短剧.py","searchable":1,"quickSearch":1,"filterable":1},
-{"key":"py_看客联盟","name":"🍑看客联盟[影][PY]","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/skapp.py","ext":{"host":"https://kankelm.cn:2024/appdomain.txt","key":"ygcnbcvybqqckwqy","iv":"1583560747143708"}},
-{"key":"py_央视片库","name":"🍑央视片库[影][PY]","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/央视片库.py"},
-{"key":"py_独播库","name":"🍑独播库[影][PY]","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/独播库.py"},
-{"key":"华数","name":"🌴华数影视","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/%E5%8D%8E%E6%95%B0.py","changeable":1},
 {"key":"py_嘶哩嘶哩","name":"🍇嘶哩嘶哩[漫][PY]","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/skapp.py","ext":{"host":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/api.txt","key":"ygcnbcznazmyrbdn","iv":"6571230062143708"}},
 {"key":"py_番薯动漫","name":"🍇番薯动漫[漫][PY]","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/AppGet.py","searchable":1,"quickSearch":1,"filterable":1,"ext":{"host":"https://new.app.bytegooty.com","api":"/api.php/getappapi","datakey":"N4yj7l7xKxHF4*gz","dataiv":"N4yj7l7xKxHF4*gz"}},
 {"key":"py_方舟动漫","name":"🍇方舟动漫[漫][PY]","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/AppGet.py","searchable":1,"quickSearch":1,"filterable":1,"ext":{"host":"https://www.cyfz.vip","api":"/api.php/getappapi","datakey":"e72cdfd629e8895d","dataiv":"e72cdfd629e8895d"}},
