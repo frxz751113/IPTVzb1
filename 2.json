@@ -11,8 +11,8 @@
 
   
 {"name":"豆瓣推荐","key":"GoConfig","type":3,"api":"csp_GoConfigAmns","indexs":1,"searchable":0,"filterable":0,"quickSearch":0,"changeable":0},
-{"name":"短剧推荐","key":"DjHggg","type":3,"api":"csp_HgggAmns","indexs":1,"searchable":0,"filterable":0,"quickSearch":0,"changeable":0,"ext":"short_play"},
-{"name":"漫剧推荐","key":"MjHggg","type":3,"api":"csp_HgggAmns","indexs":1,"searchable":0,"filterable":0,"quickSearch":0,"changeable":0,"ext":"comic_series"},
+//{"name":"短剧推荐","key":"DjHggg","type":3,"api":"csp_HgggAmns","indexs":1,"searchable":0,"filterable":0,"quickSearch":0,"changeable":0,"ext":"short_play"},
+//{"name":"漫剧推荐","key":"MjHggg","type":3,"api":"csp_HgggAmns","indexs":1,"searchable":0,"filterable":0,"quickSearch":0,"changeable":0,"ext":"comic_series"},
 {"name":"好看短剧[短][SP]","key":"HHkk","type":3,"api":"csp_HHkkAmns","searchable":1,"filterable":1,"quickSearch":1,"changeable":1},
 {"name":"盒马短剧[短][SP]","key":"Hema","type":3,"api":"csp_HemaAmns","searchable":1,"filterable":1,"quickSearch":1,"changeable":1},
 {"name":"拜拜短剧[短][SP]","key":"Bddj","type":3,"api":"csp_BddjAmns","searchable":1,"filterable":1,"quickSearch":1,"changeable":1},
