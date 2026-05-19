@@ -8,10 +8,7 @@
 {"name":"💬嗷嗚|彈幕|豆瓣","key":"GoConfig","type":3,"api":"csp_GoConfigAmns","indexs":1,"searchable":0,"filterable":0,"quickSearch":0,"changeable":0},
 {"name":"😈嗷嗚|短剧|导航","key":"DjHggg","type":3,"api":"csp_HgggAmns","indexs":1,"searchable":0,"filterable":0,"quickSearch":0,"changeable":0,"ext":"short_play"},
 {"name":"🐲嗷嗚|漫剧|导航","key":"MjHggg","type":3,"api":"csp_HgggAmns","indexs":1,"searchable":0,"filterable":0,"quickSearch":0,"changeable":0,"ext":"comic_series"},
- /*
-{"name":"豆瓣推荐","key":"GoConfig","type":3,"api":"csp_GoConfigAmns","indexs":1,"searchable":0,"filterable":0,"quickSearch":0,"changeable":0},
-{"name":"😈嗷嗚|短剧|导航","key":"DjHggg","type":3,"api":"csp_HgggAmns","indexs":1,"searchable":0,"filterable":0,"quickSearch":0,"changeable":0,"ext":"short_play"},
-{"name":"🐲嗷嗚|漫剧|导航","key":"MjHggg","type":3,"api":"csp_HgggAmns","indexs":1,"searchable":0,"filterable":0,"quickSearch":0,"changeable":0,"ext":"comic_series"},
+
 {"name":"好看短剧[短][SP]","key":"HHkk","type":3,"api":"csp_HHkkAmns","searchable":1,"filterable":1,"quickSearch":1,"changeable":1},
 {"name":"盒马短剧[短][SP]","key":"Hema","type":3,"api":"csp_HemaAmns","searchable":1,"filterable":1,"quickSearch":1,"changeable":1},
 {"name":"拜拜短剧[短][SP]","key":"Bddj","type":3,"api":"csp_BddjAmns","searchable":1,"filterable":1,"quickSearch":1,"changeable":1},
@@ -19,7 +16,7 @@
 {"name":"喵喵短剧[短][SP]","key":"Qmdj","type":3,"api":"csp_QmdjAmns","searchable":1,"filterable":1,"quickSearch":1,"changeable":1},
 {"name":"星星短剧[短][SP]","key":"Xydj","type":3,"api":"csp_XydjAmns","searchable":1,"filterable":1,"quickSearch":1,"changeable":1},
 {"key":"1905","name":"1905影视","type":3,"api":"csp_Web1905","searchable":1,"quickSearch":0,"filterable":0,"jar":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/11.jar"},
-*/
+
 
 
  
