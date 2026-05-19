@@ -6,6 +6,12 @@ CHC影迷电影,http://111.48.246.74/000000001000PLTV/88888888/224/3221230483/1.
 第一剧场,http://111.48.246.74/000000001000PLTV/88888888/224/3221230488/1.m3u8
 都市剧场,http://111.48.246.74/000000001000PLTV/88888888/224/3221230607/1.m3u8
 怀旧剧场,http://111.48.246.74/000000001000PLTV/88888888/224/3221230091/1.m3u8
+爱情喜剧,http://gslbserv.itv.cmvideo.cn:80/000000001000/8393829412396288037/1.m3u8?channel-id=ystenlive&Contentid=8393829412396288037&livemode=1&stbId=003901FF0001181003FC08A5C8C6C037&userToken=85a5a98cdcab4d800a8ec29a9d917e8d10vv&usergroup=g10045200000&version=1.0&owaccmark=8393829412396288037&owchid=ystenlive&owsid=7951969344461671826
+超级电视剧,http://gslbserv.itv.cmvideo.cn:80/1.m3u8?channel-id=ystenlive&Contentid=1000000004000024993&livemode=1&stbId=yu&mode=1
+超级电影,http://gslbserv.itv.cmvideo.cn:80/1.m3u8?channel-id=FifastbLive&Contentid=1000000004000002120&livemode=1&stbId=yu&mode=1
+古装剧场,http://gslbserv.itv.cmvideo.cn:80/1.m3u8?channel-id=FifastbLive&Contentid=6859053933687922163&livemode=1&stbId=yu&mode=1
+中国功夫,http://gslbserv.itv.cmvideo.cn:80/000000001000/5897056882324761054/1.m3u8?channel-id=ystenlive&Contentid=5897056882324761054&livemode=1&stbId=003901FF0001181003FC08A5C8C6C037&userToken=85a5a98cdcab4d800a8ec29a9d917e8d10vv&usergroup=g10045200000&version=1.0&owaccmark=5897056882324761054&owchid=ystenlive&owsid=7951969344461800735
+凤凰中文,http://111.48.34.138/000000001000PLTV/88888888/224/3221230647/1.m3u8
 百视通电影1,http://111.48.246.74/000000001000PLTV/88888888/224/3221230638/1.m3u8
 百视通电影2,http://111.48.246.74/000000001000PLTV/88888888/224/3221230640/1.m3u8
 百视通电影3,http://111.48.246.74/000000001000PLTV/88888888/224/3221230642/1.m3u8
@@ -117,13 +123,9 @@ CCTV风云足球,http://111.48.246.74/000000001000PLTV/88888888/224/3221230482/1
 宜昌旅游生活,http://liveplay.ycrmt.cn/sxgd/lysh.m3u8
 宜昌综合,http://111.48.246.74/000000001000PLTV/88888888/224/3221230587/1.m3u8
 数字影视,#genre#
-爱情喜剧,http://gslbserv.itv.cmvideo.cn:80/000000001000/8393829412396288037/1.m3u8?channel-id=ystenlive&Contentid=8393829412396288037&livemode=1&stbId=003901FF0001181003FC08A5C8C6C037&userToken=85a5a98cdcab4d800a8ec29a9d917e8d10vv&usergroup=g10045200000&version=1.0&owaccmark=8393829412396288037&owchid=ystenlive&owsid=7951969344461671826
-超级电视剧,http://gslbserv.itv.cmvideo.cn:80/1.m3u8?channel-id=ystenlive&Contentid=1000000004000024993&livemode=1&stbId=yu&mode=1
-超级电影,http://gslbserv.itv.cmvideo.cn:80/1.m3u8?channel-id=FifastbLive&Contentid=1000000004000002120&livemode=1&stbId=yu&mode=1
 超级体育,http://gslbserv.itv.cmvideo.cn:80/1.m3u8?channel-id=ystenlive&Contentid=1000000004000007755&livemode=1&stbId=yu&mode=1
 超级综艺,http://gslbserv.itv.cmvideo.cn:80/1.m3u8?channel-id=FifastbLive&Contentid=1000000004000023658&livemode=1&stbId=yu&mode=1
 潮妈辣婆,http://gslbserv.itv.cmvideo.cn:80/000000001000/6516734029835465177/1.m3u8?channel-id=ystenlive&Contentid=6516734029835465177&livemode=1&stbId=003901FF0001181003FC08A5C8C6C037&userToken=85a5a98cdcab4d800a8ec29a9d917e8d10vv&usergroup=g10045200000&version=1.0&owaccmark=6516734029835465177&owchid=ystenlive&owsid=7951969344462324357
-古装剧场,http://gslbserv.itv.cmvideo.cn:80/1.m3u8?channel-id=FifastbLive&Contentid=6859053933687922163&livemode=1&stbId=yu&mode=1
 海外剧场,http://gslbserv.itv.cmvideo.cn:80/000000001000/7681593242002292003/1.m3u8?channel-id=ystenlive&Contentid=7681593242002292003&livemode=1&stbId=003901FF0001181003FC08A5C8C6C037&userToken=85a5a98cdcab4d800a8ec29a9d917e8d10vv&usergroup=g10045200000&version=1.0&owaccmark=7681593242002292003&owchid=ystenlive&owsid=7951969344461325347
 黑莓电影,http://gslbserv.itv.cmvideo.cn:80/000000001000/8785669936177902664/1.m3u8?channel-id=ystenlive&Contentid=8785669936177902664&livemode=1&stbId=003901FF0001181003FC08A5C8C6C037&userToken=85a5a98cdcab4d800a8ec29a9d917e8d10vv&usergroup=g10045200000&version=1.0&owaccmark=8785669936177902664&owchid=ystenlive&owsid=7951969344461621383
 黑莓动画,http://gslbserv.itv.cmvideo.cn:80/000000001000/6497762188035533951/1.m3u8?channel-id=ystenlive&Contentid=6497762188035533951&livemode=1&stbId=003901FF0001181003FC08A5C8C6C037&userToken=85a5a98cdcab4d800a8ec29a9d917e8d10vv&usergroup=g10045200000&version=1.0&owaccmark=6497762188035533951&owchid=ystenlive&owsid=7951969344461242832
@@ -139,4 +141,3 @@ CCTV风云足球,http://111.48.246.74/000000001000PLTV/88888888/224/3221230482/1
 武搏世界,http://gslbserv.itv.cmvideo.cn:80/1.m3u8?channel-id=ystenlive&Contentid=bokesen&livemode=1&stbId=yu&mode=1
 炫舞未来,http://gslbserv.itv.cmvideo.cn:80/1.m3u8?channel-id=ystenlive&Contentid=1000000001000000515&livemode=1&stbId=yu&mode=1
 怡伴健康,http://gslbserv.itv.cmvideo.cn:80/5000000011000265001/1.m3u8?channel-id=ystenlive&Contentid=7820874641606664941&livemode=1&stbId=toShengfen&mode=1&
-中国功夫,http://gslbserv.itv.cmvideo.cn:80/000000001000/5897056882324761054/1.m3u8?channel-id=ystenlive&Contentid=5897056882324761054&livemode=1&stbId=003901FF0001181003FC08A5C8C6C037&userToken=85a5a98cdcab4d800a8ec29a9d917e8d10vv&usergroup=g10045200000&version=1.0&owaccmark=5897056882324761054&owchid=ystenlive&owsid=7951969344461800735
