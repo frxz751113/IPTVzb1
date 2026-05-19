@@ -11,11 +11,11 @@
 {"name":"围观短剧[短][SP]","key":"Wgdj","type":3,"api":"csp_WgdjAmns","searchable":1,"filterable":1,"quickSearch":1,"changeable":1},
 {"name":"喵喵短剧[短][SP]","key":"Qmdj","type":3,"api":"csp_QmdjAmns","searchable":1,"filterable":1,"quickSearch":1,"changeable":1},
 {"name":"星星短剧[短][SP]","key":"Xydj","type":3,"api":"csp_XydjAmns","searchable":1,"filterable":1,"quickSearch":1,"changeable":1},
+{"key":"1905","name":"1905影视","type":3,"api":"csp_Web1905","searchable":1,"quickSearch":0,"filterable":0,"jar":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/11.jar"},
 */
 
 
  
-{"key":"1905","name":"1905影视","type":3,"api":"csp_Web1905","searchable":1,"quickSearch":0,"filterable":0,"jar":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/11.jar"},
 {"key":"py_1905","name":"🍑1905[PY]","type":3,"api":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/1905.py","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"T1_旺旺短剧","name":"🥝旺旺短剧[短][T1]","type":1,"api":"https://api.wwzy.tv/api.php/provide/vod/","searchable":1,"quickSearch":1,"filterable":1,"categories":["短剧"]},
 {"key":"dr_瓜子影视","name":"瓜子影视","type":3,"api":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/瓜子影视.js"},
