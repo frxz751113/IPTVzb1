@@ -32,13 +32,13 @@ class Spider(Spider):
     def homeContent(self, filter):
         return {
             "class": [
-                {"type_id": "%E9%83%BD%E5%B8%82", "type_name": "都市"},
-                {"type_id": "%E9%9D%92%E6%98%A5", "type_name": "青春"},
-                {"type_id": "%E7%8E%B0%E4%BB%A3", "type_name": "现代"},
-                {"type_id": "%E8%B1%AA%E9%97%A8", "type_name": "豪门"},
-                {"type_id": "%E9%80%86%E8%A2%AD", "type_name": "逆袭"},
-                {"type_id": "%E7%A9%BF%E8%B6%8A", "type_name": "穿越"},
-                {"type_id": "%E6%89%93%E8%84%B8%E8%99%90%E6%B8%A3", "type_name": "打脸"}
+                {"type_id": "都市", "type_name": "都市"},
+                {"type_id": "青春", "type_name": "青春"},
+                {"type_id": "现代", "type_name": "现代"},
+                {"type_id": "豪门", "type_name": "豪门"},
+                {"type_id": "逆袭", "type_name": "逆袭"},
+                {"type_id": "穿越", "type_name": "穿越"},
+                {"type_id": "打脸", "type_name": "打脸"}
             ]
         }
 
@@ -86,12 +86,14 @@ class Spider(Spider):
         page = (int(pg) - 1) * 30
         current_timestamp = int(time.time())
         
-        if cid and ('%E9%83%BD%E5%B8%82' in cid or '%E9%9D%92%E6%98%A5' in cid or '%E7%8E%B0%E4%BB%A3' in cid):
+        encoded_cid = quote(cid)
+       
+        if cid in ['都市', '青春', '现代']:
             category_id = "68"
         else:
             category_id = "67"
             
-        url = f"{self.host}/xifan/drama/portalPage?reqType=aggregationPage&offset={page}&categoryId={category_id}&quickEngineVersion=-1&scene=&categoryNames={cid}&categoryVersion=1&density=1.5&pageID=page_theater&version=2001001&androidVersionCode=28&requestId={current_timestamp}aa498144140ef297&appId=drama&teenMode=false&userBaseMode=false{self.session_params}"
+        url = f"{self.host}/xifan/drama/portalPage?reqType=aggregationPage&offset={page}&categoryId={category_id}&quickEngineVersion=-1&scene=&categoryNames={encoded_cid}&categoryVersion=1&density=1.5&pageID=page_theater&version=2001001&androidVersionCode=28&requestId={current_timestamp}aa498144140ef297&appId=drama&teenMode=false&userBaseMode=false{self.session_params}"
         
         try:
             response = requests.get(url=url, headers=self.headers, timeout=10)
@@ -261,7 +263,8 @@ class Spider(Spider):
         videos = []
         
         current_timestamp = int(time.time())
-        url = f"{self.host}/xifan/search/getSearchList?keyword={key}84&pageIndex={page}&version=2001001&androidVersionCode=28&requestId={current_timestamp}ea3a14bc0317d76f&appId=drama&teenMode=false&userBaseMode=false{self.session_params}"
+        encoded_key = quote(key)
+        url = f"{self.host}/xifan/search/getSearchList?keyword={encoded_key}&pageIndex={page}&version=2001001&androidVersionCode=28&requestId={current_timestamp}ea3a14bc0317d76f&appId=drama&teenMode=false&userBaseMode=false{self.session_params}"
         
         try:
             response = requests.get(url=url, headers=self.headers, timeout=10)
@@ -273,10 +276,14 @@ class Spider(Spider):
                     contents = element.get('contents', [])
                     for vod in contents:
                         duanjuVo = vod.get('duanjuVo', {})
-                        if duanjuVo:
+                        if duanjuVo:                            
+                            title = duanjuVo.get('title', '')
+                            if title and ('<' in title or '>' in title):
+                                title = re.sub(r'<[^>]+>', '', title)
+                            
                             video = {
                                 "vod_id": f"{duanjuVo.get('duanjuId', '')}#{duanjuVo.get('source', '')}",
-                                "vod_name": duanjuVo.get('title', ''),
+                                "vod_name": title,
                                 "vod_remarks": f"{duanjuVo.get('total', '')}集",
                                 "vod_pic": duanjuVo.get('coverImageUrl', '')
                             }
