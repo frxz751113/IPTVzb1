@@ -1,49 +1,21 @@
 {
 
-"spider":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/mainb/lib/aw.png",
+//"spider":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/mainb/lib/aw.png",
 
 "lives":[{"name":"综合源","type":0,"pass":true,"url":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/js.txt","epg":"http://124.222.214.218:35678/?ch={name}&date={date}","logo":"https://epg.112114.xyz/logo/{name}.png"}],
 
-"sites":[
-{"name":"💬嗷嗚|彈幕|豆瓣","key":"GoConfig","type":3,"api":"csp_GoConfigAmns","indexs":1,"searchable":0,"filterable":0,"quickSearch":0,"changeable":0},
-{"name":"😈嗷嗚|短剧|导航","key":"DjHggg","type":3,"api":"csp_HgggAmns","indexs":1,"searchable":0,"filterable":0,"quickSearch":0,"changeable":0,"ext":"short_play"},
-{"name":"🐲嗷嗚|漫剧|导航","key":"MjHggg","type":3,"api":"csp_HgggAmns","indexs":1,"searchable":0,"filterable":0,"quickSearch":0,"changeable":0,"ext":"comic_series"},
-{"key":"cat_测试","name":"🌐cat_测试[CAT]","type":3,"api":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/CAT测试.js"},
-{"key":"cat_海龟[影]","name":"🍒海龟[影][CAT]","type":3,"api":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/cat_海龟.js"},
-{"name":"🥝好看短剧[短][SP]","key":"HHkk","type":3,"api":"csp_HHkkAmns","searchable":1,"filterable":1,"quickSearch":1,"changeable":1},
-{"name":"🥝盒马短剧[短][SP]","key":"Hema","type":3,"api":"csp_HemaAmns","searchable":1,"filterable":1,"quickSearch":1,"changeable":1},
-{"name":"🥝拜拜短剧[短][SP]","key":"Bddj","type":3,"api":"csp_BddjAmns","searchable":1,"filterable":1,"quickSearch":1,"changeable":1},
-{"name":"🥝围观短剧[短][SP]","key":"Wgdj","type":3,"api":"csp_WgdjAmns","searchable":1,"filterable":1,"quickSearch":1,"changeable":1},
-{"name":"🥝锦鲤短剧[短][SP]","key":"JLdj","type":3,"api":"csp_JLdjAmns","searchable":1,"filterable":1,"quickSearch":1,"changeable":1},
-{"name":"🥝喵喵短剧[短][SP]","key":"Qmdj","type":3,"api":"csp_QmdjAmns","searchable":1,"filterable":1,"quickSearch":1,"changeable":1},
-{"name":"🥝星星短剧[短][SP]","key":"Xydj","type":3,"api":"csp_XydjAmns","searchable":1,"filterable":1,"quickSearch":1,"changeable":1},
-{"key":"py_西饭短剧[短]","name":"🥝西饭短剧[短][PY]","type":3,"api":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/西饭短剧.py","searchable":1,"quickSearch":1,"filterable":1},
-{"key":"cat_聚合短剧[短]","name":"🥝聚合短剧[短][CAT]","type":3,"api":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/cat_聚合短剧[短].js"},
-{"key":"T1_旺旺短剧","name":"🥝旺旺短剧[短][T1]","type":1,"api":"https://api.wwzy.tv/api.php/provide/vod/","searchable":1,"quickSearch":1,"filterable":1,"categories":["短剧"]},
-{"key":"py_看客联盟","name":"🍑看客联盟[影][PY]","type":3,"api":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/skapp.py","ext":{"host":"https://kankelm.cn:2024/appdomain.txt","key":"ygcnbcvybqqckwqy","iv":"1583560747143708"}},
-{"key":"py_热播影视大全","name":"🍑热播[影][PY]","type":3,"api":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/RJAPP.py","ext":" http://v.rbotv.cn "},
-{"key":"py_央视片库","name":"🍑央视片库[影][PY]","type":3,"api":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/央视片库.py"},
-{"key":"py_端木APP","name":"🍑端木[影][PY]","type":3,"api":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/新端木视频3.4单线.py"},
-{"key":"py_爱瓜TVAPP","name":"🍑爱瓜[影][PY]","type":3,"api":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/爱瓜TVAPP.py","searchable":1,"quickSearch":1,"filterable":1},
-{"key":"py_1905","name":"🍑1905[影][PY]","type":3,"api":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/1905.py","searchable":1,"quickSearch":1,"filterable":1},
-{"key":"py_哔哩视频","name":"🍑哔哩[影][PY]","type":3,"api":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/哔哩视频.py","searchable":1,"quickSearch":1,"filterable":1},
-{"key":"py_番薯动漫","name":"🍇番薯动漫[漫][PY]","type":3,"api":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/AppGet.py","searchable":1,"quickSearch":1,"filterable":1,"ext":{"host":"https://new.app.bytegooty.com","api":"/api.php/getappapi","datakey":"N4yj7l7xKxHF4*gz","dataiv":"N4yj7l7xKxHF4*gz"}},
-{"key":"py_方舟动漫","name":"🍇方舟动漫[漫][PY]","type":3,"api":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/AppGet.py","searchable":1,"quickSearch":1,"filterable":1,"ext":{"host":"https://www.cyfz.vip","api":"/api.php/getappapi","datakey":"e72cdfd629e8895d","dataiv":"e72cdfd629e8895d"}},
-
-{"name":"豆瓣精选","key":"GoConfig","type":3,"jar":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/mainb/lib/aw.png","api":"csp_GoConfigAmns","indexs":1,"searchable":0,"filterable":0,"quickSearch":0,"changeable":0},
-{"name":"短剧导航","key":"DjHggg","type":3,"jar":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/mainb/lib/aw.png","api":"csp_HgggAmns","indexs":1,"searchable":0,"filterable":0,"quickSearch":0,"changeable":0,"ext":"short_play"},
-{"name":"漫剧导航","key":"MjHggg","type":3,"jar":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/mainb/lib/aw.png","api":"csp_HgggAmns","indexs":1,"searchable":0,"filterable":0,"quickSearch":0,"changeable":0,"ext":"comic_series"},
+"sites":[/*
 {"name":"好看短剧[短][SP]","key":"HHkk","type":3,"api":"csp_HHkkAmns","searchable":1,"filterable":1,"quickSearch":1,"changeable":1},
 {"name":"盒马短剧[短][SP]","key":"Hema","type":3,"api":"csp_HemaAmns","searchable":1,"filterable":1,"quickSearch":1,"changeable":1},
 {"name":"拜拜短剧[短][SP]","key":"Bddj","type":3,"api":"csp_BddjAmns","searchable":1,"filterable":1,"quickSearch":1,"changeable":1},
 {"name":"围观短剧[短][SP]","key":"Wgdj","type":3,"api":"csp_WgdjAmns","searchable":1,"filterable":1,"quickSearch":1,"changeable":1},
 {"name":"喵喵短剧[短][SP]","key":"Qmdj","type":3,"api":"csp_QmdjAmns","searchable":1,"filterable":1,"quickSearch":1,"changeable":1},
 {"name":"星星短剧[短][SP]","key":"Xydj","type":3,"api":"csp_XydjAmns","searchable":1,"filterable":1,"quickSearch":1,"changeable":1},
-
+*/
 
 
  
- {"key":"1905","name":"1905影视","type":3,"api":"csp_Web1905","searchable":1,"quickSearch":0,"filterable":0,"jar":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/11.jar"},
+{"key":"1905","name":"1905影视","type":3,"api":"csp_Web1905","searchable":1,"quickSearch":0,"filterable":0,"jar":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/11.jar"},
 {"key":"py_1905","name":"🍑1905[PY]","type":3,"api":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/1905.py","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"T1_旺旺短剧","name":"🥝旺旺短剧[短][T1]","type":1,"api":"https://api.wwzy.tv/api.php/provide/vod/","searchable":1,"quickSearch":1,"filterable":1,"categories":["短剧"]},
 {"key":"dr_瓜子影视","name":"瓜子影视","type":3,"api":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext":"https://ghfast.top/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/瓜子影视.js"},
