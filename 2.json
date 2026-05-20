@@ -75,10 +75,10 @@
 {"name":"lemiao","type":0,"url":"http://jx.hao-zsj.cn/vip/?url="}],
 
 
-"rules":[{"name":"通用去广告(时长)","hosts":["*"],"regex":["#EXT-X-DISCONTINUITY\\s*#EXTINF:([3-9]\\.\\d+|1[0-9])","#EXTINF:[3-9]\\.\\d+,\\s*.*?\\.ts","#EXT-X-DISCONTINUITY\\s*#EXT-X-KEY:METHOD=NONE"]},
-{"name":"硬核广告过滤","hosts":["ryplay","svip.ryplay","cdn.ryplay"],"regex":["#EXT-X-DISCONTINUITY\\s*#EXTINF:6\\.633333","#EXT-X-DISCONTINUITY\\s*#EXTINF:8\\.333333"]},
-{"name":"棋牌类广告","hosts":["qihubf","askzycdn","jkunbf","bfikuncdn"],"regex":["XR8pDxQk","p5XQill8","#EXT-X-KEY:METHOD=NONE\\s*#EXTINF:2,"]},
-{"name":"短剧/直播流清洗","hosts":["magnet","short","live"],"regex":["请访问","社区","直播","更新","英皇体育","澳门"]},
+"rules":[//{"name":"通用去广告(时长)","hosts":["*"],"regex":["#EXT-X-DISCONTINUITY\\s*#EXTINF:([3-9]\\.\\d+|1[0-9])","#EXTINF:[3-9]\\.\\d+,\\s*.*?\\.ts","#EXT-X-DISCONTINUITY\\s*#EXT-X-KEY:METHOD=NONE"]},
+//{"name":"硬核广告过滤","hosts":["ryplay","svip.ryplay","cdn.ryplay"],"regex":["#EXT-X-DISCONTINUITY\\s*#EXTINF:6\\.633333","#EXT-X-DISCONTINUITY\\s*#EXTINF:8\\.333333"]},
+//{"name":"棋牌类广告","hosts":["qihubf","askzycdn","jkunbf","bfikuncdn"],"regex":["XR8pDxQk","p5XQill8","#EXT-X-KEY:METHOD=NONE\\s*#EXTINF:2,"]},
+//{"name":"短剧/直播流清洗","hosts":["magnet","short","live"],"regex":["请访问","社区","直播","更新","英皇体育","澳门"]},
 {"name":"硬核[正则❅时长]","hosts":["ryplay","svip.ryplay","cdn.ryplay"],"regex":["#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:(?:6\\.633333),[\\s\\S]*?#EXT-X-DISCONTINUITY","#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:8\\.333333,[\\s\\S].*?\\.ts","#EXTINF:2\\.933333,[\\s\\S].*?\\.ts","10.6","11.68","9.36","8.68","18.12","11.266667","8.24","20"]},
 {"name":"鸭鸭[正则❅时长]","hosts":["v2.qdhdcate","qdhdcate","v2.ffhij","ffhij"],"regex":["#EXTINF:3\\.080000,[\\s\\S]*?(#EXTINF:\\d+\\.\\d+,[\\s\\S]*?){14}"]},
 {"name":"360[正则❅时长]","hosts":["lyhuicheng"],"regex":["#EXTINF.*?\\s+.*?hrz8QcR9.*?\\.ts\\s+","#EXT-X-KEY:METHOD=NONE[\\s\\S]*?#EXT-X-DISCONTINUITY"]},
