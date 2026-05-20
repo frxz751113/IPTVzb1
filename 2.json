@@ -44,7 +44,7 @@
 
   
   
-{"key":"乐播资源1","name":"乐乐资源1","type":0,"api":"https://suoniapi.com/api.php/provide/vod/at/xml","searchable":1,"quickSearch":1,"filterable":1},
+{"key":"suoni_custom","name":"索尼资源","ext": "{url:'https://suoniapi.com/api.php/provide/vod/at/xml', classes:'1#2#3#4#5#'}","type":3,"api":"csp_Xml","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"乐播资源2","name":"乐乐资源2","type":0,"api":"https://sdzyapi.com/api.php/provide/vod/at/xml","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"乐播资源3","name":"乐乐资源3","type":0,"api":"https://91md.me/api.php/provide/vod/at/xml","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"乐播资源","name":"乐播资源","type":0,"api":"https://lbapi9.com/api.php/provide/vod/at/xml","searchable":1,"quickSearch":1,"filterable":1},
