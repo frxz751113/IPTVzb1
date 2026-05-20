@@ -45,7 +45,7 @@
   
   
 {"key":"乐播资源1","name":"乐乐资源[VPN]","type":0,"api":"https://apidanaizi.com/api.php/provide/vod/at/xml","searchable":1,"quickSearch":1,"filterable":1},
-{"key":"乐播资源1","name":"乐乐资源1[VPN]","type":0,"api":"https://apilj.com/api.php/provide/vod/at/xml","searchable":1,"quickSearch":1,"filterable":1},
+{"key":"乐播资源2","name":"乐乐资源1[VPN]","type":0,"api":"https://apilj.com/api.php/provide/vod/at/xml","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"乐播资源","name":"乐播资源","type":0,"api":"https://lbapi9.com/api.php/provide/vod/at/xml","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"didizy.com","name":"💕滴滴(直连)","type":1,"api":"https://api.ddapi.cc/api.php/provide/vod/?ac=list","searchable":1,"filterable":1,"jar":"https://8415.kstore.space/Tvbox/jar/papapg.jar"},
 {"key":"KpgxdyE","name":"🔞黄AV资源","type":0,"api":"https://www.pgxdy.com/api/xml.php","searchable":1,"quickSearch":1,"filterable":1},
