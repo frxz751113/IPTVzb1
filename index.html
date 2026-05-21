@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文件列表</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        ul { list-style: none; padding: 0; }
+        li { margin: 8px 0; }
+        a { text-decoration: none; color: #0366d6; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <h2>仓库文件列表</h2>
+    <ul id="fileList">
+        <li>正在加载...</li>
+    </ul>
+
+    <script>
+    // 在这里手动填写你的仓库文件名（包含子目录路径，如 docs/readme.txt）
+    // 因为纯前端 JS 无法自动扫描仓库所有文件，只能靠预先写好的列表
+    const files = [
+        "你的文件1.txt",
+        "你的文件2.json",
+        "子目录/你的文件3.md"
+    ];
+
+    const ul = document.getElementById("fileList");
+    ul.innerHTML = "";
+
+    if (files.length === 0) {
+        ul.innerHTML = "<li>暂无文件</li>";
+    } else {
+        files.forEach(name => {
+            const li = document.createElement("li");
+            const a = document.createElement("a");
+            a.href = name;
+            a.textContent = name;
+            li.appendChild(a);
+            ul.appendChild(li);
+        });
+    }
+    </script>
+</body>
+</html>
