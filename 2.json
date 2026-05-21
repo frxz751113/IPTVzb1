@@ -6,6 +6,7 @@
 "sites":[
 {"key":"py_1905","name":"🍑1905影视[PY]","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/1905.py","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"dr_瓜子影视","name":"瓜子影视[DR旧]","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/瓜子影视.js"},
+{"key":"瓜子.py","name":"瓜子影视","type":3,"api":"https://github.com/franksun1211/TXT/raw/main/TVbox/E8jin/lib/瓜子.py","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"dr_农民影视[优]","name":"农民影视[DR旧]","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/农民影视[优].js"},
 {"key":"py_热播影视大全","name":"🍑热播[影][PY]","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/RJAPP.py","ext":"http://v.rbotv.cn"},
 {"key":"py_西饭短剧[短]","name":"🥝西饭短剧[短][PY]","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/西饭短剧.py","searchable":1,"quickSearch":1,"filterable":1},
