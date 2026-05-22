@@ -6,7 +6,6 @@
 
 "sites":[
 {"key":"Douban","name":"豆瓣｜推荐","type":3,"api":"csp_DoubanFishGuard","indexs":1,"searchable":0,"filterable":1,"ext":"./lib/douban.json"},
-{"key":"YGP","name":"新片｜预告","type":3,"api":"csp_YGPFishGuard","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"wencai","name":"文才｜影视","type":3,"api":"csp_WenCaiFishGuard","searchable":1,"ext":"https://www.tjrongze.com,https://y2s52n7.com,https://m.hkybqufgh.com,https://m.sizhengxt.com,https://m.9zhoukj.com,https://m.jiabaide.cn"},
 {"key":"Guazi","name":"瓜子｜影视","type":3,"api":"csp_GuaziFishGuard","searchable":1},
 {"key":"py_1905","name":"🍑1905影视[PY]","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/1905.py","searchable":1,"quickSearch":1,"filterable":1},
