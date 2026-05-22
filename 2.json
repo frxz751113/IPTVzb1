@@ -51,7 +51,16 @@
 {"key":"py_聚合直播[直]","name":"🥦聚合直播[直][PY]","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/网络直播.py","searchable":1,"quickSearch":1,"filterable":1},
  
   
-{"key":"乐播资源0","name":"采集资源1[VPN]","type":0,"api":"https://api.souavzyw.net/api.php/provide/vod/at/xml","searchable":1,"quickSearch":1,"filterable":1,"categories":["传媒-91传媒","传媒-杏吧传媒",
+
+{"key":"乐乐资源","name":"乐乐资源","type":0,"categories":["精品推荐","国产主播","国产乱伦","自拍偷拍","制服丝袜","网曝事件","传媒探花","清纯学生","A V 解说","淫妻作乐","港台辣妹","足浴撩妹","反差母狗","A I 换脸","V R 视角",
+"重口性癖","制服诱惑","丝袜美腿","中文字幕","无码流出","多人群交","凌辱快感","角色剧情","强奸乱伦","韩国三级","欧美激情","人妻熟女","主奴调教","动漫卡通","变性伪娘","女同性恋","野外露出"],"api":"https://apidanaizi.com/api.php/provide/vod/at/xml","searchable":1,"quickSearch":1,"filterable":1},
+{"key":"乐播资源","name":"乐播资源","type":0,"api":"https://lbapi9.com/api.php/provide/vod/at/xml","searchable":1,"quickSearch":1,"filterable":1},
+{"key":"didizy.com","name":"💕滴滴(直连)","type":1,"api":"https://api.ddapi.cc/api.php/provide/vod/?ac=list","searchable":1,"filterable":1,"jar":"https://8415.kstore.space/Tvbox/jar/papapg.jar"},
+{"key":"KpgxdyE","name":"🔞黄AV资源","type":0,"api":"https://www.pgxdy.com/api/xml.php","searchable":1,"quickSearch":1,"filterable":1},
+{"key":"森林","name":"🔞采集.森林资源","type":1,"api":"https://beiyong.slapibf.com/api.php/provide/vod/?ac=list","searchable":1}
+
+ /*
+{"key":"采集资源1","name":"采集资源1[VPN]","type":0,"api":"https://api.souavzyw.net/api.php/provide/vod/at/xml","searchable":1,"quickSearch":1,"filterable":1,"categories":["传媒-91传媒","传媒-杏吧传媒",
 "传媒-起点传媒","传媒-CCAV成人头条","传媒-渡边传媒","传媒-辣椒原创","传媒-红斯灯影像","传媒-情欲国潮","传媒-糖心传媒","传媒-乐播传媒","传媒-葫芦影业","传媒-其他传媒","传媒-麻豆传媒","传媒-精东影业","传媒-蜜桃传媒","传媒-果冻传媒","传媒-星空无限传媒","传媒-SA国际传媒","传媒-性视界传媒","欧美-高清无码","日本-中文字幕","日本-无码流出","日本-高清有码","皇家华人","欧美-中文字幕","刘玥","玩偶姐姐",
 "台湾粉红兔","扣扣传媒","恐怖色情","迷奸强奸","91传媒","杏吧传媒",
 "渡边传媒","糖心传媒","乐播传媒","葫芦影业","其他传媒",
@@ -61,15 +70,8 @@
 "鸡教练","唐伯虎",
 "地雷系","白菜妹妹","小二先生"]
 	},
-{"key":"乐播资源1","name":"乐乐资源[VPN]","type":0,"api":"https://apidanaizi.com/api.php/provide/vod/at/xml","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"乐播资源2","name":"乐乐资源1[VPN]","type":0,"api":"https://apilj.com/api.php/provide/vod/at/xml","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"乐播资源3","name":"乐乐资源2[VPN]","type":0,"api":"https://api.souavzyw.net/api.php/provide/vod/at/xml","searchable":1,"quickSearch":1,"filterable":1},
-{"key":"乐播资源","name":"乐播资源","type":0,"api":"https://lbapi9.com/api.php/provide/vod/at/xml","searchable":1,"quickSearch":1,"filterable":1},
-{"key":"didizy.com","name":"💕滴滴(直连)","type":1,"api":"https://api.ddapi.cc/api.php/provide/vod/?ac=list","searchable":1,"filterable":1,"jar":"https://8415.kstore.space/Tvbox/jar/papapg.jar"},
-{"key":"KpgxdyE","name":"🔞黄AV资源","type":0,"api":"https://www.pgxdy.com/api/xml.php","searchable":1,"quickSearch":1,"filterable":1},
-{"key":"森林","name":"🔞采集.森林资源","type":1,"api":"https://beiyong.slapibf.com/api.php/provide/vod/?ac=list","searchable":1}
-
- /*
 {"key":"9号资源","name":"🔞9号资源[VPN]","type":0,"api":"http://fhapi9.com/api.php/provide/vod/at/xml/","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"lajiao","name":"辣椒资源需VPN","type":1,"api":"http://api.11bat.com/api.php/provide/vod","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"奥斯卡","name":"🔞采集.奥斯卡[VPN]","type":1,"api":"https://aosikazy.com/api.php/provide/vod/?ac=list","searchable":1},
