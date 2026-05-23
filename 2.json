@@ -18,7 +18,7 @@
 {"key":"aiting","name":"爱听｜音乐","type":3,"api":"csp_AiTingMusicFishGuard","searchable":1,"quickSearch":1,"filterable":0},
 {"key":"py_枫叶音乐","name":"🍈枫叶音乐[音][PY]","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/枫叶音乐.py","searchable":1,"quickSearch":1,"filterable":1},
 {"key": "csp_XYQHiker_戏曲多多","name":"🎻戏曲多多","jar": "https://gh-proxy.com/https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/custom_spider.jar;md5;58a6e013ta3Vy37x395KNcJ1ZwXSSWoAxPBU2Kga","type":3,"api":"csp_XYQHiker","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://gh-proxy.com/https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQHiker/戏曲多多.json"},
-{"key": "csp_XYQHiker_农民影视","name":"🧑🏻农民影视","jar": "https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/XYQspider.jar;md5;58a6e013ta3Vy37x395KNcJ1ZwXSSWoAxPBU2Kga","type":3,"api":"csp_XYQHiker","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/lib/农民影视.json"},
+{"key": "csp_XYQHiker_农民影视","name":"🧑🏻农民影视","jar": "https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/XYQspider.jar","type":3,"api":"csp_XYQHiker","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/农民影视.json"},
                
 /*
 {"name":"豆瓣推荐","key":"GoConfig","type":3,"api":"csp_GoConfigAmns","indexs":1,"searchable":0,"filterable":0,"quickSearch":0,"changeable":0},
