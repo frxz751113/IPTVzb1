@@ -47,6 +47,7 @@
 {"key":"T1_旺旺短剧","name":"🥝旺旺短剧[短][T1]","type":1,"api":"https://api.wwzy.tv/api.php/provide/vod/","searchable":1,"quickSearch":1,"filterable":1,"categories":["短剧"]},
 {"key":"cat_聚合短剧[短]","name":"聚合短剧","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/cat_聚合短剧[短].js"},
 {"key":"dr_星芽短剧[短]","name":"星芽短剧","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/星芽短剧[短].js"},
+{"key":"dr_星芽短剧[短]1","name":"星芽短剧1","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/星芽短剧.js"},
 {"key":"dr_小酷短剧[短]","name":"小酷短剧","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/小酷短剧[短].js"},
 {"key":"py_河马短剧[短]","name":"🥝河马短剧[短][PY]","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/河马短剧.py","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"py_星星短剧[短]","name":"🥝星星短剧[短][PY]","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/星星短剧.py","searchable":1,"quickSearch":1,"filterable":1},
