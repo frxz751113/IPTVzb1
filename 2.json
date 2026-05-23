@@ -1,5 +1,5 @@
 {
-  //"spider": "https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/aw.png",
+  //"jar": "https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/aw.png",
   "spider": "https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/摸鱼儿.jar",
 
 "lives":[{"name":"综合源","type":0,"pass":true,"url":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/js.txt","epg":"http://124.222.214.218:35678/?ch={name}&date={date}","logo":"https://epg.112114.xyz/logo/{name}.png"}],
@@ -17,12 +17,12 @@
 {"key":"ChuXin","name":"初心｜音乐","type":3,"api":"csp_ChuXinFishGuard","searchable":1,"quickSearch":1,"filterable":0},
 {"key":"aiting","name":"爱听｜音乐","type":3,"api":"csp_AiTingMusicFishGuard","searchable":1,"quickSearch":1,"filterable":0},
 {"key":"py_枫叶音乐","name":"🍈枫叶音乐[音][PY]","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/枫叶音乐.py","searchable":1,"quickSearch":1,"filterable":1},
-{"name":"好看短剧[短][SP]","key":"HHkk","type":3,"api":"csp_HHkkAmns","searchable":1,"filterable":1,"quickSearch":1,"changeable":1},
-{"name":"盒马短剧[短][SP]","key":"Hema","type":3,"api":"csp_HemaAmns","searchable":1,"filterable":1,"quickSearch":1,"changeable":1},
-{"name":"拜拜短剧[短][SP]","key":"Bddj","type":3,"api":"csp_BddjAmns","searchable":1,"filterable":1,"quickSearch":1,"changeable":1},
-{"name":"围观短剧[短][SP]","key":"Wgdj","type":3,"api":"csp_WgdjAmns","searchable":1,"filterable":1,"quickSearch":1,"changeable":1},
-{"name":"喵喵短剧[短][SP]","key":"Qmdj","type":3,"api":"csp_QmdjAmns","searchable":1,"filterable":1,"quickSearch":1,"changeable":1},
-{"name":"星星短剧[短][SP]","key":"Xydj","type":3,"api":"csp_XydjAmns","searchable":1,"filterable":1,"quickSearch":1,"changeable":1},
+{"name":"好看短剧[短][SP]","key":"HHkk","type":3,"jar": "https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/aw.png","api":"csp_HHkkAmns","searchable":1,"filterable":1,"quickSearch":1,"changeable":1},
+{"name":"盒马短剧[短][SP]","key":"Hema","type":3,"jar": "https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/aw.png","api":"csp_HemaAmns","searchable":1,"filterable":1,"quickSearch":1,"changeable":1},
+{"name":"拜拜短剧[短][SP]","key":"Bddj","type":3,"jar": "https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/aw.png","api":"csp_BddjAmns","searchable":1,"filterable":1,"quickSearch":1,"changeable":1},
+{"name":"围观短剧[短][SP]","key":"Wgdj","type":3,"jar": "https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/aw.png","api":"csp_WgdjAmns","searchable":1,"filterable":1,"quickSearch":1,"changeable":1},
+{"name":"喵喵短剧[短][SP]","key":"Qmdj","type":3,"jar": "https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/aw.png","api":"csp_QmdjAmns","searchable":1,"filterable":1,"quickSearch":1,"changeable":1},
+{"name":"星星短剧[短][SP]","key":"Xydj","type":3,"jar": "https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/aw.png","api":"csp_XydjAmns","searchable":1,"filterable":1,"quickSearch":1,"changeable":1},
                
 /*
 {"name":"豆瓣推荐","key":"GoConfig","type":3,"api":"csp_GoConfigAmns","indexs":1,"searchable":0,"filterable":0,"quickSearch":0,"changeable":0},
