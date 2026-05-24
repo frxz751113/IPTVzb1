@@ -4,38 +4,38 @@
 "lives":[{"name":"综合源","type":0,"pass":true,"url":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/js.txt","epg":"http://124.222.214.218:35678/?ch={name}&date={date}","logo":"https://epg.112114.xyz/logo/{name}.png"}],
 
 "sites":[
-{"key":"Douban","name":"豆瓣推荐","type":3,"api":"csp_DoubanFishGuard","indexs":1,"searchable":0,"filterable":1,"ext":"./lib/douban.json"},
-{"key":"wencai","name":"文才影视","type":3,"api":"csp_WenCaiFishGuard","categories":["电影","电视剧",""],"searchable":1,"ext":"https://www.tjrongze.com,https://y2s52n7.com,https://m.hkybqufgh.com,https://m.sizhengxt.com,https://m.9zhoukj.com,https://m.jiabaide.cn"},
-{"key":"Guazi","name":"瓜子影视","type":3,"api":"csp_GuaziFishGuard","categories":["电影","国产剧","短剧"],"searchable":1},
-{"key":"Rebo","name":"热播APP","type":3,"api":"csp_AppRJFishGuard","categories":["电影","内地"],"searchable":1,"quickSearch":1,"filterable":0,"ext":{"url":"http://v.rbotv.cn"}},
-{"key":"三秋影视","name":"三秋APP","api":"csp_App3QFishGuard","type":3,"searchable":1,"quickSearch":1,"filterable":0},
-{"key":"ChuXin","name":"初心音乐","type":3,"api":"csp_ChuXinFishGuard","searchable":1,"quickSearch":1,"filterable":0},
-{"key":"aiting","name":"爱听音乐","type":3,"api":"csp_AiTingMusicFishGuard","searchable":1,"quickSearch":1,"filterable":0},
+{"key":"摸鱼儿_Douban","name":"豆瓣推荐","type":3,"api":"csp_DoubanFishGuard","indexs":1,"searchable":0,"filterable":1,"ext":"./lib/douban.json"},
+{"key":"摸鱼儿_wencai","name":"文才影视","type":3,"api":"csp_WenCaiFishGuard","categories":["电影","电视剧",""],"searchable":1,"ext":"https://www.tjrongze.com,https://y2s52n7.com,https://m.hkybqufgh.com,https://m.sizhengxt.com,https://m.9zhoukj.com,https://m.jiabaide.cn"},
+{"key":"摸鱼儿_Guazi","name":"瓜子影视","type":3,"api":"csp_GuaziFishGuard","categories":["电影","国产剧","短剧"],"searchable":1},
+{"key":"摸鱼儿_Rebo","name":"热播APP","type":3,"api":"csp_AppRJFishGuard","categories":["电影","内地"],"searchable":1,"quickSearch":1,"filterable":0,"ext":{"url":"http://v.rbotv.cn"}},
+{"key":"摸鱼儿_三秋影视","name":"三秋APP","api":"csp_App3QFishGuard","type":3,"searchable":1,"quickSearch":1,"filterable":0},
+{"key":"摸鱼儿_ChuXin","name":"初心音乐","type":3,"api":"csp_ChuXinFishGuard","searchable":1,"quickSearch":1,"filterable":0},
+{"key":"摸鱼儿_aiting","name":"爱听音乐","type":3,"api":"csp_AiTingMusicFishGuard","searchable":1,"quickSearch":1,"filterable":0},
  //脚本类              
 {"key":"py_枫叶音乐","name":"枫叶音乐","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/枫叶音乐.py","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"py_1905","name":"1905影视","type":3,"categories":["电影","微电影","独家","系列电影"],"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/1905.py","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"py_西饭短剧","name":"西饭短剧","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/西饭短剧.py","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"py_央视片库","name":"央视片库","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/央视片库.py"},
-{"key":"华数","name":"华数影视","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/%E5%8D%8E%E6%95%B0.py","changeable":1},
+{"key":"py_华数","name":"华数影视","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/%E5%8D%8E%E6%95%B0.py","changeable":1},
 {"key":"py_独播库","name":"独播库","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/独播库.py"},
 {"key":"py_看客联盟","name":"看客联盟","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/skapp.py","ext":{"host":"https://kankelm.cn:2024/appdomain.txt","key":"ygcnbcvybqqckwqy","iv":"1583560747143708"}},
 {"key":"py_嘶哩嘶哩","name":"嘶哩嘶哩","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/skapp.py","ext":{"host":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/api.txt","key":"ygcnbcznazmyrbdn","iv":"6571230062143708"}},
 {"key":"py_番薯动漫","name":"番薯动漫","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/AppGet.py","searchable":1,"quickSearch":1,"filterable":1,"ext":{"host":"https://new.app.bytegooty.com","api":"/api.php/getappapi","datakey":"N4yj7l7xKxHF4*gz","dataiv":"N4yj7l7xKxHF4*gz"}},
 {"key":"py_哔哩视频","name":"哔哩","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/哔哩视频.py","searchable":1,"quickSearch":1,"filterable":1},
-{"key":"cat_聚合短剧","name":"聚合短剧","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/cat_聚合短剧[短].js"},
-{"key":"dr_星芽短剧改","name":"星芽短剧改","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/星芽短剧[元宝版].js"},
+{"key":"js_聚合短剧","name":"聚合短剧","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/cat_聚合短剧[短].js"},
+{"key":"js_星芽短剧改","name":"星芽短剧改","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/星芽短剧[元宝版].js"},
 {"key":"py_河马短剧","name":"河马短剧","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/河马短剧.py","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"py_星星短剧","name":"星星短剧","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/星星短剧.py","searchable":1,"quickSearch":1,"filterable":1},
  
   
 //采集类
-{"key":"T1_旺旺短剧","name":"旺旺短剧","type":1,"api":"https://api.wwzy.tv/api.php/provide/vod/","searchable":1,"quickSearch":1,"filterable":1,"categories":["短剧"]},
-{"key":"乐乐资源","name":"🔞乐乐资源","type":0,"categories":["精品推荐","国产主播","国产乱伦","自拍偷拍","制服丝袜","网曝事件","传媒探花","清纯学生","A V 解说","淫妻作乐","港台辣妹","足浴撩妹","反差母狗","A I 换脸","V R 视角",
+{"key":"采集_旺旺短剧","name":"旺旺短剧","type":1,"api":"https://api.wwzy.tv/api.php/provide/vod/","searchable":1,"quickSearch":1,"filterable":1,"categories":["短剧"]},
+{"key":"采集_乐乐资源","name":"🔞乐乐资源","type":0,"categories":["精品推荐","国产主播","国产乱伦","自拍偷拍","制服丝袜","网曝事件","传媒探花","清纯学生","A V 解说","淫妻作乐","港台辣妹","足浴撩妹","反差母狗","A I 换脸","V R 视角",
 "重口性癖","制服诱惑","丝袜美腿","中文字幕","无码流出","多人群交","凌辱快感","角色剧情","强奸乱伦","韩国三级","欧美激情","人妻熟女","主奴调教","动漫卡通","变性伪娘","女同性恋","野外露出"],"api":"https://apidanaizi.com/api.php/provide/vod/at/xml","searchable":1,"quickSearch":1,"filterable":1},
-{"key":"乐播资源","name":"🔞乐播资源","type":0,"api":"https://lbapi9.com/api.php/provide/vod/at/xml","searchable":1,"quickSearch":1,"filterable":1},
-{"key":"didizy.com","name":"🔞滴滴直连","type":1,"api":"https://api.ddapi.cc/api.php/provide/vod/?ac=list","searchable":1,"filterable":1,"jar":"https://8415.kstore.space/Tvbox/jar/papapg.jar"},
-{"key":"KpgxdyE","name":"🔞黄AV资源","type":0,"api":"https://www.pgxdy.com/api/xml.php","searchable":1,"quickSearch":1,"filterable":1},
-{"key":"森林","name":"🔞采集.森林资源","type":1,"api":"https://beiyong.slapibf.com/api.php/provide/vod/?ac=list","searchable":1}
+{"key":"采集_乐播资源","name":"🔞乐播资源","type":0,"api":"https://lbapi9.com/api.php/provide/vod/at/xml","searchable":1,"quickSearch":1,"filterable":1},
+{"key":"采集_didizy.com","name":"🔞滴滴直连","type":1,"api":"https://api.ddapi.cc/api.php/provide/vod/?ac=list","searchable":1,"filterable":1,"jar":"https://8415.kstore.space/Tvbox/jar/papapg.jar"},
+{"key":"采集_KpgxdyE","name":"🔞黄AV资源","type":0,"api":"https://www.pgxdy.com/api/xml.php","searchable":1,"quickSearch":1,"filterable":1},
+{"key":"采集_森林","name":"🔞采集.森林资源","type":1,"api":"https://beiyong.slapibf.com/api.php/provide/vod/?ac=list","searchable":1}
 
 ],
 
