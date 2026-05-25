@@ -18,8 +18,6 @@ https://down.nigx.cn/raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/
 
 https://ghfast.top/     最快
 
-https://tvv.tw/
-
 https://github.boki.moe/
 
 https://gh-proxy.com/源码
