@@ -1,16 +1,16 @@
 {
-  "spider": "https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/摸鱼儿.jar",
+  //"spider": "https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/摸鱼儿.jar",
 
 "lives":[{"name":"综合源","type":0,"pass":true,"url":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/js.txt","epg":"http://124.222.214.218:35678/?ch={name}&date={date}","logo":"https://epg.112114.xyz/logo/{name}.png"}],
 
-"sites":[
+"sites":[/*
 {"key":"摸鱼儿_Douban","name":"豆瓣推荐","type":3,"api":"csp_DoubanFishGuard","indexs":1,"searchable":0,"filterable":1,"ext":"./lib/douban.json"},
 {"key":"摸鱼儿_wencai","name":"文才影视","type":3,"api":"csp_WenCaiFishGuard","categories":["电影","电视剧",""],"searchable":1,"ext":"https://www.tjrongze.com,https://y2s52n7.com,https://m.hkybqufgh.com,https://m.sizhengxt.com,https://m.9zhoukj.com,https://m.jiabaide.cn"},
 {"key":"摸鱼儿_Guazi","name":"瓜子影视","type":3,"api":"csp_GuaziFishGuard","categories":["电影","国产剧","短剧"],"searchable":1},
 {"key":"摸鱼儿_Rebo","name":"热播APP","type":3,"api":"csp_AppRJFishGuard","categories":["电影","内地"],"searchable":1,"quickSearch":1,"filterable":0,"ext":{"url":"http://v.rbotv.cn"}},
 {"key":"摸鱼儿_三秋影视","name":"三秋APP","api":"csp_App3QFishGuard","type":3,"searchable":1,"quickSearch":1,"filterable":1},
 {"key":"摸鱼儿_ChuXin","name":"初心音乐","type":3,"api":"csp_ChuXinFishGuard","searchable":1,"quickSearch":1,"filterable":1},
-{"key":"摸鱼儿_aiting","name":"爱听音乐","type":3,"api":"csp_AiTingMusicFishGuard","searchable":1,"quickSearch":1,"filterable":1},
+{"key":"摸鱼儿_aiting","name":"爱听音乐","type":3,"api":"csp_AiTingMusicFishGuard","searchable":1,"quickSearch":1,"filterable":1},*/
  //脚本类              
 {"key":"py_枫叶音乐","name":"枫叶音乐","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/枫叶音乐.py","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"py_1905","name":"1905影视","type":3,"categories":["电影","微电影","独家","系列电影"],"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/1905.py","searchable":1,"quickSearch":1,"filterable":1},
@@ -30,7 +30,7 @@
   
 
 ],
-
+/*
 "parses":[{"name":"解析1","type":0,"url":"https://bd.jx.cn/?url="},
 {"name":"免费分享","type":0,"url":"https://jx.xmflv.com/?url=","ext":{"flag":["qq","腾讯","qiyi","爱奇艺","奇艺","youku","优酷","mgtv","芒果","imgo","letv","乐视","pptv","PPTV","sohu","bilibili","哔哩哔哩","哔哩"],"header":{"User-Agent":"okhttp/4.1.0"}}},
 {"name":"云解","type":0,"url":"https://yparse.ik9.cc/index.php?url=","ext":{"header":{"user-agent":"Mozilla/5.0(Linux;Android13;V2049ABuild/TP1A.220624.014;wv)AppleWebKit/537.36(KHTML,likeGecko)Version/4.0Chrome/116.0.0.0MobileSafari/537.36"}}},
@@ -42,7 +42,7 @@
 {"name":"CK解析","type":0,"url":"https://www.ckplayer.vip/jiexi/?url=","ext":{"header":{"User-Agent":"Mozilla/5.0"}}},
 {"name":"冰豆","type":0,"url":"https://bd.jx.cn/?url="},
 {"name":"lemiao","type":0,"url":"http://jx.hao-zsj.cn/vip/?url="}],
-
+*/
 
 "rules":[
 {"name":"硬核[正则❅时长]","hosts":["ryplay","svip.ryplay","cdn.ryplay"],"regex":["#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:(?:6\\.633333),[\\s\\S]*?#EXT-X-DISCONTINUITY","#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:8\\.333333,[\\s\\S].*?\\.ts","#EXTINF:2\\.933333,[\\s\\S].*?\\.ts","10.6","11.68","9.36","8.68","18.12","11.266667","8.24","20"]},
