@@ -1,7 +1,7 @@
 {
   //"spider": "https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/摸鱼儿.jar",
 
-"lives":[{"name":"综合源","type":0,"pass":true,"url":"https://5.net4.de5.net:80/js.txt","epg":"http://124.222.214.218:35678/?ch={name}&date={date}","logo":"https://epg.112114.xyz/logo/{name}.png"}],
+"lives":[{"name":"综合源","type":0,"pass":true,"url":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/js.txt","epg":"http://124.222.214.218:35678/?ch={name}&date={date}","logo":"https://epg.112114.xyz/logo/{name}.png"}],
 
 "sites":[/*
 {"key":"摸鱼儿_Douban","name":"豆瓣推荐","type":3,"api":"csp_DoubanFishGuard","indexs":1,"searchable":0,"filterable":1,"ext":"./lib/douban.json"},
