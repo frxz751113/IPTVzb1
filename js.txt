@@ -209,7 +209,7 @@ CCTV兵器科技,http://111.48.246.74/000000001000PLTV/88888888/224/3221230537/1
 武搏世界,http://gslbserv.itv.cmvideo.cn:80/1.m3u8?channel-id=ystenlive&Contentid=bokesen&livemode=1&stbId=yu&mode=1
 炫舞未来,http://gslbserv.itv.cmvideo.cn:80/1.m3u8?channel-id=ystenlive&Contentid=1000000001000000515&livemode=1&stbId=yu&mode=1
 怡伴健康,http://gslbserv.itv.cmvideo.cn:80/5000000011000265001/1.m3u8?channel-id=ystenlive&Contentid=7820874641606664941&livemode=1&stbId=toShengfen&mode=1&
-其他频道,#genre#
+收费数字,#genre#
 生活时尚,http://111.48.246.74/000000001000PLTV/88888888/224/3221230611/1.m3u8
 生活时尚,http://111.48.246.74/000000001000PLTV/88888888/224/3221230617/1.m3u8
 BRIVKAKU少儿,http://111.48.246.74/000000001000PLTV/88888888/224/3221230040/1.m3u8
