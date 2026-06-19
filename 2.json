@@ -3,14 +3,17 @@
 
 "lives":[{"name":"综合源","type":0,"pass":true,"url":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/js.txt","epg":"http://124.222.214.218:35678/?ch={name}&date={date}","logo":"https://epg.112114.xyz/logo/{name}.png"}],
 
-"sites":[
-{"key":"摸鱼儿_Douban","name":"豆瓣推荐","type":3,"api":"csp_DoubanFishGuard","indexs":1,"searchable":0,"filterable":1,"ext":"./lib/douban.json"},
+"sites":[{"key":"瓜子影视","name":"瓜子","type":3,"api":"csp_Gz360","searchable":1,"quickSearch":1,"filterable":1},
+{"key":"热播影视","name":"热播🌌APP","type":3,"api":"csp_AppRJ","searchable":1,"quickSearch":1,"filterable":0,"ext":{"url":"http://v.rbotv.cn"}},
+
+/*{"key":"摸鱼儿_Douban","name":"豆瓣推荐","type":3,"api":"csp_DoubanFishGuard","indexs":1,"searchable":0,"filterable":1,"ext":"./lib/douban.json"},
 {"key":"摸鱼儿_wencai","name":"文才影视","type":3,"api":"csp_WenCaiFishGuard","categories":["电影","电视剧",""],"searchable":1,"ext":"https://www.tjrongze.com,https://y2s52n7.com,https://m.hkybqufgh.com,https://m.sizhengxt.com,https://m.9zhoukj.com,https://m.jiabaide.cn"},
 {"key":"摸鱼儿_Guazi","name":"瓜子影视","type":3,"api":"csp_GuaziFishGuard","categories":["电影","国产剧","短剧"],"searchable":1},
 {"key":"摸鱼儿_Rebo","name":"热播APP","type":3,"api":"csp_AppRJFishGuard","categories":["电影","内地"],"searchable":1,"quickSearch":1,"filterable":0,"ext":{"url":"http://v.rbotv.cn"}},
 {"key":"摸鱼儿_三秋影视","name":"三秋APP","api":"csp_App3QFishGuard","type":3,"searchable":1,"quickSearch":1,"filterable":1},
 {"key":"摸鱼儿_ChuXin","name":"初心音乐","type":3,"api":"csp_ChuXinFishGuard","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"摸鱼儿_aiting","name":"爱听音乐","type":3,"api":"csp_AiTingMusicFishGuard","searchable":1,"quickSearch":1,"filterable":1},
+*/
  //脚本类              
 {"key":"py_枫叶音乐","name":"枫叶音乐","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/枫叶音乐.py","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"py_1905","name":"1905影视","type":3,"categories":["电影","微电影","独家","系列电影"],"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/1905.py","searchable":1,"quickSearch":1,"filterable":1},
