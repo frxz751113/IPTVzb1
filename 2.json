@@ -11,7 +11,12 @@
 {"key":"农民影视","name":"农民影视","type":3,"api":"csp_Wwys","ext":"https://vip.wwgz.cn:5200"},
 {"key":"ChuXin","name":"初心音乐","type":3,"api":"csp_ChuXin","searchable":1,"quickSearch":1,"filterable":0},
 {"key":"Music24bit","name":"🎼无损音乐","type":3,"api":"csp_Music24bit","searchable":1,"changeable":1,"ext":{"categories":["周杰伦","林俊杰","陈奕迅","邓紫棋","薛之谦"]}},
-  
+/*
+  {"key":"py_妲己视频","name":"🔞🅿️妲己视频｜py","type":3,"api":"./lib/妲己视频.py","searchable":1,"quickSearch":1,"changeable":1,"filterable":1,"timeout":120},
+{"key":"py_菠萝七区","name":"🔞🅿️菠萝七区｜py","type":3,"api":"./lib/菠萝七区.py","searchable":1,"quickSearch":1,"changeable":1,"filterable":1,"timeout":120},
+{"key":"py_香蕉视频","name":"🔞🅿️香蕉视频｜py","type":3,"api":"./lib/香蕉视频.py","searchable":1,"quickSearch":1,"changeable":1,"filterable":1,"timeout":120},
+{"key":"py_五月天","name":"🔞🅿️五月天｜py","type":3,"api":"./lib/五月天.py","searchable":1,"quickSearch":1,"changeable":1,"filterable":1,"timeout":120},
+*/  
 
  //脚本类              
 {"key":"py_枫叶音乐","name":"枫叶音乐","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/枫叶音乐.py","searchable":1,"quickSearch":1,"filterable":1},
