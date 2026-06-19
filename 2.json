@@ -1,10 +1,10 @@
 {
-  "spider": "https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/摸鱼儿新.jar",
+  "spider": "https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/摸鱼儿.jar",
 
 "lives":[{"name":"综合源","type":0,"pass":true,"url":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/js.txt","epg":"http://124.222.214.218:35678/?ch={name}&date={date}","logo":"https://epg.112114.xyz/logo/{name}.png"}],
 
 "sites":[{"key":"Douban","name":"🌕️┃豆瓣┃推荐","type":3,"api":"csp_Douban","indexs":1,"searchable":0,"filterable":1,"ext":"./lib/douban.json"},
-  {"key":"瓜子影视","name":"瓜子","type":3,"api":"csp_Gz360","searchable":1,"quickSearch":1,"filterable":1},
+{"key":"wencai","name":"✏️┃文才┃影视","type":3,"api":"csp_WenCai","searchable":1,"ext":"https://www.tjrongze.com,https://y2s52n7.com,https://m.hkybqufgh.com,https://m.sizhengxt.com,https://m.9zhoukj.com,https://m.jiabaide.cn"},
 {"key":"热播影视","name":"热播🌌APP","type":3,"api":"csp_AppRJ","searchable":1,"quickSearch":1,"filterable":0,"ext":{"url":"http://v.rbotv.cn"}},
 {"key":"农民影视","name":"农民｜影视","type":3,"api":"csp_Wwys","ext":"https://vip.wwgz.cn:5200"},
 {"key":"ChuXin","name":"💕┃初心┃音乐","type":3,"api":"csp_ChuXin","searchable":1,"quickSearch":1,"filterable":0},
