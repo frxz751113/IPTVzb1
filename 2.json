@@ -9,7 +9,8 @@
 "sites":[
 
 {"key":"Douban","name":"豆瓣推荐","type":3,"api":"csp_Douban","indexs":1,"searchable":0,"filterable":1,"ext":"./lib/douban.json"},
-{"key":"Guazi","name":"瓜子影视","type":3,"api":"csp_Guazi","searchable":1},
+{"key":"BuBu","name":"🧸┃布布┃4K","type":3,"api":"csp_BuBu","searchable":1,"changeable":1,"filterable":1,"ext":{"site":["https://asd123sx23xdacsx.top"]}},
+{"key":"景仪","name":"🍑┃景仪┃4K","type":3,"api":"csp_App88","searchable":1,"filterable":1,"ext":"AScEBDU8ZGTviWgGR4VE0GGkVwxm9FRojDfGdLd7Uq6yQW7ma68i5+t2StAnXVayevGqI3Kb0rJi2eqa1Lrp8jJj1eVhRBjZt3JLZ2Jjm3iKe3a3GKl9jBlh/RMkOo3RfAvtXJdZasUTDhxflfJPCn0T5P68L/XHUV9ylgYmABoOSghqLVoMUNWDS5E2PAMVkm39vpIJOyKNEIhVd327DvpGU3cGs3s8KpmpKEspoPWaJo9usLN+tZVbLO8rEccdRYGvxYsXmVjhxaXhmzQEoEme5LF/0+x+M2A880NZ5akhrKIl5ZjfREZCgQ6FClx7+L8f8fb2VNiLtFu5538MrSRozjub6WRKe1m5OOdgdOTsAXJXw5QG5IQ/Y/i9VBZTZUjqP+0TpP4h92QjLynjJAFzwSr3bAOOIvEJW2LsK+hocK72wpyVG93vl42XQpU5s95dAVJOOOnbawZUsOq8a0ctuSsSdWQ="},
 {"key":"wencai","name":"文才影视","type":3,"api":"csp_WenCai","searchable":1,"ext":"https://www.tjrongze.com,https://y2s52n7.com,https://m.hkybqufgh.com,https://m.sizhengxt.com,https://m.9zhoukj.com,https://m.jiabaide.cn"},
 {"key":"热播影视","name":"热播APP","type":3,"api":"csp_AppRJ","searchable":1,"quickSearch":1,"filterable":0,"ext":{"url":"http://v.rbotv.cn"}},
 {"key":"农民影视","name":"农民影视","type":3,"api":"csp_Wwys","ext":"https://vip.wwgz.cn:5200"},
