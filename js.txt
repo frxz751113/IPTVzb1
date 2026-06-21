@@ -1,6 +1,10 @@
 经典频道,#genre#
 搞笑配音,http://175.178.182.213:80/douyu.php?id=9446117
 MV欣赏,http://175.178.182.213:80/douyu.php?id=10469362
+邵氏电影,http://192.151.150.154/live/lbssdy.m3u8
+邵氏武侠,http://192.151.150.154/live/lbsswx.m3u8
+邵氏动作,http://192.151.150.154/live/lbssdz.m3u8
+邵氏喜剧,http://192.151.150.154/live/lbssxj.m3u8
 邵氏电影,http://38.75.136.137:98/gslb/dsdqpub/lbssdy.m3u8?auth=testpub
 邵氏武侠,http://38.75.136.137:98/gslb/dsdqpub/lbsswx.m3u8?auth=testpub
 邵氏动作,http://38.75.136.137:98/gslb/dsdqpub/lbssdz.m3u8?auth=testpub
