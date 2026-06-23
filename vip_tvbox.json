@@ -1,6 +1,6 @@
 {
 
-"spider":"http://tv.laohu.cool/lh250711.jar;md5;9ab53f593c034c2b80cdc9f4c785a6f3","wallpaper":"https://bing.img.run/uhd.php",
+//"spider":"http://tv.laohu.cool/lh250711.jar;md5;9ab53f593c034c2b80cdc9f4c785a6f3","wallpaper":"https://bing.img.run/uhd.php",
 
 "lives":[{"group":"redirect","channels":[{"name":"live","urls":["proxy://do=live&type=txt&ext="]}]}],
 
