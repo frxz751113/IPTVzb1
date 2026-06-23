@@ -8,13 +8,13 @@
  "logo":"https://epg.112114.xyz/logo/{name}.png"}],
 
 "sites":[{"key":"豆瓣","name":"豆瓣｜首页","type":3,"api":"csp_Douban","searchable":0},
-{"key":"文才影视","name":"文采[py]","type":3,"api":"./lib/文采影视.py","searchable":1,"quickSearch":1,"filterable":1,"playerType":2,"ext":{"site":"https://m.hkybqufgh.com,https://m.sizhengxt.com,https://m.9zhoukj.com,https://m.sizhengxt.com,https://m.jiabaide.cn"}},
-{"key":"天天","name":"天天","type":3,"api":"csp_TTian","searchable":1,"quickSearch":1,"filterable":1,"jar":"./lib/天天.jar","ext":"7lj763gg0939791h1l3888jig44gi291li"},
-{"key":"柠檬","name":"柠檬｜影视","type":3,"api":"csp_Nmvod","playerType":2,"jar":"./lib/柠檬影视.jar","ext":"7lj763gg402i7942503g839jg74h8h88highi40799jh6i6k454419l0l5184k0g549h0kg2i01i838i2h42g891lgg1"},
-{"key":"米粒蓝光","name":"米粒蓝光","type":3,"api":"csp_Wwys","jar":"./lib/米粒蓝光.jar","ext":"https://vip.wwgz.cn:5200"},
-{"key":"旺旺影视","name":"旺旺┃影视","type":3,"api":"csp_XBPQ","ext":"./lib/旺旺影视.json","jar":"./lib/旺旺影视.jar"},
-{"key":"爱看剧","name":"剧看","type":3,"api":"./lib/剧看.py","ext":"http://43.248.117.123:4680","jar":"./lib/肥猫.jar"},
-{"key":"drjs_荐片","name":"荐片[DR]","type":3,"api":"./lib/drpy2.min.js","ext":"./lib/荐片.js"},
+{"key":"文才影视","name":"文采[py]","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/文采影视.py","searchable":1,"quickSearch":1,"filterable":1,"playerType":2,"ext":{"site":"https://m.hkybqufgh.com,https://m.sizhengxt.com,https://m.9zhoukj.com,https://m.sizhengxt.com,https://m.jiabaide.cn"}},
+{"key":"天天","name":"天天","type":3,"api":"csp_TTian","searchable":1,"quickSearch":1,"filterable":1,"jar":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/天天.jar","ext":"7lj763gg0939791h1l3888jig44gi291li"},
+{"key":"柠檬","name":"柠檬｜影视","type":3,"api":"csp_Nmvod","playerType":2,"jar":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/柠檬影视.jar","ext":"7lj763gg402i7942503g839jg74h8h88highi40799jh6i6k454419l0l5184k0g549h0kg2i01i838i2h42g891lgg1"},
+{"key":"米粒蓝光","name":"米粒蓝光","type":3,"api":"csp_Wwys","jar":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/米粒蓝光.jar","ext":"https://vip.wwgz.cn:5200"},
+{"key":"旺旺影视","name":"旺旺┃影视","type":3,"api":"csp_XBPQ","ext":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/旺旺影视.json","jar":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/旺旺影视.jar"},
+{"key":"爱看剧","name":"剧看","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/剧看.py","ext":"http://43.248.117.123:4680","jar":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/肥猫.jar"},
+{"key":"drjs_荐片","name":"荐片[DR]","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/荐片.js"},
 {"key":"荐片","name":"荐片[SP]","api":"csp_JianPian","type":3},
 {"key":"wencai","name":"文才[sp]","jar": "https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/摸鱼儿新.jar","type":3,"api":"csp_WenCai","searchable":1,"ext":"https://www.tjrongze.com,https://y2s52n7.com,https://m.hkybqufgh.com,https://m.sizhengxt.com,https://m.9zhoukj.com,https://m.jiabaide.cn"},
 {"key":"热播影视","name":"热播APP","type":3,"api":"csp_AppRJ","searchable":1,"quickSearch":1,"filterable":0,"ext":{"url":"http://v.rbotv.cn"}},
@@ -46,11 +46,11 @@
 
 
 /*
-{"key":"Douban","name":"豆瓣推荐","jar": "https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/摸鱼儿新.jar","type":3,"api":"csp_Douban","indexs":1,"searchable":0,"filterable":1,"ext":"./lib/douban.json"},
-{"key":"py_妲己视频","name":"🔞🅿️妲己视频｜py","type":3,"api":"./lib/妲己视频.py","searchable":1,"quickSearch":1,"changeable":1,"filterable":1,"timeout":120},
-{"key":"py_菠萝七区","name":"🔞🅿️菠萝七区｜py","type":3,"api":"./lib/菠萝七区.py","searchable":1,"quickSearch":1,"changeable":1,"filterable":1,"timeout":120},
-{"key":"py_香蕉视频","name":"🔞🅿️香蕉视频｜py","type":3,"api":"./lib/香蕉视频.py","searchable":1,"quickSearch":1,"changeable":1,"filterable":1,"timeout":120},
-{"key":"py_五月天","name":"🔞🅿️五月天｜py","type":3,"api":"./lib/五月天.py","searchable":1,"quickSearch":1,"changeable":1,"filterable":1,"timeout":120},
+{"key":"Douban","name":"豆瓣推荐","jar": "https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/摸鱼儿新.jar","type":3,"api":"csp_Douban","indexs":1,"searchable":0,"filterable":1,"ext":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/douban.json"},
+{"key":"py_妲己视频","name":"🔞🅿️妲己视频｜py","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/妲己视频.py","searchable":1,"quickSearch":1,"changeable":1,"filterable":1,"timeout":120},
+{"key":"py_菠萝七区","name":"🔞🅿️菠萝七区｜py","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/菠萝七区.py","searchable":1,"quickSearch":1,"changeable":1,"filterable":1,"timeout":120},
+{"key":"py_香蕉视频","name":"🔞🅿️香蕉视频｜py","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/香蕉视频.py","searchable":1,"quickSearch":1,"changeable":1,"filterable":1,"timeout":120},
+{"key":"py_五月天","name":"🔞🅿️五月天｜py","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/五月天.py","searchable":1,"quickSearch":1,"changeable":1,"filterable":1,"timeout":120},
 */  
 
  //脚本类              
