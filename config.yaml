@@ -1,0 +1,1590 @@
+port: 7890
+socks-port: 7891
+allow-lan: false
+mode: rule
+log-level: info
+geodata-mode: true
+geo-auto-update: true
+geodata-loader: standard
+geo-update-interval: 24
+geox-url:
+  geoip: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat
+  geosite: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat
+  mmdb: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb
+  asn: https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb
+rule-providers:
+  geolocation-cn:
+    type: http
+    format: mrs
+    behavior: domain
+    url: https://github.boki.moe/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/geolocation-cn.mrs
+    path: ./ruleset/geolocation-cn.mrs
+    interval: 86400
+  cn:
+    type: http
+    format: mrs
+    behavior: ipcidr
+    url: https://github.boki.moe/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/cn.mrs
+    path: ./ruleset/cn.mrs
+    interval: 86400
+  geolocation-!cn:
+    type: http
+    format: mrs
+    behavior: domain
+    url: https://github.boki.moe/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/geolocation-!cn.mrs
+    path: ./ruleset/geolocation-!cn.mrs
+    interval: 86400
+  private:
+    type: http
+    format: mrs
+    behavior: ipcidr
+    url: https://github.boki.moe/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/private.mrs
+    path: ./ruleset/private.mrs
+    interval: 86400
+dns:
+  enable: true
+  ipv6: true
+  respect-rules: true
+  enhanced-mode: fake-ip
+  nameserver:
+    - https://120.53.53.53/dns-query
+    - https://223.5.5.5/dns-query
+  proxy-server-nameserver:
+    - https://120.53.53.53/dns-query
+    - https://223.5.5.5/dns-query
+  nameserver-policy:
+    geosite:cn,private:
+      - https://120.53.53.53/dns-query
+      - https://223.5.5.5/dns-query
+    geosite:geolocation-!cn:
+      - https://dns.cloudflare.com/dns-query
+      - https://dns.google/dns-query
+proxies:
+  - name: 62.5ms
+    type: vless
+    server: 91.193.58.196
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 109.3ms
+    type: vless
+    server: www.iios.fun
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: IPV6
+    type: vless
+    server: 2606:4700:a0::51ba:278c
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: ">>>12"
+    type: vless
+    server: forthwithlife.co.uk
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 1562.1ms
+    type: vless
+    server: handypress.io
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: IPV6 2
+    type: vless
+    server: 2606:4700:a0::549a:1be8
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: IPV6 3
+    type: vless
+    server: 2606:4700:a0::51ca:e43e
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: "4"
+    type: vless
+    server: sp.itcreations.com
+    port: 2053
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: ">%<"
+    type: vless
+    server: 172.67.69.8
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 10 2
+    type: vless
+    server: 8619ff735e6b4f7d9bebea09654d0c37.elf.site
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: IPV6 4
+    type: vless
+    server: 2606:4700:a0::d7:d0b5
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: ">%< 2"
+    type: vless
+    server: 172.67.65.91
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 140.6ms
+    type: vless
+    server: www.iios.ga
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: "13"
+    type: vless
+    server: zackie1.geminiadvisory.io
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: ">>>3"
+    type: vless
+    server: www.precision-ceramics.com
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 562.4ms
+    type: vless
+    server: florate.io
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: ">>>13"
+    type: vless
+    server: www.forthwithlife.co.uk
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 218.7ms
+    type: vless
+    server: 154.207.77.250
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 265.6ms
+    type: vless
+    server: 135.84.75.15
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 203.1ms
+    type: vless
+    server: 147.185.161.5
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 203.1ms 2
+    type: vless
+    server: 102.177.176.107
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 656.1ms
+    type: vless
+    server: 92.53.190.198
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 203.1ms 3
+    type: vless
+    server: 77.232.140.220
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 140.6ms 2
+    type: vless
+    server: www.iios.club
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 218.7ms 2
+    type: vless
+    server: 88.216.67.159
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 249.9ms
+    type: vless
+    server: 209.208.227.95
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 187.5ms
+    type: vless
+    server: 92.243.75.41
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 203.1ms 4
+    type: vless
+    server: 185.176.24.212
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 203.1ms 5
+    type: vless
+    server: 104.129.166.1
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 218.7ms 3
+    type: vless
+    server: 77.74.228.138
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 218.7ms 4
+    type: vless
+    server: 188.42.88.67
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 187.5ms 2
+    type: vless
+    server: 91.209.253.76
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 203.1ms 6
+    type: vless
+    server: 80.93.202.9
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: ">>>7"
+    type: vless
+    server: hairbyanahbooking.net
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 15 2
+    type: vless
+    server: 8.209.220.50
+    port: 21273
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 406.2ms
+    type: vless
+    server: 103.133.1.83
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 218.7ms 5
+    type: vless
+    server: 154.81.141.28
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 7 9
+    type: vless
+    server: 37.0.6.241
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 203.1ms 7
+    type: vless
+    server: 108.165.216.8
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 499.9ms
+    type: vless
+    server: 64.26.212.245
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 203.1ms 8
+    type: vless
+    server: 185.251.81.19
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 5 11
+    type: vless
+    server: 156.230.12.71
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 218.7ms 6
+    type: vless
+    server: 88.216.66.87
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 265.6ms 2
+    type: vless
+    server: 206.238.238.250
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 406.2ms 2
+    type: vless
+    server: 104.238.69.123
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 109.3ms 2
+    type: vless
+    server: www.qdzhongrun.com
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 218.7ms 7
+    type: vless
+    server: 88.216.67.215
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 234.3ms
+    type: vless
+    server: 104.129.167.22
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 234.3ms 2
+    type: vless
+    server: 96.43.101.132
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 218.7ms 8
+    type: vless
+    server: 188.42.88.161
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 218.7ms 9
+    type: vless
+    server: 88.216.66.182
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: ">>>6"
+    type: vless
+    server: www.hairbyanahbooking.net
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 218.7ms 10
+    type: vless
+    server: 185.18.184.231
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 1046.6ms
+    type: vless
+    server: 713dm.com
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 249.9ms 2
+    type: vless
+    server: 702dm.com
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 249.9ms 3
+    type: vless
+    server: 170.153.144.31
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: IPV6 5
+    type: vless
+    server: 2606:4700:a0::dcc7:44a8
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 203.1ms 9
+    type: vless
+    server: 166.62.104.38
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 265.6ms 3
+    type: vless
+    server: 143.42.27.64
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: IPV6 6
+    type: vless
+    server: 2606:4700:a0::5103:eb91
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 109.3ms 3
+    type: vless
+    server: 935dm.com
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 624.9ms
+    type: vless
+    server: 710dm.com
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 203.1ms 10
+    type: vless
+    server: 206.238.239.204
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 294.0ms
+    type: vless
+    server: 5.144.179.118
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 296.8ms
+    type: vless
+    server: 185.36.142.241
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 203.1ms 11
+    type: vless
+    server: www.705dm.com
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 93.7ms
+    type: vless
+    server: 737dm.com
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: IPV6 7
+    type: vless
+    server: 2606:4700:a0::13:a388:7229
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 109.3ms 4
+    type: vless
+    server: www.710dm.com
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 62.5ms 2
+    type: vless
+    server: 185.251.80.137
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 749.8ms
+    type: vless
+    server: api.teloscan.io
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: 109.3ms 5
+    type: vless
+    server: www.713dm.com
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: ">>>14"
+    type: vless
+    server: stgmainapi4.experiorusa.com
+    port: 443
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+  - name: "16"
+    type: vless
+    server: kloud.megakons.com
+    port: 2053
+    uuid: 74e65dcf-7a57-4b87-ad0b-c1406711acd7
+    tls: true
+    servername: 2.oonnd.dynv6.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2.oonnd.dynv6.net
+    tfo: false
+    skip-cert-verify: false
+proxy-groups:
+  - type: select
+    name: 🚀 节点选择
+    proxies:
+      - DIRECT
+      - REJECT
+      - ♻️ 自动选择
+      - 62.5ms
+      - 109.3ms
+      - IPV6
+      - ">>>12"
+      - 1562.1ms
+      - IPV6 2
+      - IPV6 3
+      - "4"
+      - ">%<"
+      - 10 2
+      - IPV6 4
+      - ">%< 2"
+      - 140.6ms
+      - "13"
+      - ">>>3"
+      - 562.4ms
+      - ">>>13"
+      - 218.7ms
+      - 265.6ms
+      - 203.1ms
+      - 203.1ms 2
+      - 656.1ms
+      - 203.1ms 3
+      - 140.6ms 2
+      - 218.7ms 2
+      - 249.9ms
+      - 187.5ms
+      - 203.1ms 4
+      - 203.1ms 5
+      - 218.7ms 3
+      - 218.7ms 4
+      - 187.5ms 2
+      - 203.1ms 6
+      - ">>>7"
+      - 15 2
+      - 406.2ms
+      - 218.7ms 5
+      - 7 9
+      - 203.1ms 7
+      - 499.9ms
+      - 203.1ms 8
+      - 5 11
+      - 218.7ms 6
+      - 265.6ms 2
+      - 406.2ms 2
+      - 109.3ms 2
+      - 218.7ms 7
+      - 234.3ms
+      - 234.3ms 2
+      - 218.7ms 8
+      - 218.7ms 9
+      - ">>>6"
+      - 218.7ms 10
+      - 1046.6ms
+      - 249.9ms 2
+      - 249.9ms 3
+      - IPV6 5
+      - 203.1ms 9
+      - 265.6ms 3
+      - IPV6 6
+      - 109.3ms 3
+      - 624.9ms
+      - 203.1ms 10
+      - 294.0ms
+      - 296.8ms
+      - 203.1ms 11
+      - 93.7ms
+      - IPV6 7
+      - 109.3ms 4
+      - 62.5ms 2
+      - 749.8ms
+      - 109.3ms 5
+      - ">>>14"
+      - "16"
+  - name: ♻️ 自动选择
+    type: url-test
+    proxies:
+      - 62.5ms
+      - 109.3ms
+      - IPV6
+      - ">>>12"
+      - 1562.1ms
+      - IPV6 2
+      - IPV6 3
+      - "4"
+      - ">%<"
+      - 10 2
+      - IPV6 4
+      - ">%< 2"
+      - 140.6ms
+      - "13"
+      - ">>>3"
+      - 562.4ms
+      - ">>>13"
+      - 218.7ms
+      - 265.6ms
+      - 203.1ms
+      - 203.1ms 2
+      - 656.1ms
+      - 203.1ms 3
+      - 140.6ms 2
+      - 218.7ms 2
+      - 249.9ms
+      - 187.5ms
+      - 203.1ms 4
+      - 203.1ms 5
+      - 218.7ms 3
+      - 218.7ms 4
+      - 187.5ms 2
+      - 203.1ms 6
+      - ">>>7"
+      - 15 2
+      - 406.2ms
+      - 218.7ms 5
+      - 7 9
+      - 203.1ms 7
+      - 499.9ms
+      - 203.1ms 8
+      - 5 11
+      - 218.7ms 6
+      - 265.6ms 2
+      - 406.2ms 2
+      - 109.3ms 2
+      - 218.7ms 7
+      - 234.3ms
+      - 234.3ms 2
+      - 218.7ms 8
+      - 218.7ms 9
+      - ">>>6"
+      - 218.7ms 10
+      - 1046.6ms
+      - 249.9ms 2
+      - 249.9ms 3
+      - IPV6 5
+      - 203.1ms 9
+      - 265.6ms 3
+      - IPV6 6
+      - 109.3ms 3
+      - 624.9ms
+      - 203.1ms 10
+      - 294.0ms
+      - 296.8ms
+      - 203.1ms 11
+      - 93.7ms
+      - IPV6 7
+      - 109.3ms 4
+      - 62.5ms 2
+      - 749.8ms
+      - 109.3ms 5
+      - ">>>14"
+      - "16"
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
+  - type: select
+    name: 🏠 私有网络
+    proxies:
+      - 🚀 节点选择
+      - DIRECT
+      - REJECT
+      - ♻️ 自动选择
+      - 62.5ms
+      - 109.3ms
+      - IPV6
+      - ">>>12"
+      - 1562.1ms
+      - IPV6 2
+      - IPV6 3
+      - "4"
+      - ">%<"
+      - 10 2
+      - IPV6 4
+      - ">%< 2"
+      - 140.6ms
+      - "13"
+      - ">>>3"
+      - 562.4ms
+      - ">>>13"
+      - 218.7ms
+      - 265.6ms
+      - 203.1ms
+      - 203.1ms 2
+      - 656.1ms
+      - 203.1ms 3
+      - 140.6ms 2
+      - 218.7ms 2
+      - 249.9ms
+      - 187.5ms
+      - 203.1ms 4
+      - 203.1ms 5
+      - 218.7ms 3
+      - 218.7ms 4
+      - 187.5ms 2
+      - 203.1ms 6
+      - ">>>7"
+      - 15 2
+      - 406.2ms
+      - 218.7ms 5
+      - 7 9
+      - 203.1ms 7
+      - 499.9ms
+      - 203.1ms 8
+      - 5 11
+      - 218.7ms 6
+      - 265.6ms 2
+      - 406.2ms 2
+      - 109.3ms 2
+      - 218.7ms 7
+      - 234.3ms
+      - 234.3ms 2
+      - 218.7ms 8
+      - 218.7ms 9
+      - ">>>6"
+      - 218.7ms 10
+      - 1046.6ms
+      - 249.9ms 2
+      - 249.9ms 3
+      - IPV6 5
+      - 203.1ms 9
+      - 265.6ms 3
+      - IPV6 6
+      - 109.3ms 3
+      - 624.9ms
+      - 203.1ms 10
+      - 294.0ms
+      - 296.8ms
+      - 203.1ms 11
+      - 93.7ms
+      - IPV6 7
+      - 109.3ms 4
+      - 62.5ms 2
+      - 749.8ms
+      - 109.3ms 5
+      - ">>>14"
+      - "16"
+  - type: select
+    name: 🔒 国内服务
+    proxies:
+      - 🚀 节点选择
+      - DIRECT
+      - REJECT
+      - ♻️ 自动选择
+      - 62.5ms
+      - 109.3ms
+      - IPV6
+      - ">>>12"
+      - 1562.1ms
+      - IPV6 2
+      - IPV6 3
+      - "4"
+      - ">%<"
+      - 10 2
+      - IPV6 4
+      - ">%< 2"
+      - 140.6ms
+      - "13"
+      - ">>>3"
+      - 562.4ms
+      - ">>>13"
+      - 218.7ms
+      - 265.6ms
+      - 203.1ms
+      - 203.1ms 2
+      - 656.1ms
+      - 203.1ms 3
+      - 140.6ms 2
+      - 218.7ms 2
+      - 249.9ms
+      - 187.5ms
+      - 203.1ms 4
+      - 203.1ms 5
+      - 218.7ms 3
+      - 218.7ms 4
+      - 187.5ms 2
+      - 203.1ms 6
+      - ">>>7"
+      - 15 2
+      - 406.2ms
+      - 218.7ms 5
+      - 7 9
+      - 203.1ms 7
+      - 499.9ms
+      - 203.1ms 8
+      - 5 11
+      - 218.7ms 6
+      - 265.6ms 2
+      - 406.2ms 2
+      - 109.3ms 2
+      - 218.7ms 7
+      - 234.3ms
+      - 234.3ms 2
+      - 218.7ms 8
+      - 218.7ms 9
+      - ">>>6"
+      - 218.7ms 10
+      - 1046.6ms
+      - 249.9ms 2
+      - 249.9ms 3
+      - IPV6 5
+      - 203.1ms 9
+      - 265.6ms 3
+      - IPV6 6
+      - 109.3ms 3
+      - 624.9ms
+      - 203.1ms 10
+      - 294.0ms
+      - 296.8ms
+      - 203.1ms 11
+      - 93.7ms
+      - IPV6 7
+      - 109.3ms 4
+      - 62.5ms 2
+      - 749.8ms
+      - 109.3ms 5
+      - ">>>14"
+      - "16"
+  - type: select
+    name: 🌏 非中国
+    proxies:
+      - 🚀 节点选择
+      - DIRECT
+      - REJECT
+      - ♻️ 自动选择
+      - 62.5ms
+      - 109.3ms
+      - IPV6
+      - ">>>12"
+      - 1562.1ms
+      - IPV6 2
+      - IPV6 3
+      - "4"
+      - ">%<"
+      - 10 2
+      - IPV6 4
+      - ">%< 2"
+      - 140.6ms
+      - "13"
+      - ">>>3"
+      - 562.4ms
+      - ">>>13"
+      - 218.7ms
+      - 265.6ms
+      - 203.1ms
+      - 203.1ms 2
+      - 656.1ms
+      - 203.1ms 3
+      - 140.6ms 2
+      - 218.7ms 2
+      - 249.9ms
+      - 187.5ms
+      - 203.1ms 4
+      - 203.1ms 5
+      - 218.7ms 3
+      - 218.7ms 4
+      - 187.5ms 2
+      - 203.1ms 6
+      - ">>>7"
+      - 15 2
+      - 406.2ms
+      - 218.7ms 5
+      - 7 9
+      - 203.1ms 7
+      - 499.9ms
+      - 203.1ms 8
+      - 5 11
+      - 218.7ms 6
+      - 265.6ms 2
+      - 406.2ms 2
+      - 109.3ms 2
+      - 218.7ms 7
+      - 234.3ms
+      - 234.3ms 2
+      - 218.7ms 8
+      - 218.7ms 9
+      - ">>>6"
+      - 218.7ms 10
+      - 1046.6ms
+      - 249.9ms 2
+      - 249.9ms 3
+      - IPV6 5
+      - 203.1ms 9
+      - 265.6ms 3
+      - IPV6 6
+      - 109.3ms 3
+      - 624.9ms
+      - 203.1ms 10
+      - 294.0ms
+      - 296.8ms
+      - 203.1ms 11
+      - 93.7ms
+      - IPV6 7
+      - 109.3ms 4
+      - 62.5ms 2
+      - 749.8ms
+      - 109.3ms 5
+      - ">>>14"
+      - "16"
+  - type: select
+    name: 🐟 漏网之鱼
+    proxies:
+      - 🚀 节点选择
+      - DIRECT
+      - REJECT
+      - ♻️ 自动选择
+      - 62.5ms
+      - 109.3ms
+      - IPV6
+      - ">>>12"
+      - 1562.1ms
+      - IPV6 2
+      - IPV6 3
+      - "4"
+      - ">%<"
+      - 10 2
+      - IPV6 4
+      - ">%< 2"
+      - 140.6ms
+      - "13"
+      - ">>>3"
+      - 562.4ms
+      - ">>>13"
+      - 218.7ms
+      - 265.6ms
+      - 203.1ms
+      - 203.1ms 2
+      - 656.1ms
+      - 203.1ms 3
+      - 140.6ms 2
+      - 218.7ms 2
+      - 249.9ms
+      - 187.5ms
+      - 203.1ms 4
+      - 203.1ms 5
+      - 218.7ms 3
+      - 218.7ms 4
+      - 187.5ms 2
+      - 203.1ms 6
+      - ">>>7"
+      - 15 2
+      - 406.2ms
+      - 218.7ms 5
+      - 7 9
+      - 203.1ms 7
+      - 499.9ms
+      - 203.1ms 8
+      - 5 11
+      - 218.7ms 6
+      - 265.6ms 2
+      - 406.2ms 2
+      - 109.3ms 2
+      - 218.7ms 7
+      - 234.3ms
+      - 234.3ms 2
+      - 218.7ms 8
+      - 218.7ms 9
+      - ">>>6"
+      - 218.7ms 10
+      - 1046.6ms
+      - 249.9ms 2
+      - 249.9ms 3
+      - IPV6 5
+      - 203.1ms 9
+      - 265.6ms 3
+      - IPV6 6
+      - 109.3ms 3
+      - 624.9ms
+      - 203.1ms 10
+      - 294.0ms
+      - 296.8ms
+      - 203.1ms 11
+      - 93.7ms
+      - IPV6 7
+      - 109.3ms 4
+      - 62.5ms 2
+      - 749.8ms
+      - 109.3ms 5
+      - ">>>14"
+      - "16"
+rules:
+  - RULE-SET,geolocation-cn,🔒 国内服务
+  - RULE-SET,cn,🔒 国内服务
+  - RULE-SET,geolocation-!cn,🌏 非中国
+  - RULE-SET,private,🏠 私有网络,no-resolve
+  - RULE-SET,cn,🔒 国内服务,no-resolve
+  - MATCH,🐟 漏网之鱼
