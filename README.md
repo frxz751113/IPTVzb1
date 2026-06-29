@@ -15,7 +15,7 @@
 ## Github RAW 加速服务  影视接口https://github.com/woshishiq1/hipy-drpy/blob/main/dr/dr2.json
 
 
-https://down.nigx.cn/raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/
+https://github.catvod.com/
 
 https://ghfast.top/     最快
 
