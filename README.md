@@ -17,7 +17,6 @@
 
 https://github.catvod.com/
 
-https://ghfast.top/     最快
 
 https://github.boki.moe/
 
