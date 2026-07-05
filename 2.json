@@ -7,6 +7,7 @@
  "logo":"https://epg.112114.xyz/logo/{name}.png"}],
 
 "sites":[{"key":"豆瓣","name":"豆瓣｜首页","type":3,"api":"csp_Douban","searchable":0},
+ {"key":"红果","name":"🍎红果短剧✨全网短剧","type":3,"api":"https://8815.kstore.vip/tvbox/py/红果.py","searchable":1,"changeable":1,"quickSearch":1,"filterable":1},
 {"key":"文才影视","name":"文采[py]","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/文采影视.py","searchable":1,"quickSearch":1,"filterable":1,"playerType":2,"ext":{"site":"https://m.hkybqufgh.com,https://m.sizhengxt.com,https://m.9zhoukj.com,https://m.sizhengxt.com,https://m.jiabaide.cn"}},
 {"key":"天天","name":"天天","type":3,"api":"csp_TTian","searchable":1,"quickSearch":1,"filterable":1,"ext":"7lj763gg0939791h1l3888jig44gi291li"},
 {"key":"柠檬","name":"柠檬影视","type":3,"api":"csp_Nmvod","playerType":2,"ext":"7lj763gg402i7942503g839jg74h8h88highi40799jh6i6k454419l0l5184k0g549h0kg2i01i838i2h42g891lgg1"},
