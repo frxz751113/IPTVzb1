@@ -24,13 +24,13 @@ from urllib.parse import urlparse
 from translate import Translator  # 导入Translator类,用于文本翻译
 ## 定义txt文件的URL列表
 urls = [
-       'https://raw.githubusercontent.com/AnonymousOrz/IPTV/92ee0bf5c26dd20ac118503563d6b7fffa3f0349/Live/collect/CR_250713.txt'
-       'https://raw.githubusercontent.com/lai1tony/git_catvod/bb831377a6622e97ef32e6f8e87069bcb0c50e77/hk1box/live.txt'
-       'https://raw.githubusercontent.com/alenin-zhang/IPTV/4b9d5ab96648a439dd4a83cb2eca9fc34bf0d719/IMTV.txt'
-       'https://raw.githubusercontent.com/alenin-zhang/IPTV/4b9d5ab96648a439dd4a83cb2eca9fc34bf0d719/smt.txt'
-       'https://raw.githubusercontent.com/RaycornM/TVbox-IPTV/a9e6441470a09c75ff4406c7a5170dad514c6dfd/Tivi.txt'
-       'https://raw.githubusercontent.com/fleung49/star/65e6b3e630c621fd1922439be9dbadcb4b82b6b8/hhzt'
-       'https://raw.githubusercontent.com/RaycornM/TVbox-IPTV/a9e6441470a09c75ff4406c7a5170dad514c6dfd/Tivi.txt'   ###
+       'https://raw.githubusercontent.com/AnonymousOrz/IPTV/92ee0bf5c26dd20ac118503563d6b7fffa3f0349/Live/collect/CR_250713.txt',
+       'https://raw.githubusercontent.com/lai1tony/git_catvod/bb831377a6622e97ef32e6f8e87069bcb0c50e77/hk1box/live.txt',
+       'https://raw.githubusercontent.com/alenin-zhang/IPTV/4b9d5ab96648a439dd4a83cb2eca9fc34bf0d719/IMTV.txt',
+       'https://raw.githubusercontent.com/alenin-zhang/IPTV/4b9d5ab96648a439dd4a83cb2eca9fc34bf0d719/smt.txt',
+       'https://raw.githubusercontent.com/RaycornM/TVbox-IPTV/a9e6441470a09c75ff4406c7a5170dad514c6dfd/Tivi.txt',
+       'https://raw.githubusercontent.com/fleung49/star/65e6b3e630c621fd1922439be9dbadcb4b82b6b8/hhzt',
+       'https://raw.githubusercontent.com/RaycornM/TVbox-IPTV/a9e6441470a09c75ff4406c7a5170dad514c6dfd/Tivi.txt',   ###
        '',
        '',
        '',
