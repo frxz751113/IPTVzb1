@@ -2,7 +2,7 @@ name: IP采集检测
 
 on:
   schedule:
-    - cron: '5 0 */15 * *'  # UTC时间每天0:05运行（北京时间8:05）
+    - cron: '5 0 */3 * *'  # UTC时间每天0:05运行（北京时间8:05）
   workflow_dispatch:
     inputs:
       branch:
@@ -33,7 +33,7 @@ jobs:
       - name: 执行采集脚本 🚀
         run: |
           # 只保留需要执行的脚本
-          python ${{ github.workspace }}/py/测绘站采集备用.py
+          python ${{ github.workspace }}/py/网络收集.py
           #python ${{ github.workspace }}/py/酒店源副本.py
           # 其他脚本按需取消注释
 
