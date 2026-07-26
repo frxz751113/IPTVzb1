@@ -14,6 +14,13 @@
 
 ## Github RAW 加速服务  影视接口https://github.com/woshishiq1/hipy-drpy/blob/main/dr/dr2.json
 
+https://gh.jasonzeng.dev/
+
+https://github.mk/
+
+https://gh.qninq.cn/
+
+https://www.gitwarp.com/
 
 https://tvv.tw/
 
