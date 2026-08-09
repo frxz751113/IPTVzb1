@@ -1,18 +1,18 @@
 {
-"spider": "https://x.111222.cc.cd/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/潇洒1.jar",
+"spider": "https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/潇洒1.jar",
 
-"lives":[{"name":"综合源","type":0,"pass":true,"url":"https://x.111222.cc.cd/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/js.txt",
+"lives":[{"name":"综合源","type":0,"pass":true,"url":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/js.txt",
  //"epg":"http://124.222.214.218:35678/?ch={name}&date={date}",
- "epg":"https://x.111222.cc.cd/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/pp.xml",
+ "epg":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/pp.xml",
  "logo":"https://epg.112114.xyz/logo/{name}.png"}],
 
 "sites":[{"key":"豆瓣","name":"豆瓣｜首页","type":3,"api":"csp_Douban","searchable":0},
-{"key":"文才影视","name":"文采[py]","type":3,"api":"https://x.111222.cc.cd/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/文采影视.py","searchable":1,"quickSearch":1,"filterable":1,"playerType":2,"ext":{"site":"https://m.hkybqufgh.com,https://m.sizhengxt.com,https://m.9zhoukj.com,https://m.sizhengxt.com,https://m.jiabaide.cn"}},
+{"key":"文才影视","name":"文采[py]","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/文采影视.py","searchable":1,"quickSearch":1,"filterable":1,"playerType":2,"ext":{"site":"https://m.hkybqufgh.com,https://m.sizhengxt.com,https://m.9zhoukj.com,https://m.sizhengxt.com,https://m.jiabaide.cn"}},
 {"key":"天天","name":"天天","type":3,"api":"csp_TTian","searchable":1,"quickSearch":1,"filterable":1,"ext":"7lj763gg0939791h1l3888jig44gi291li"},
 {"key":"柠檬","name":"柠檬影视","type":3,"api":"csp_Nmvod","playerType":2,"ext":"7lj763gg402i7942503g839jg74h8h88highi40799jh6i6k454419l0l5184k0g549h0kg2i01i838i2h42g891lgg1"},
 {"key":"米粒蓝光","name":"米粒蓝光","type":3,"api":"csp_Wwys","ext":"https://vip.wwgz.cn:5200"},
-{"key":"爱看剧","name":"剧看[py]","type":3,"api":"https://x.111222.cc.cd/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/剧看.py","ext":"http://43.248.117.123:4680"},
-{"key":"drjs_荐片","name":"荐片[DR]","type":3,"api":"https://x.111222.cc.cd/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext":"https://x.111222.cc.cd/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/荐片.js"},
+{"key":"爱看剧","name":"剧看[py]","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/剧看.py","ext":"http://43.248.117.123:4680"},
+{"key":"drjs_荐片","name":"荐片[DR]","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/drpy2.min.js","ext":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/荐片.js"},
 {"key":"荐片","name":"荐片[SP]","api":"csp_JianPian","type":3},
 {"key":"热播影视","name":"热播APP","type":3,"api":"csp_AppRJ","searchable":1,"quickSearch":1,"filterable":0,"ext":{"url":"http://v.rbotv.cn"}},
 {"key":"农民影视","name":"农民影视","type":3,"api":"csp_Wwys","ext":"https://vip.wwgz.cn:5200"},
@@ -48,20 +48,20 @@
 
 
  //脚本类              
-{"key":"py_枫叶音乐","name":"枫叶音乐","type":3,"api":"https://x.111222.cc.cd/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/枫叶音乐.py","searchable":1,"quickSearch":1,"filterable":1},
-{"key":"py_1905","name":"1905影视","type":3,"categories":["电影","微电影","独家","系列电影"],"api":"https://x.111222.cc.cd/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/1905.py","searchable":1,"quickSearch":1,"filterable":1},
-{"key":"py_西饭短剧","name":"西饭短剧","type":3,"api":"https://x.111222.cc.cd/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/西饭短剧.py","searchable":1,"quickSearch":1,"filterable":1},
-{"key":"py_央视片库","name":"央视片库","type":3,"api":"https://x.111222.cc.cd/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/央视片库.py"},
-{"key":"py_华数","name":"华数影视","type":3,"api":"https://x.111222.cc.cd/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/%E5%8D%8E%E6%95%B0.py","changeable":1},
-{"key":"py_独播库","name":"独播库","type":3,"api":"https://x.111222.cc.cd/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/独播库.py"},
-{"key":"py_看客联盟","name":"看客联盟","type":3,"api":"https://x.111222.cc.cd/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/skapp.py","ext":{"host":"https://kankelm.cn:2024/appdomain.txt","key":"ygcnbcvybqqckwqy","iv":"1583560747143708"}},
-{"key":"py_嘶哩嘶哩","name":"嘶哩嘶哩","type":3,"api":"https://x.111222.cc.cd/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/skapp.py","ext":{"host":"https://x.111222.cc.cd/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/api.txt","key":"ygcnbcznazmyrbdn","iv":"6571230062143708"}},
-{"key":"py_番薯动漫","name":"番薯动漫","type":3,"api":"https://x.111222.cc.cd/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/AppGet.py","searchable":1,"quickSearch":1,"filterable":1,"ext":{"host":"https://new.app.bytegooty.com","api":"/api.php/getappapi","datakey":"N4yj7l7xKxHF4*gz","dataiv":"N4yj7l7xKxHF4*gz"}},
-{"key":"py_哔哩视频","name":"哔哩","type":3,"api":"https://x.111222.cc.cd/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/哔哩视频.py","searchable":1,"quickSearch":1,"filterable":1},
-{"key":"js_聚合短剧","name":"聚合短剧","type":3,"api":"https://x.111222.cc.cd/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/cat_聚合短剧[短].js"},
-{"key":"js_星芽短剧改","name":"星芽短剧改","type":3,"api":"https://x.111222.cc.cd/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/星芽短剧[元宝版].js"},
-{"key":"py_河马短剧","name":"河马短剧","type":3,"api":"https://x.111222.cc.cd/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/河马短剧.py","searchable":1,"quickSearch":1,"filterable":1},
-{"key":"py_星星短剧","name":"星星短剧","type":3,"api":"https://x.111222.cc.cd/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/星星短剧.py","searchable":1,"quickSearch":1,"filterable":1}
+{"key":"py_枫叶音乐","name":"枫叶音乐","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/枫叶音乐.py","searchable":1,"quickSearch":1,"filterable":1},
+{"key":"py_1905","name":"1905影视","type":3,"categories":["电影","微电影","独家","系列电影"],"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/1905.py","searchable":1,"quickSearch":1,"filterable":1},
+{"key":"py_西饭短剧","name":"西饭短剧","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/西饭短剧.py","searchable":1,"quickSearch":1,"filterable":1},
+{"key":"py_央视片库","name":"央视片库","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/央视片库.py"},
+{"key":"py_华数","name":"华数影视","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/%E5%8D%8E%E6%95%B0.py","changeable":1},
+{"key":"py_独播库","name":"独播库","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/独播库.py"},
+{"key":"py_看客联盟","name":"看客联盟","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/skapp.py","ext":{"host":"https://kankelm.cn:2024/appdomain.txt","key":"ygcnbcvybqqckwqy","iv":"1583560747143708"}},
+{"key":"py_嘶哩嘶哩","name":"嘶哩嘶哩","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/skapp.py","ext":{"host":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/api.txt","key":"ygcnbcznazmyrbdn","iv":"6571230062143708"}},
+{"key":"py_番薯动漫","name":"番薯动漫","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/AppGet.py","searchable":1,"quickSearch":1,"filterable":1,"ext":{"host":"https://new.app.bytegooty.com","api":"/api.php/getappapi","datakey":"N4yj7l7xKxHF4*gz","dataiv":"N4yj7l7xKxHF4*gz"}},
+{"key":"py_哔哩视频","name":"哔哩","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/哔哩视频.py","searchable":1,"quickSearch":1,"filterable":1},
+{"key":"js_聚合短剧","name":"聚合短剧","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/cat_聚合短剧[短].js"},
+{"key":"js_星芽短剧改","name":"星芽短剧改","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/星芽短剧[元宝版].js"},
+{"key":"py_河马短剧","name":"河马短剧","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/河马短剧.py","searchable":1,"quickSearch":1,"filterable":1},
+{"key":"py_星星短剧","name":"星星短剧","type":3,"api":"https://github.boki.moe/https://raw.githubusercontent.com/frxz751113/IPTVzb1/refs/heads/main/lib/星星短剧.py","searchable":1,"quickSearch":1,"filterable":1}
  
   
 
