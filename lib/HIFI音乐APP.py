@@ -37,6 +37,9 @@ xurl = "http://if2.hifiok.com"
 
 xurl1 = "http://if2.zhenxian.fm"
 
+HIFI_SECRET_KEY = os.environ.get('HIFI_SECRET_KEY', '6f7ab440b39eba4ac87bfa5576eac999')
+HIFI_API_KEY = os.environ.get('HIFI_API_KEY', '0f607264-fc63-38a9-ab9e-13c65db7cd3c')
+
 headerx = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.87 Safari/537.36'
           }
@@ -120,8 +123,8 @@ class Spider(Spider):
                 return jg
 
     def decrypt(self, timestamp):
-        secret_key = "6f7ab440b39eba4ac87bfa5576eac999"
-        apikey = "0f607264-fc63-38a9-ab9e-13c65db7cd3c"
+        secret_key = HIFI_SECRET_KEY
+        apikey = HIFI_API_KEY
         protocolver = "zx11"
         sliderid = "4"
         terminaltype = "5"
@@ -131,8 +134,8 @@ class Spider(Spider):
         return base64_result
 
     def decrypt_sha1(self, timestamp, value):
-        secret_key = "6f7ab440b39eba4ac87bfa5576eac999"
-        apikey = "0f607264-fc63-38a9-ab9e-13c65db7cd3c"
+        secret_key = HIFI_SECRET_KEY
+        apikey = HIFI_API_KEY
         id_value = value
         maxitems = "96"
         protocolver = "zx11"
@@ -144,8 +147,8 @@ class Spider(Spider):
         return base64_result
 
     def decrypt_sha2(self, timestamp):
-        secret_key = "6f7ab440b39eba4ac87bfa5576eac999"
-        apikey = "0f607264-fc63-38a9-ab9e-13c65db7cd3c"
+        secret_key = HIFI_SECRET_KEY
+        apikey = HIFI_API_KEY
         protocolver = "zx11"
         data = f"apikey{apikey}protocolver{protocolver}timestamp{timestamp}"
         signature = hmac.new(
@@ -157,8 +160,8 @@ class Spider(Spider):
         return base64_signature
 
     def decrypt_sha4(self, timestamp):
-        secret_key = "6f7ab440b39eba4ac87bfa5576eac999"
-        apikey = "0f607264-fc63-38a9-ab9e-13c65db7cd3c"
+        secret_key = HIFI_SECRET_KEY
+        apikey = HIFI_API_KEY
         protocolver = "zx11"
         terminaltype = "0"
         data = f"apikey{apikey}protocolver{protocolver}terminaltype{terminaltype}timestamp{timestamp}"
@@ -171,8 +174,8 @@ class Spider(Spider):
         return base64_signature
 
     def decrypt_sha3(self, timestamp, value):
-        secret_key = "6f7ab440b39eba4ac87bfa5576eac999"
-        apikey = "0f607264-fc63-38a9-ab9e-13c65db7cd3c"
+        secret_key = HIFI_SECRET_KEY
+        apikey = HIFI_API_KEY
         id_value = value
         protocolver = "zx11"
         data = f"apikey{apikey}id{id_value}protocolver{protocolver}timestamp{timestamp}"
@@ -185,8 +188,8 @@ class Spider(Spider):
         return base64_signature
 
     def decrypt_sha5(self, timestamp):
-        secret_key = "6f7ab440b39eba4ac87bfa5576eac999"
-        apikey = "0f607264-fc63-38a9-ab9e-13c65db7cd3c"
+        secret_key = HIFI_SECRET_KEY
+        apikey = HIFI_API_KEY
         protocolver = "zx11"
         maxitems = "96"
         startitem = "0"
