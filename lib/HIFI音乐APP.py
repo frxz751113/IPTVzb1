@@ -37,6 +37,9 @@ xurl = "http://if2.hifiok.com"
 
 xurl1 = "http://if2.zhenxian.fm"
 
+HIFI_SECRET_KEY = os.environ.get("HIFI_SECRET_KEY", "")
+HIFI_API_KEY = os.environ.get("HIFI_API_KEY", "")
+
 headerx = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.87 Safari/537.36'
           }
@@ -120,8 +123,8 @@ class Spider(Spider):
                 return jg
 
     def decrypt(self, timestamp):
-        secret_key = "6f7ab440b39eba4ac87bfa5576eac999"
-        apikey = "0f607264-fc63-38a9-ab9e-13c65db7cd3c"
+        secret_key = HIFI_SECRET_KEY
+        apikey = HIFI_API_KEY
         protocolver = "zx11"
         sliderid = "4"
         terminaltype = "5"
@@ -131,8 +134,8 @@ class Spider(Spider):
         return base64_result
 
     def decrypt_sha1(self, timestamp, value):
-        secret_key = "6f7ab440b39eba4ac87bfa5576eac999"
-        apikey = "0f607264-fc63-38a9-ab9e-13c65db7cd3c"
+        secret_key = HIFI_SECRET_KEY
+        apikey = HIFI_API_KEY
         id_value = value
         maxitems = "96"
         protocolver = "zx11"
@@ -144,8 +147,8 @@ class Spider(Spider):
         return base64_result
 
     def decrypt_sha2(self, timestamp):
-        secret_key = "6f7ab440b39eba4ac87bfa5576eac999"
-        apikey = "0f607264-fc63-38a9-ab9e-13c65db7cd3c"
+        secret_key = HIFI_SECRET_KEY
+        apikey = HIFI_API_KEY
         protocolver = "zx11"
         data = f"apikey{apikey}protocolver{protocolver}timestamp{timestamp}"
         signature = hmac.new(
@@ -157,8 +160,8 @@ class Spider(Spider):
         return base64_signature
 
     def decrypt_sha4(self, timestamp):
-        secret_key = "6f7ab440b39eba4ac87bfa5576eac999"
-        apikey = "0f607264-fc63-38a9-ab9e-13c65db7cd3c"
+        secret_key = HIFI_SECRET_KEY
+        apikey = HIFI_API_KEY
         protocolver = "zx11"
         terminaltype = "0"
         data = f"apikey{apikey}protocolver{protocolver}terminaltype{terminaltype}timestamp{timestamp}"
@@ -171,8 +174,8 @@ class Spider(Spider):
         return base64_signature
 
     def decrypt_sha3(self, timestamp, value):
-        secret_key = "6f7ab440b39eba4ac87bfa5576eac999"
-        apikey = "0f607264-fc63-38a9-ab9e-13c65db7cd3c"
+        secret_key = HIFI_SECRET_KEY
+        apikey = HIFI_API_KEY
         id_value = value
         protocolver = "zx11"
         data = f"apikey{apikey}id{id_value}protocolver{protocolver}timestamp{timestamp}"
@@ -185,8 +188,8 @@ class Spider(Spider):
         return base64_signature
 
     def decrypt_sha5(self, timestamp):
-        secret_key = "6f7ab440b39eba4ac87bfa5576eac999"
-        apikey = "0f607264-fc63-38a9-ab9e-13c65db7cd3c"
+        secret_key = HIFI_SECRET_KEY
+        apikey = HIFI_API_KEY
         protocolver = "zx11"
         maxitems = "96"
         startitem = "0"
@@ -205,7 +208,7 @@ class Spider(Spider):
         current_timestamp = int(datetime.datetime.now().timestamp())
         signature = self.decrypt_sha2(current_timestamp)
 
-        url = f'{xurl}/interface2/ws/tv/index?apikey=0f607264-fc63-38a9-ab9e-13c65db7cd3c&protocolver=zx/1.1&timestamp={str(current_timestamp)}&signature={signature}'
+        url = f'{xurl}/interface2/ws/tv/index?apikey={HIFI_API_KEY}&protocolver=zx/1.1&timestamp={str(current_timestamp)}&signature={signature}'
         detail = requests.get(url=url, headers=headerx)
         detail.encoding = "utf-8"
         if detail.status_code == 200:
@@ -235,7 +238,7 @@ class Spider(Spider):
         current_timestamp = int(datetime.datetime.now().timestamp())
         signature = self.decrypt(current_timestamp)
 
-        url = f'{xurl}/interface2/ws/content/slider?apikey=0f607264-fc63-38a9-ab9e-13c65db7cd3c&protocolver=zx/1.1&sliderid=4&terminaltye=5&timestamp={str(current_timestamp)}&signature={signature}'
+        url = f'{xurl}/interface2/ws/content/slider?apikey={HIFI_API_KEY}&protocolver=zx/1.1&sliderid=4&terminaltye=5&timestamp={str(current_timestamp)}&signature={signature}'
         detail = requests.get(url=url, headers=headerx)
         detail.encoding = "utf-8"
         if detail.status_code == 200:
@@ -271,7 +274,7 @@ class Spider(Spider):
         current_timestamp = int(datetime.datetime.now().timestamp())
         if '93' not in cid:
             signature = self.decrypt_sha1(current_timestamp, cid)
-            url = f'{xurl}/interface2/ws/content/album/list?apikey=0f607264-fc63-38a9-ab9e-13c65db7cd3c&id={cid}&maxitems=96&protocolver=zx/1.1&startitem=0&timestamp={str(current_timestamp)}&type=1&signature={signature}'
+            url = f'{xurl}/interface2/ws/content/album/list?apikey={HIFI_API_KEY}&id={cid}&maxitems=96&protocolver=zx/1.1&startitem=0&timestamp={str(current_timestamp)}&type=1&signature={signature}'
             detail = requests.get(url=url, headers=headerx)
             detail.encoding = "utf-8"
             if detail.status_code == 200:
@@ -298,7 +301,7 @@ class Spider(Spider):
                     videos.append(video)
         else:
             signature = self.decrypt_sha5(current_timestamp)
-            url = f'{xurl}/interface2/ws/content/pack/list?apikey=0f607264-fc63-38a9-ab9e-13c65db7cd3c&maxitems=96&protocolver=zx/1.1&startitem=0&timestamp={str(current_timestamp)}&signature={signature}'
+            url = f'{xurl}/interface2/ws/content/pack/list?apikey={HIFI_API_KEY}&maxitems=96&protocolver=zx/1.1&startitem=0&timestamp={str(current_timestamp)}&signature={signature}'
             detail = requests.get(url=url, headers=headerx)
             detail.encoding = "utf-8"
             if detail.status_code == 200:
@@ -343,7 +346,7 @@ class Spider(Spider):
         signature = self.decrypt_sha3(current_timestamp, fenge[0])
 
         if '789' not in fenge[1]:
-            url = f'{xurl}/interface2/ws/content/album/detail?apikey=0f607264-fc63-38a9-ab9e-13c65db7cd3c&id={fenge[0]}&protocolver=zx/1.1&timestamp={str(current_timestamp)}&signature={signature}'
+            url = f'{xurl}/interface2/ws/content/album/detail?apikey={HIFI_API_KEY}&id={fenge[0]}&protocolver=zx/1.1&timestamp={str(current_timestamp)}&signature={signature}'
             detail = requests.get(url=url, headers=headerx)
             detail.encoding = "utf-8"
             if detail.status_code == 200:
@@ -378,7 +381,7 @@ class Spider(Spider):
 
             xianlu = '音乐专线'
         else:
-            url = f'{xurl}/interface2/ws/content/pack/detail?apikey=0f607264-fc63-38a9-ab9e-13c65db7cd3c&id={fenge[0]}&protocolver=zx/1.1&timestamp={str(current_timestamp)}&signature={signature}'
+            url = f'{xurl}/interface2/ws/content/pack/detail?apikey={HIFI_API_KEY}&id={fenge[0]}&protocolver=zx/1.1&timestamp={str(current_timestamp)}&signature={signature}'
             detail = requests.get(url=url, headers=headerx)
             detail.encoding = "utf-8"
             if detail.status_code == 200:
@@ -434,7 +437,7 @@ class Spider(Spider):
             current_timestamp = int(datetime.datetime.now().timestamp())
             signature = self.decrypt_sha3(current_timestamp, id)
 
-            url1 = f'{xurl1}/interface2/ws/content/music/detail?apikey=0f607264-fc63-38a9-ab9e-13c65db7cd3c&id={id}&protocolver=zx/1.1&timestamp={str(current_timestamp)}&signature={signature}'
+            url1 = f'{xurl1}/interface2/ws/content/music/detail?apikey={HIFI_API_KEY}&id={id}&protocolver=zx/1.1&timestamp={str(current_timestamp)}&signature={signature}'
             response = requests.get(url1, headers=headerx, allow_redirects=False)
             url1 = response.headers.get('Location')
 
@@ -445,14 +448,14 @@ class Spider(Spider):
 
             signature = self.decrypt_sha4(current_timestamp)
 
-            url2 = f'{data}?apikey=0f607264-fc63-38a9-ab9e-13c65db7cd3c&protocolver=zx/1.1&terminaltype=0&timestamp={str(current_timestamp)}&signature={signature}'
+            url2 = f'{data}?apikey={HIFI_API_KEY}&protocolver=zx/1.1&terminaltype=0&timestamp={str(current_timestamp)}&signature={signature}'
             response = requests.get(url2, headers=headerx, allow_redirects=False)
             url = response.headers.get('Location')
         else:
             current_timestamp = int(time.time() * 1000)
             signature = self.decrypt_sha4(current_timestamp)
 
-            url1 = f'{id}?apikey=0f607264-fc63-38a9-ab9e-13c65db7cd3c&protocolver=zx/1.1&terminaltype=0&timestamp={str(current_timestamp)}&signature={signature}'
+            url1 = f'{id}?apikey={HIFI_API_KEY}&protocolver=zx/1.1&terminaltype=0&timestamp={str(current_timestamp)}&signature={signature}'
             response = requests.get(url1, headers=headerx, allow_redirects=False)
             url = response.headers.get('Location')
 
