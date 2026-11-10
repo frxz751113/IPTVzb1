@@ -5,7 +5,8 @@ import io
 
 urls = {
     #"http://epg.51zmt.top:8000/e.xml.gz": "pp.xml"   # ✅ 最终保存的文件名
-    "https://epg.pw/xmltv/epg_CN.xml": "pp.xml"
+    #"https://epg.pw/xmltv/epg_CN.xml": "pp.xml"
+    "https://epg.tv.darwinchow.com/epg.xml": "pp.xml"
 }
 
 for url, filename in urls.items():
